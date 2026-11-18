@@ -1,0 +1,313 @@
+Revised proposal: qualification and 12-division structure
+
+November 13, 2026 • Added proposal; earlier material preserved below
+
+This proposal sets out the latest direction for discussion: top-25% qualification, three skill levels, four age categories, and team self-assessment subject to organizer approval. It is added above the earlier design without deleting it. Where the approaches differ, this section describes the latest proposal; the material below records the previous design.
+
+1. Champions League: top 25% plus playoff champions
+
+Invite teams finishing in the top 25% of the regular-season standings in each individual home-league division, rounded up. Calculate this within each standings division, not across the league’s entire membership. Qualification places = ceiling(number of teams ÷ 4). Use official standings and the home league’s tiebreakers.
+
+Examples: four teams → one place; six teams → two; eight teams → two; 10 teams → three; 12 teams → three; 16 teams → four; 20 teams → five. Describe the rule as “top 25%, rounded up,” because rounding can qualify more than exactly one quarter.
+
+Recommended additional route: retain an invitation for the playoff champion if it finishes outside those standings places. A team qualifying both ways receives one entry; its duplicate qualification does not pass down. Publish the eligible season and standings cutoff before invitations.
+
+2. Challengers Cup: the remaining top-half teams
+
+Invite teams below the Champions League standings cutoff but within the top half of their home division, excluding the playoff champion and all other Champions League qualifiers. Retain the previous top-half rounding rule: floor(number of teams ÷ 2). Eligible standings positions therefore run from ceiling(N ÷ 4) + 1 through floor(N ÷ 2), excluding playoff champions.
+
+Example: In an eight-team division, first and second qualify for Champions League; third and fourth qualify for Challengers Cup. If fourth wins the playoffs, it qualifies for Champions League instead and only third remains eligible for Challengers Cup. Do not extend the cutoff to replace excluded teams.
+
+Champions League qualifiers may enter only that competition. Declining their invitation or losing a knockout game does not make them eligible for the Challengers Cup. The competitions describe different qualification routes, not automatically different skill levels.
+
+3. Three skill levels
+
+Replace the earlier five-tier concept in this proposal with Elite, Competitive and Recreational. Use clear descriptions of current team ability supported by player background. Home-league A/B/C/D/E labels remain reference information, not automatic placement.
+
+Elite
+
+Strong teams featuring former professional, university, college or junior players. Former professionals are permitted; the strongest amateur teams are also welcome. Retain the proposed exclusion of currently active professionals unless changed in the final rulebook.
+
+Competitive
+
+Strong recreational teams, typically with AAA, AA, A or extensive organized-hockey experience. No former professionals. Junior, college and university experience triggers an Elite review; Competitive placement requires approval based on the level played, player age, years since that level and current ability.
+
+Recreational
+
+Teams primarily from house-league, adult-entry and lower-level recreational backgrounds. No former professionals and no players whose current ability materially exceeds the division. A strong AAA player is not automatically eligible simply because they never played junior.
+
+Resolve overlap through review rather than using “played junior” as an unrestricted description of both Elite and Competitive. A recent high-level junior player and a player with lower-level junior experience decades ago may require different placements. Review standout skaters and goalies as well as the team overall.
+
+4. Four age categories × three skill levels
+
+The proposed core menu contains 12 divisions per competition:
+
+Open (18+): Open Elite; Open Competitive; Open Recreational.
+
+40+: 40+ Elite; 40+ Competitive; 40+ Recreational.
+
+50+: 50+ Elite; 50+ Competitive; 50+ Recreational.
+
+60+: 60+ Elite; 60+ Competitive; 60+ Recreational.
+
+Use “40+,” “50+” and “60+” to make the minimum age inclusive and clear. Every player must meet the selected category’s minimum age on the published competition-wide cutoff date. Open has no upper age limit. Keep the same age classification through the competition.
+
+These are 12 potential divisions in Champions League and another 12 in Challengers Cup: up to 24 separate brackets before any women’s or U25 additions. Women’s and U25 concepts remain in the earlier material below but are not counted in this 4 × 3 matrix.
+
+Treat the matrix as a registration and expression-of-interest menu, not a promise to run every bracket initially. Open each division only when enough suitable teams enter and travel and ice capacity are workable. Do not combine materially different abilities just to fill a bracket.
+
+5. Self-assessment with organizer approval
+
+Captains request their age category and skill level, then submit their home league, local division, standings link, full roster, player ages, highest levels played and years since junior, university, college or professional hockey. Include a captain’s declaration and league-convenor contact.
+
+The organizer reviews the application and returns one of three outcomes: Approved; More information needed; or Assigned a different level. Self-assessment starts the process but does not determine final placement.
+
+Check the strongest players and goalie alongside overall roster ability, domestic results and available cross-league evidence. Use the existing convenor review, video or optional classification-game process where placement remains uncertain.
+
+Confirm placements and allow a documented appeal window before the knockout draw. Freeze divisions once competitive play begins. This protects teams from being eliminated by a materially misclassified opponent and avoids moving eliminated teams into easier brackets.
+
+6. Keep the season-long knockout format
+
+Retain scheduled single-elimination rounds alongside the normal league season: book a game, advance the winner, then book the next tie. The final eight teams in each viable division attend year-end finals. Eight is the finals field, not the total registration cap.
+
+The full 24-bracket menu could require 24 separate finals fields. Confirm actual demand before committing finals dates and ice, and stage different divisions separately where needed. Retain the smaller-field options and published fees from the operating format below.
+
+7. Reference and recommended direction
+
+True North’s calibre page provides a useful example of plain-language descriptions: Competitive includes experience up to AAA minor hockey, while Intermediate, Recreational, Rookie and Beginner are described separately. It states that it does not offer A or B divisions. Borrow the clarity of its descriptions while adding an Elite category suited to this competition.
+
+Reference: https://www.truenorthhockey.com/Home/Calibre
+
+Recommended direction: top 25% rounded up plus playoff champions; remaining top-half teams in Challengers Cup; three skill levels; four age categories; self-assessment subject to approval; season-long knockout rounds and year-end finals.
+
+Earlier design — retained in full
+
+The original content follows unchanged. Its first-place-only qualification and five-tier framework describe the previous design and should be read alongside the revised proposal above.
+
+Champions League & Challengers Cup
+
+Plaionn Sports Group • Competition design • November 5, 2026
+
+Cross-league classification: Local A, B, C, D and E labels are not directly comparable. Teams earn entry through results and receive an independently reviewed competition tier.
+
+Keep your team. Represent your league. Compete for something bigger.
+
+This document sets out qualification, divisions, roster rules and season-long knockout competitions culminating in year-end Final Eight tournaments. Qualification and the knockout-to-finals structure reflect the agreed direction; detailed operating rules remain proposals until finalized.
+
+1. Champions League qualification
+
+Every team that finishes first in the regular-season standings of its league division OR wins its playoff championship receives an invitation to the Champions League. Either achievement qualifies independently. Teams do not need to win both.
+
+Both teams are invited when the regular-season winner and playoff champion are different. A playoff champion qualifies regardless of its regular-season finishing position. Apply this rule to every eligible division within each league, including lower-skill divisions—not just the league’s highest division.
+
+A team that wins both receives one invitation and is recognized as a double champion. Its duplicate qualification does not automatically pass to a runner-up.
+
+Use official final standings and playoff results from the most recently completed eligible season. Publish the qualifying-season window and cutoff date before invitations are issued. Use the home league’s official tiebreakers to identify first place.
+
+Example: In an eight-team division, Team A finishes first and Team D wins the playoffs. Both are invited to the Champions League. If Team A wins both, Team A receives one invitation.
+
+Qualification earns the invitation; roster, age and competitive strength determine the competition division. Invite every qualifying champion and size each knockout bracket to accepted entries, using preliminary ties and byes for uneven fields. Participation remains subject to roster eligibility, registration deadlines and a viable field.
+
+2. Challengers Cup qualification
+
+The Challengers Cup is exclusively for teams finishing second through the top half of their regular-season division, excluding the playoff champion. Regular-season first-place teams and playoff champions may compete only in the Champions League. Declining an invitation or being eliminated does not make them eligible for the Challengers Cup.
+
+Eligible positions are second through floor(number of teams ÷ 2), excluding any playoff champion. For eight or nine teams, this means second through fourth; for 10 teams, second through fifth. Do not expand the cutoff to replace excluded teams.
+
+Example: In an eight-team division, A finishes first and D finishes fourth but wins the playoffs. A and D are eligible only for the Champions League; second-place B and third-place C qualify for the Challengers Cup. If the playoff champion finishes outside the top half, second through fourth remain eligible. There is no transfer between competitions after elimination.
+
+Recommended name: Challengers Cup. It communicates the second competition clearly while giving it its own identity. Positioning: “Your season isn’t over. Take on the best of the rest.”
+
+3. Division architecture
+
+Use three separate labels: competition → age category → our skill tier. Examples: Champions League — Men’s Open — Tier 3 Competitive; Challengers Cup — Women’s Open — Tier 4 Recreational. Qualification, age eligibility and skill placement are separate decisions.
+
+“Open” means no upper age limit, with an adult minimum age of 18. “Elite” identifies the highest skill tier, where former professional players may participate. Age and playing history are separate eligibility dimensions.
+
+Age categories
+
+Men’s Open: Ages 18+. The main men’s competition and initial priority.
+
+Men’s U25: Ages 18–24. Develop as a distinct pathway for players transitioning from youth and junior hockey, subject to sufficient qualified teams.
+
+Men’s 40+: Every player at least 40. The first masters category to develop.
+
+Men’s 50+ and 60+: Every player meets the relevant minimum age. Add as qualified demand grows.
+
+Women’s Open: Ages 18+. The main women’s competition and initial priority.
+
+Women’s 30+ and 40+: Every player meets the relevant minimum age. Collect interest and open each category only when there is a viable field.
+
+Use age on a published competition-wide eligibility date before the opening round, including U25, and retain that classification through the finals. Birthdays during the competition do not change eligibility. Teams from unrestricted home leagues may enter an age category if they meet both age and returning-roster rules; they cannot rebuild their roster to claim champion status.
+
+Independent skill tiers
+
+Use five numbered tiers as the initial classification framework. These descriptions guide review; they are not automatic player-history cutoffs or a requirement to run all five tiers in every age category.
+
+Tier 1 — Elite: Highest-level adult hockey; former professionals permitted, subject to the published eligibility policy.
+
+Tier 2 — Advanced: Strong amateur teams, potentially with substantial junior or university experience.
+
+Tier 3 — Competitive: Experienced, capable recreational teams.
+
+Tier 4 — Recreational: Lower-intensity recreational teams.
+
+Tier 5 — Development: Predominantly newer players and adult beginners.
+
+Retain the amateur restriction for Tiers 2–5: no former professionals. Publish specific junior, university and other high-level experience restrictions for the lower tiers before registration. Consider current ability, age and years since high-level play; roster averages cannot excuse individual players far beyond a tier’s standard.
+
+Proposed launch policy: Exclude currently active professionals. Define professional experience, applicable leagues and appearance criteria before registration. Expense reimbursement alone does not establish professional status.
+
+Open only tiers supported by enough comparable teams and manageable travel. Do not combine materially different abilities merely to fill a bracket.
+
+4. Cross-league classification and competitive balance
+
+Earn qualification; receive a reviewed placement
+
+Every eligible regular-season first-place team and playoff champion remains invited to the Champions League, including champions from local A through E divisions. Challengers Cup eligibility remains second place through the top half, excluding playoff champions. Local division letters do not determine our tier.
+
+A local E-division champion could become a Champions League Tier 5 champion. The Challengers Cup is not automatically weaker hockey: its Tier 1 teams may be stronger than Champions League Tier 4 teams. Competition identifies the qualification route; tier identifies playing strength.
+
+Teams request a tier; the organizer confirms it after review. Captains should hear a clear promise: “You qualify through your league results. We place you against teams of comparable ability, regardless of what your home league calls its divisions.”
+
+Build a league-to-league comparison map
+
+Ask each participating league’s convenor to describe its division standards and compare them with known teams. Verify that assessment against rosters and available cross-league results. Record the league, local division, proposed competition tier, evidence, confidence, reviewer and review date.
+
+Illustrative mapping only: one league’s B division might map to Tier 2, another league’s A to Tier 3, another’s D to Tier 3, and another’s C to Tier 4. These are hypothetical examples, not assessments of actual leagues.
+
+Use the map as a starting point, not an automatic assignment. A dominant champion or a team with a substantially different roster may belong above its home division’s baseline. Revisit mappings each season.
+
+Evidence for team assessment
+
+Roster and playing history: Review the full roster, strongest skaters and goalie—not just average ability. Verify relevant history using league records and sources such as HockeyDB or Elite Prospects. No profile does not mean no experience; confirm player identity before matching records.
+
+Age and recency: Consider age and years since high-level hockey so past credentials are not treated as a complete measure of present ability.
+
+Domestic results: Review standings, goals for and against, and whether the team dominates its own division. Raw win percentage cannot establish strength across unrelated leagues.
+
+Convenor assessment: Obtain comparisons with known teams and divisions. Have the organizer review the evidence rather than letting captains choose an easier tier.
+
+Crossover results and video: Prioritize recent interleague or tournament results involving comparable rosters. Use recent game video when placement remains uncertain.
+
+Record a provisional tier and confidence level rather than an artificially precise numerical score. Early classification will require informed judgment; a score such as 78.4 would imply unsupported precision.
+
+Resolve uncertainty before elimination
+
+Clearly understood teams receive a confirmed tier. Uncertain teams receive a provisional tier and further review. Where needed, arrange one or two classification games against teams whose standard is understood.
+
+Classification games are separately identified, non-eliminating assessments before the cup bracket begins. They are required only where necessary, not for the whole field. Publish any additional costs and allow sufficient time before the competitive draw.
+
+Finalize roster review, tier placement and a documented appeal process before knockout play. Freeze tiers when the competitive bracket starts. Do not transfer eliminated teams into a lower tier or the other competition.
+
+Handle undisclosed experience, ineligible players and false declarations through published eligibility and disciplinary rules. A single heavy defeat is not sufficient evidence of deception or a reliable reason to reclassify a team mid-competition.
+
+Build ratings from actual interleague play
+
+Record each game’s date, opponents, score, competition tier and roster used. Over time, use opponent-adjusted ratings to support placement and seeding, with safeguards against rewarding excessive score margins.
+
+Keep ratings provisional where leagues have few connections. A 15–1 team in one isolated league cannot be reliably compared with a 10–6 team elsewhere without shared opponents or other evidence. Reassess ratings after significant roster changes.
+
+Launch within a manageable region, involve convenors in classification and build a reviewed division map before confirming placements. Limit age-and-tier combinations to fields with enough comparable teams. Each viable tier retains its own knockout bracket and year-end finals.
+
+5. Preserve the qualifying team
+
+The event should feature the teams that earned qualification. Proposed roster controls:
+
+Returning core: At least 80% of the event roster must come from the qualifying-season roster.
+
+Participation: Returning players must have played at least 40% of that team’s regular-season games, subject to documented injury exceptions.
+
+Additions: Maximum three additional players, with prior approval. Additions cannot materially increase the team’s competitive level. Apply both the 80% rule and the three-addition limit.
+
+Goalies: Use a qualifying-season goalie where possible. Approve replacement goalies individually at comparable ability; replacements must meet age eligibility.
+
+One team: A player may represent only one team across both competitions during the same competition cycle, including the finals.
+
+Roster lock: Final rosters due 30 days before the opening round. The same approved roster carries through the knockout phase and finals. No recruiting from eliminated teams; permit only documented, approved emergency replacements under the published rules.
+
+Verification: Require the home league’s roster and game-participation evidence where available, plus captain certification. Resolve incomplete records before confirming eligibility.
+
+6. Season-long knockout competition
+
+Run both competitions as single-elimination cups alongside normal league seasons. Book one game per tie: win and advance, lose and exit. Book the next tie once the advancing opponents are known. There is no opening round robin or three-game guarantee in this phase.
+
+Brackets that scale with entries
+
+Create separate brackets by competition, age category and skill tier. Group early ties geographically to control travel, and separate teams from the same home league in the opening round where practical. Publish the bracket pathway and draw rules before play starts, then assign specific dates within each round window.
+
+Example: 64 entries → 32 teams → 16 teams → Final Eight. The three qualifying rounds require 32 + 16 + 8 = 56 games spread through the season. Each surviving team plays three games before finals.
+
+A 32-team field needs two rounds to reach eight; 128 teams need four. For 48 entries, 16 preliminary ties and 16 byes produce a round of 32. Publish a transparent bye policy, preferably a draw within geographic brackets. Winning both standings and playoffs never earns a second entry.
+
+With N entrants, reaching eight survivors requires N − 8 decisive knockout games, assuming no withdrawals. The whole competition is not capped at eight entries; eight is the finals field per division.
+
+Scheduling and ice booking
+
+Publish round windows, provisionally four to six weeks each, and a fixed year-end finals date. Collect domestic schedules and blackout dates before the draw. Allow postponement buffers and enough time after the final qualifying round for finals travel arrangements.
+
+When opponents are confirmed, the organizer coordinates both captains, books suitable ice, assigns officials and confirms the fixture. Use available partner-league ice, an agreed rescheduled slot or new ice. Cup games are additional fixtures unless the affected home leagues explicitly approve another arrangement; they do not automatically count toward domestic standings.
+
+Suggested process: captains submit availability within seven days of their pairing. The organizer confirms a game within the round window at an assigned host or neutral rink. Publish hosting and travel rules; if agreement fails, the organizer assigns a reasonable slot under predefined postponement and forfeit rules.
+
+Each game must produce a winner. Publish regulation length, overtime, shootout procedures and required ice-time buffer. Verify results promptly, carry suspensions across rounds and update the bracket before booking the next game.
+
+Payment structure
+
+Proposed model: initial registration/administration fee, then a published game fee for each round played. Define how ice, officials and timekeeping costs are shared, and collect payment before confirming bookings. Disclose the separate Final Eight fee upfront, plus cancellation, withdrawal and forfeit terms.
+
+7. Year-end Final Eight and launch
+
+The final eight teams in each viable competition division attend a centralized tournament at the end of the playing year. This means eight per division, not eight across all ages, skill tiers and both competitions. Different divisions can hold finals on different weekends.
+
+Recommended finals format
+
+Continue the knockout format: four quarterfinals, two semifinals and one championship final. This requires seven title-path games per division; finalists play three. A Friday-to-Sunday schedule can place quarterfinals Friday, semifinals Saturday and the final Sunday.
+
+Optional placement games can guarantee all eight travelling teams three games: add two consolation semifinals plus third-, fifth- and seventh-place games. This creates 12 total finals games per division. Teams losing in the title bracket cannot return to championship contention.
+
+Decide between the lean seven-game finals, which guarantee only one game, and the 12-game placement option before registration. The earlier 15-game group-stage tournament is no longer the default.
+
+For a 64-team division, straight knockout throughout requires 63 games: 56 distributed games plus seven finals games. With finals placement games, the total is 68. Budget season-long ice separately from centralized finals ice.
+
+Launch priorities and small fields
+
+Prioritize Men’s Open Tier 3 Competitive and Tier 4 Recreational fields in the Champions League, Women’s Open at reviewed tiers, and Men’s Open Tier 3 Competitive in the Challengers Cup. Confirm these priorities against applications; accept scalable fields rather than targeting only eight entries.
+
+Open Tier 1 Elite, Tier 2 Advanced and Tier 5 Development, plus U25 and masters categories, when comparable demand and manageable travel support them. Confirm classification, divisions, round windows, travel boundaries and finals ice before accepting binding entries.
+
+Exactly eight entries may go directly to finals. Four entries use a Final Four with two semifinals and a final; five to seven use a published small-field bracket with byes. Require at least four comparable confirmed teams and offer an appropriate alternative or refund if the field is not viable. Do not merge materially different ages or abilities to fill a bracket.
+
+8. Growth pathway and league partnerships
+
+Pathway: Win your regular-season standings OR playoff championship → receive a Champions League invitation → win scheduled knockout ties throughout the season → reach the year-end Final Eight → compete for your division’s championship. Eligible non-champions follow a separate Challengers Cup bracket.
+
+Begin with geographically grouped knockout brackets and regional finals. As coverage grows, publish regional allocations to a national Final Eight before the draw. Those allocations must total eight teams per competition division.
+
+Welcome independently operated leagues as well as Plaionn-managed leagues. Teams keep their identity and represent their home league. League partners can supply verified results, help distribute invitations and celebrate their representatives.
+
+The directory can identify leagues and qualifying champions; the championship creates player interest, content and relationships that support future tournaments and league growth. Keep qualification based on sporting results rather than league ownership.
+
+9. Invitation and registration workflow
+
+Build the league and division list, then record the eligible season, standings link, first-place team, playoff champion, captain contact and verification status.
+
+Invite every verified first-place team and playoff champion, deduplicating teams that won both. Explain the achievement that qualified each team and the roster-continuity requirement.
+
+Collect age category, player history, roster, home-league schedule and blackout dates. Confirm each division’s field, travel limits, round windows, finals dates and fee structure before the draw.
+
+Verify rosters and cross-league evidence, resolve provisional placements through review or classification games where needed, hear appeals, then freeze tiers before the knockout draw. Publish brackets, byes, round deadlines and booking responsibilities. Track Challengers Cup invitations separately: second place through the top half, excluding playoff champions.
+
+10. Items to finalize before registration
+
+Finalize round windows and finals dates; qualification and age cutoffs; geographic brackets and travel limits; bye allocation; booking responsibilities; per-round and finals fees; refund and forfeit terms; game and overtime rules; roster exceptions; discipline; minimum rest periods; and regional allocations to finals.
+
+The core decisions are settled: regular-season first-place teams and playoff champions are invited to the Champions League only. The Challengers Cup admits second place through the top half, excluding playoff champions. Both use scheduled knockout rounds leading to year-end finals.
+
+Reference examples
+
+CARHA Hockey World Cup tournament details provide an example of age divisions and a minimum of four comparable teams for division formation: https://carhahockeyworldcup.ca/tournament-details/
+
+CARHA Hockey World Cup FAQ provides an example of excluding currently active professional players: https://carhahockeyworldcup.ca/faq/
+
+These references informed age and player-eligibility recommendations, not the season-long knockout structure. Qualification and the knockout-to-finals direction are confirmed; detailed operating policies remain proposals.

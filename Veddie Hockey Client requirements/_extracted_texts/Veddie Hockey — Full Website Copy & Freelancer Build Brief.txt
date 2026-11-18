@@ -1,0 +1,1435 @@
+VEDDIE HOCKEY
+
+Full Website Copy & Freelancer Build Brief
+
+Draft for founder review • November 14, 2026
+
+01 / READ THIS FIRST — FREELANCER NOTES
+
+This document contains the complete core marketing-site copy, section order, calls to action, form wording and launch-state instructions. Text labelled H1, H2, Body, Button, Microcopy or FAQ is intended for the website. Production notes and bracketed placeholders are not public copy.
+
+Creative approach: clear offers, tangible player benefits, hockey identity, community and media. This is original Veddie copy; do not imply endorsement or affiliation with Alex Hormozi, Brodie, professional teams or leagues.
+
+Source: Veddie Hockey Playbook, https://docs.google.com/document/d/1HbRdYeMvct8dnAoQbKgFa_42OPXn9sMc7pwhUefwJVM/edit
+
+Latest naming: Champions Cup, Champions League, Tournaments, Leagues and Pickup. Use “Pickup” everywhere, including navigation, forms and page titles. Summer can describe a particular schedule, but is not the product name.
+
+Launch approach: all five product pages appear from day one. Champions Cup and Pickup lead acquisition. Until inventory and delivery are confirmed, use interest forms rather than checkout. Champions League, Tournaments and Leagues accept interest without promising a launch date.
+
+The source targets a spring 2027 Cup and initial pickup in summer 2027, with GTA/southern Ontario as a working market. These are planning assumptions. Public copy below avoids treating them as booked events.
+
+The source proposes a paid founding-team offer. A later marketing idea includes a free inaugural Cup, cash prizes and a captain-tag giveaway. Those economics and terms remain unresolved. Default copy makes no price or prize claim; optional approved-promotion copy appears at the end.
+
+A complete privacy policy, participation terms, waiver, refund rules and competition rules require the operator’s final details. They are launch dependencies, not invented legal text in this document.
+
+Site map and navigation
+
+Primary navigation: Play Veddie | Team Rankings | The Experience | Find Your Division | Our Story. Team Rankings links to /rankings.
+
+“Play Veddie” opens five links: Champions Cup /champions-cup; Champions League /champions-league; Tournaments /tournaments; Leagues /leagues; Pickup /pickup.
+
+Persistent primary button: Find Your Game → /play.
+
+Other pages: /experience, /divisions, /our-story, /partners, /contact, /faqs, /rankings and /teams/[team-slug].
+
+Footer utility links: Privacy, Terms, Refund Policy, Player Code, Contact. Link each to the final approved page before launch.
+
+Use the page and section order below. Each product hero should have one primary action and one supporting action. Keep forms on the product page or preserve product selection when routing to /play.
+
+02 / HOMEPAGE — /
+
+Hero
+
+Eyebrow: PREMIUM ADULT HOCKEY
+
+H1: STILL GOT IT.
+
+Supporting headline: The pro hockey experience for the rest of your career.
+
+Body: The room. The rivalry. The feeling of burying one when it matters. Veddie brings it all together with hockey at your level and an experience worth getting the team together for.
+
+Primary button: Find Your Game → /play
+
+Secondary button: Explore the Experience → /experience
+
+Microcopy: Teams. Individual players. Goalies. Your next chapter starts here.
+
+Production note: Use authentic hockey footage or a clearly identified experience preview. Show the room, game action, bench reactions and celebration. Do not use invented Veddie event footage or results.
+
+The emotional hook
+
+H2: You’ve still got hockey left in you.
+
+Body: Maybe you played junior. Maybe you’ve worn the same team colours for twenty years. Maybe the best part of your week still starts with a hockey bag.
+
+You still care about the game. You deserve a place that cares about your experience just as much.
+
+Pull quote: A hockey vet isn’t an age. It’s someone who keeps coming back.
+
+Five ways to play
+
+H2: Your game. Your level. Your next chapter.
+
+Intro: Chase a championship. Build a weekly ritual. Or just get out for a great skate. Find the Veddie game that fits your life.
+
+Card — Champions Cup
+
+Headline: Your league was just the beginning.
+
+Body: Represent your home league against qualifying teams in Veddie’s flagship championship. Fresh rivals. League pride. A Cup worth lifting.
+
+Button: Explore the Champions Cup → /champions-cup
+
+Card — Champions League
+
+Headline: Keep your league. Chase a bigger title.
+
+Body: A planned cross-league competition alongside your regular season. Regional knockout rounds. A road to the finals. More on the line.
+
+Button: Explore Champions League → /champions-league
+
+Card — Tournaments
+
+Headline: Same team. New rivals.
+
+Body: Get the team together for a standalone tournament with reviewed divisions, a proper hockey atmosphere and another banner to chase.
+
+Button: Explore Tournaments → /tournaments
+
+Card — Leagues
+
+Headline: Make this your hockey night.
+
+Body: A consistent weekly game. A team to call your own. A season of rivalries, recognition and reasons to keep coming back.
+
+Button: Explore Leagues → /leagues
+
+Card — Pickup
+
+Headline: Your next skate, upgraded.
+
+Body: Organized skates, balanced teams and the Veddie touches that make getting to the rink worth it. All without a full-season commitment.
+
+Button: Explore Pickup → /pickup
+
+Production note: Show “Accepting Interest” on products with a working interest form. Use “Registration Open” only for an actual bookable offering.
+
+Experience preview
+
+H2: You may not play in the show. We’ll treat you like you do.
+
+Intro: We’re building Veddie around the details players notice, from the first step into the room to the last photo after the game.
+
+Feature: A room ready for you.
+
+Copy: Tape, towels, water and music. The little things that make you feel expected.
+
+Feature: Competition that fits.
+
+Copy: Clear divisions and placement review. Good hockey starts with players who belong on the same ice.
+
+Feature: Someone handling the details.
+
+Copy: Clear arrival information, organized games and an on-site point of contact.
+
+Feature: Moments worth keeping.
+
+Copy: Photos, clips and player stories that give your hockey life a place beyond the group chat.
+
+Feature: Something to play for.
+
+Copy: Fresh opponents, team pride and recognition for the moments that matter.
+
+Feature: Your people.
+
+Copy: The teammate who always has a story. The goalie who bails you out. The room you want to come back to.
+
+Microcopy: Exact amenities, support and media coverage are listed with each program before registration opens.
+
+Button: See the Veddie Experience → /experience
+
+Division preview
+
+H2: Find your pace. Find your people.
+
+Body: Four skill levels. Four age categories. Placement based on current ability, playing background and team strength.
+
+Division labels: D1 — Elite | D2 — Competitive | D3 — Intermediate | D4 — Recreational
+
+Age labels: Open 18+ | 40+ | 50+ | 60+
+
+Microcopy: Available combinations vary by program and local demand.
+
+Button: Find Your Division → /divisions
+
+Team rankings preview
+
+H2: Don’t just win the night. Build your reputation.
+
+Body: Your Champions Cup and Champions League results will build your place in the Veddie Team Rankings. Follow the teams setting the standard, see who’s moving up and give your next matchup a little more meaning.
+
+Button: Explore Team Rankings → /rankings
+
+Microcopy: Separate rankings by skill division and age category. Rankings begin when verified competition results are available.
+
+Production note: Show the top five eligible teams for a selected category once live, with rank, team, rating and movement. Before then, show “The first rankings will be earned on the ice.” Never populate fictional ranks.
+
+Joining steps
+
+H2: You bring the gear. We’ll handle the next steps.
+
+Step 1 — Pick your game.
+
+Copy: Choose a championship, tournament, league or pickup skate.
+
+Step 2 — Tell us where you fit.
+
+Copy: Share your city, age category and playing background.
+
+Step 3 — Get the details.
+
+Copy: We’ll follow up with relevant opportunities and confirmed program information before you commit.
+
+Button: Find Your Game → /play
+
+Community
+
+H2: Your highlights deserve more than the group chat.
+
+Body: Big saves. Scrappy goals. Familiar faces. Teams with twenty years of stories and players writing their next chapter. That’s Veddie.
+
+Launch panel headline: Help write the first chapter.
+
+Launch panel body: We’re building our founding hockey community. Tell us where you play and what you want your next game to look like.
+
+Button: Be Part of Veddie → /play
+
+Production note: Launch with founder content and genuine previews. Replace this panel with real stories, galleries and consented testimonials as they become available.
+
+Final conversion
+
+H2: The next chapter still has your name on it.
+
+Body: Bring your team. Find your team. Or just find your next skate.
+
+Primary button: Find Your Game → /play
+
+Secondary button: Ask Us a Question → /contact
+
+03 / CHAMPIONS CUP — /champions-cup
+
+Hero
+
+Eyebrow: VEDDIE CHAMPIONS CUP • ACCEPTING INTEREST
+
+H1: Your league was just the beginning.
+
+Body: You’ve earned your place at home. Now give the team a bigger stage. The Veddie Champions Cup brings qualifying teams together for fresh rivalries, a proper championship experience and a Cup worth lifting.
+
+Primary button: Register Team Interest → #cup-form
+
+Secondary button: See How Qualification Works → #qualification
+
+Microcopy: Join the first-edition interest list. Dates, location, divisions and entry details will be confirmed before registration opens.
+
+The reason to play
+
+H2: Same team. Bigger stage.
+
+Body: You already know what your team can do in your own league. The Cup gives you a new question to answer: how do you stack up against the teams who earned their place somewhere else?
+
+Bring your colours. Represent your league. Give the group chat something new to talk about.
+
+Qualification
+
+H2: Earn your place. Find your level.
+
+Body: Our proposed qualification route invites teams finishing in the top 25% of their home division’s regular-season standings, rounded up, plus that division’s playoff champion.
+
+Qualifying twice earns one place in the invitation process. We verify the relevant season and standings, then review team strength for Veddie division placement.
+
+Example: In a 10-team home division, the top three regular-season teams would meet the proposed standings threshold. The playoff champion would also qualify if it is a different team.
+
+Supporting copy: A B division in one league can play very differently from a B division somewhere else. Your home-league label helps us understand your team; it does not automatically decide your Veddie division.
+
+Microcopy: Final eligibility rules, participating divisions and any inaugural wildcard process will be published before registration opens. Qualification does not reserve a place.
+
+Button: Tell Us About Your Team → #cup-form
+
+The offer
+
+H2: You get the team together. We build the championship around you.
+
+Body: The planned Cup package brings organized competition and the Veddie player experience into one event.
+
+Benefit — A clear road to the Cup.
+
+Copy: Published formats, schedules and rules so your captain can focus on getting the team ready.
+
+Benefit — A proper game.
+
+Copy: Officials, timekeeping and scorekeeping, with reviewed rosters and divisions.
+
+Benefit — The room treatment.
+
+Copy: Prepared rooms, player essentials and the atmosphere that makes the event feel different.
+
+Benefit — Your weekend, remembered.
+
+Copy: Planned game recordings, replay access, curated highlights and team photography.
+
+Benefit — A finish worth chasing.
+
+Copy: Competition awards, a championship presentation and a team photo you’ll want to keep.
+
+Microcopy: The final event package will confirm every inclusion, support service and coverage window before payment.
+
+Format and first-edition interest
+
+H2: Help put your division on the ice.
+
+Body: We’re collecting interest across D1–D4 and Open 18+, 40+, 50+ and 60+. The first Cup will open divisions where there are enough comparable teams to deliver good competition.
+
+The planned format combines pool play with knockout rounds. Your division’s game guarantee, game length and advancement rules will be published with registration.
+
+H2: Be part of the first Cup.
+
+Body: Put your team forward for the inaugural event. Tell us your league, standing and playing background, and we’ll contact you as the field takes shape.
+
+Button: Register Team Interest → #cup-form
+
+Microcopy: No payment at this stage. Joining the list is not an accepted entry or a reserved place.
+
+Cup ranking section
+
+H2: Lift the Cup. Leave your mark.
+
+Body: The final buzzer settles the game. Your result stays with your team. Verified Champions Cup games contribute to the Veddie Team Rankings, giving your championship run a place in your team’s story.
+
+Button: See Team Rankings → /rankings
+
+Microcopy: Rankings and championship titles are separate. Cup qualification and division placement follow their own published rules.
+
+Cup FAQs
+
+Do we have to win our league?
+
+The proposed route includes the top quarter of regular-season standings, rounded up, as well as playoff champions. Final qualification rules will be confirmed before registration.
+
+Can we apply before our season ends?
+
+Yes. Tell us your current standing and when your season finishes. Final qualification will depend on the published rules and verified results.
+
+Can we bring our usual jerseys?
+
+The plan is for Cup teams to retain their own uniforms and identity. Final colour-conflict and uniform requirements will accompany registration.
+
+What if we do not qualify?
+
+Register for tournament updates. Veddie Tournaments offer a separate route to competition, with eligibility published for each event.
+
+What does it cost?
+
+The first event’s entry fee and full package are being finalized. We will publish the total cost, payment schedule and refund terms before asking you to commit.
+
+Is the Cup the Champions League final?
+
+The initial Cup is planned as a standalone championship. Champions League is a separate future competition; any later connection will be explained before teams register.
+
+04 / CHAMPIONS LEAGUE — /champions-league
+
+Hero
+
+Eyebrow: VEDDIE CHAMPIONS LEAGUE • IN DEVELOPMENT
+
+H1: Keep your league. Chase a bigger title.
+
+Body: Your regular season stays. The stakes get bigger. We’re building a cross-league competition where teams meet in regional knockout rounds and advancing teams earn their way to the finals.
+
+Primary button: Register Team Interest → #champions-league-form
+
+Secondary button: Bring Your League → /partners
+
+Microcopy: Planned competition. Season dates, entry rules and fees have not yet been announced.
+
+The concept
+
+H2: Your home schedule. A new road to the title.
+
+Body: Keep the rivalries you already love. Add opponents you would not normally face. Champions League is designed to sit alongside your home season, giving your team another reason to make the next game count.
+
+H2: Win. Advance. Keep the run alive.
+
+Step 1 — Enter the field.
+
+Copy: Teams apply under the published eligibility and roster rules, then receive division review.
+
+Step 2 — Play regional rounds.
+
+Copy: Matchups take place within announced competition windows and travel boundaries.
+
+Step 3 — Earn your finals place.
+
+Copy: Advancing teams meet at the finals destination to settle the title.
+
+Microcopy: Final formats may include byes or additional games. The complete pathway will be published before registration.
+
+Practical commitment
+
+H2: A bigger competition needs a clear plan.
+
+Body: Before you enter, you’ll know the round windows, travel limits, roster rules, booking responsibilities and full fee structure, including any additional round or finals charges.
+
+We’re collecting interest from teams and league operators now so the competition can be built around realistic schedules and strong local matchups.
+
+H2: More than another fixture.
+
+Body: A regional rival you’ve never played. A bracket your teammates keep checking. A result that means your season has another chapter. That’s the competition we’re building.
+
+Primary button: Put Your Team on the List → #champions-league-form
+
+Secondary button: Talk League Partnerships → /partners
+
+Champions League ranking section
+
+H2: Every round adds to your reputation.
+
+Body: Each verified Champions League result contributes to your team’s Veddie ranking. Take on a new rival, follow your movement and see how your record compares with teams in the same age and skill category.
+
+Button: Follow the Rankings → /rankings
+
+Microcopy: Rankings combine eligible Champions League and Champions Cup games. Bracket advancement follows the competition rules, not the ranking table.
+
+Champions League FAQs
+
+Do we have to leave our current league?
+
+No. The planned competition runs alongside teams’ home leagues.
+
+How far will we travel?
+
+Travel boundaries will be published for each region before registration. No travel radius is confirmed yet.
+
+Is this open to every skill level?
+
+The shared D1–D4 and age-category framework will guide placement. Actual divisions depend on sufficient comparable teams.
+
+Does entering guarantee a place in the finals?
+
+No. Teams must advance through the published competition format.
+
+How is this different from the Cup?
+
+The Cup begins as a standalone championship event. Champions League is a planned season-long pathway through regional rounds to finals.
+
+05 / TOURNAMENTS — /tournaments
+
+Hero
+
+Eyebrow: VEDDIE TOURNAMENTS
+
+H1: Same team. New rivals. Another banner to chase.
+
+Body: Some weekends deserve more than another group-chat plan. Get the team together for a Veddie tournament built around good competition, a proper hockey atmosphere and moments you’ll talk about on the drive home.
+
+Primary button: Get Tournament Updates → #tournament-form
+
+Secondary button: Find Your Division → /divisions
+
+Microcopy: Dates and locations will be announced as events are confirmed.
+
+Why enter
+
+H2: Give the team a weekend worth circling.
+
+Body: A rivalry weekend. An alumni reunion. An age-group showdown. Veddie Tournaments give your team a reason to get back in the same room and take on someone new.
+
+Expect the same attention to calibre, organization and player experience that defines Veddie, with the exact package published for each event.
+
+Event discovery
+
+H2: Find your next tournament.
+
+Filter labels: Location | Month | Skill division | Age category
+
+Empty-state headline: Your next tournament is taking shape.
+
+Empty-state body: Tell us where your team plays and the competition you’re looking for. We’ll let you know when a relevant event is announced.
+
+Button: Get Tournament Updates → #tournament-form
+
+Production note: Do not populate this section with fictional events. A reusable event-detail template appears later in this brief.
+
+Included experience
+
+H2: More hockey. Less organizing.
+
+Body: Published game guarantees. Reviewed divisions. A clear captain contact. The Veddie room experience. Media and awards matched to the event.
+
+You bring the roster and team spirit. We make the plan clear before you register.
+
+Microcopy: Hotels, meals, travel and optional extras are included only when explicitly listed.
+
+Tournament FAQs
+
+Do we need to qualify through our league?
+
+Not generally through the Champions Cup route. Each tournament publishes its own entry requirements, including any invitation-only events.
+
+Can individuals join?
+
+Some events may offer individual-player placement. Register your interest and select “Individual player” so we can contact you when that option is available.
+
+How many games do we get?
+
+Every event will publish its minimum game guarantee and advancement format before payment.
+
+Can we suggest a tournament for our team or age group?
+
+Yes. Tell us your preferred location, age category, level and dates through the interest form.
+
+Final H2: Put something better in the team calendar.
+
+Button: Get Tournament Updates → #tournament-form
+
+06 / LEAGUES — /leagues
+
+Hero
+
+Eyebrow: VEDDIE LEAGUES • ACCEPTING INTEREST
+
+H1: Make this your hockey night.
+
+Body: One night on the calendar that belongs to you. A team to call your own. A season of competition, stories and reasons to keep coming back.
+
+Primary button: Join the League Interest List → #league-form
+
+Secondary button: Explore the Experience → /experience
+
+Microcopy: Join as a team or an individual. Locations, nights and season details will be announced as leagues are confirmed.
+
+The weekly offer
+
+H2: Your favourite night of the week deserves an upgrade.
+
+Body: Veddie Leagues bring the player experience into a regular season: organized games, reviewed competition, player recognition and a community that grows stronger with every week.
+
+From the first room introduction to the last playoff game, we want your season to feel like something you’re part of.
+
+Two routes
+
+H2: Bring your team. Or find one here.
+
+Team headline: Keep the crew together.
+
+Team body: Tell us your roster’s level, preferred area and playing night. We’ll help assess the right fit as divisions open.
+
+Team button: Register Team Interest → #league-form, team selected
+
+Individual headline: Your next team starts with one sign-up.
+
+Individual body: New to the area? Returning to hockey? Ready for a different fit? Share your background and availability. We’ll contact you when suitable individual-player opportunities become available.
+
+Individual button: Join as an Individual → #league-form, individual selected
+
+Microcopy: Team formation and individual placement depend on demand. Joining the list does not guarantee a roster spot.
+
+Season package
+
+H2: A season you can see yourself in.
+
+Body: The planned league experience combines regular games and playoffs with officials, verified scores, player records, game media and the Veddie room treatment.
+
+Before registration, you’ll see the season schedule, game guarantee, start-time range, uniform package, exact inclusions and full price. Any personalized jersey and sock package will be clearly identified in your offer.
+
+H2: Tell us where hockey belongs in your week.
+
+Body: Your location, preferred night and division help us build leagues people can actually commit to.
+
+Button: Join the League Interest List → #league-form
+
+League FAQs
+
+Can I register without a team?
+
+Yes, you can join the individual-player interest list. We will contact you when a suitable placement opportunity is available.
+
+Will we play on the same night?
+
+The plan is to build each local league around a consistent playing night. Confirmed schedules and any exceptions will be published before registration.
+
+Are jerseys included?
+
+The final league offer will specify the uniform package and any separate charges.
+
+Can divisions change during the season?
+
+Any placement adjustment process will be explained in the league rules before the season starts.
+
+When does the league begin?
+
+Launch dates depend on ice availability and enough comparable players and teams. Join the list for your area to hear when details are confirmed.
+
+07 / PICKUP — /pickup
+
+Hero
+
+Eyebrow: VEDDIE PICKUP
+
+H1: Your next skate, upgraded.
+
+Body: Less chasing players. More playing hockey. Organized skates, balanced teams and a host who handles the details, without a full-season commitment.
+
+Primary button: Join the Pickup List → #pickup-form
+
+Secondary button: See How It Works → #pickup-how
+
+Microcopy: Tell us your area, level and preferred nights. We’ll contact you as suitable sessions open.
+
+The experience
+
+H2: A better skate starts before the puck drops.
+
+Body: You make time for hockey. We want that time to count.
+
+The planned Pickup experience includes team balancing, goalie coordination and backup planning, clean pinnies, warm-up pucks, tape, towels, water and music. A host keeps the session organized so you can get on with the reason you came.
+
+Supporting line: Bring your gear. We’ll handle the rest.
+
+Microcopy: Session listings confirm exact amenities and capacity. Pickup does not automatically include referees, official statistics or every-game recordings. Photo and clip coverage is periodic and announced.
+
+Booking steps
+
+H2: Find a skate that fits.
+
+Step 1 — Choose your session.
+
+Copy: Check the location, time, age category and level.
+
+Step 2 — Book your place.
+
+Copy: Review the price, capacity and cancellation policy before paying.
+
+Step 3 — Get to the rink.
+
+Copy: Follow your arrival details, meet the host and get ready to play.
+
+Production note: Use these booking steps when sessions go live. Until then, replace the step introduction with: “We’re collecting interest now. Once sessions open, here’s how booking will work.”
+
+Skaters and goalies
+
+H2: Skaters, find your pace.
+
+Body: Whether you want a fast skate or a lower-tempo game, tell us your background so we can guide you toward the right session.
+
+Button: Join as a Skater → #pickup-form, skater selected
+
+H2: Goalies, we want you in the crease.
+
+Body: Share your area, level and availability. We’ll contact you about suitable sessions and confirm any goalie-specific booking terms before you commit.
+
+Button: Join as a Goalie → #pickup-form, goalie selected
+
+Availability and FAQs
+
+Empty-state headline: Your next skate is taking shape.
+
+Empty-state body: No sessions are open for booking yet. Join the list and tell us where you want to play.
+
+Do I need to bring a full team?
+
+No. Pickup is designed for individual skaters and goalies.
+
+How many players are on the ice?
+
+The planning standard is a maximum of 20 skaters and two goalies for a full-ice session. Each listing will show its actual capacity and format.
+
+Do you guarantee two goalies?
+
+We coordinate goalies and maintain backup plans. Each session’s published policy will explain what happens if a goalie becomes unavailable.
+
+Can I play with a friend?
+
+Let the host know. We’ll try to accommodate requests while keeping teams balanced.
+
+What if I need to cancel?
+
+The cancellation deadline, refund or credit rules and waitlist process will be shown before booking.
+
+Are passes available?
+
+Multi-session options may be offered once schedules are confirmed. Any pass will state its eligible sessions, expiry and booking limits.
+
+Final H2: Keep your game going.
+
+Button: Join the Pickup List → #pickup-form
+
+08 / THE VEDDIE EXPERIENCE — /experience
+
+Hero
+
+H1: Show up and feel like a player again.
+
+Body: The pro hockey experience is about how the whole night feels. A room that’s ready. A game that’s organized. Competition that fits. Moments that matter.
+
+Button: Find Your Game → /play
+
+The room
+
+H2: It starts in the room.
+
+Body: The tape is there. The music is on. Your teammates are settling in. You have a few minutes to leave the rest of the day outside and be a hockey player.
+
+Prepared rooms, player essentials and a welcoming host are at the heart of the Veddie experience.
+
+The game
+
+H2: Good competition makes everything better.
+
+Body: A close game. A good pace. Players who belong on the same ice. We use a shared division framework and review playing backgrounds so the experience starts with a better fit.
+
+Our full competitions are planned around officials, scorekeeping, clear rules and accountable game operations. Pickup offers a lighter package built around organized, balanced skates.
+
+The support
+
+H2: Details handled. People available.
+
+Body: Arrival instructions you can find. Someone to ask when you need help. Published support arrangements, emergency procedures and a clear code of conduct.
+
+Competition packages will identify qualified athletic support and its coverage hours. Every program will explain what support is available.
+
+The recognition
+
+H2: You’re still making moments.
+
+Body: The save that keeps you in it. The goal the bench won’t stop talking about. The teammate who finally gets their first one.
+
+Veddie’s planned competition coverage includes recorded games, replay access, selected highlights, team photography and player recognition. Pickup coverage is periodic. Your program listing tells you exactly what to expect.
+
+Package clarity
+
+H2: Know what comes with your game.
+
+Body: Different ways to play need different packages. Your event, season or session listing will spell out the room amenities, game services, support, media, awards and any extras included in your price.
+
+Livestreams, commentary, personalized kits, sharpening, team meals and enhanced finals production are available only where specifically offered.
+
+Final H2: The game matters. So does everything around it.
+
+Button: Find Your Game → /play
+
+Production note: The source describes proposed standards. Do not change this page to unconditional “included in every booking” language until operations has approved the applicable packages.
+
+09 / FIND YOUR DIVISION — /divisions
+
+Hero
+
+H1: Good hockey starts with the right competition.
+
+Body: Your old league letter is only part of the story. We look at current ability, playing history and team strength to help find the right Veddie fit.
+
+Primary button: Help Me Find My Division → /contact?topic=division
+
+Secondary button: Find Your Game → /play
+
+Skill levels
+
+D1 — Elite
+
+High-tempo hockey for former pro, college/university and high-level junior players who still play at a strong level.
+
+D2 — Competitive
+
+Strong competitive hockey for suitable junior, AAA and AA backgrounds. Junior experience is reviewed in context, including level, age and time away.
+
+D3 — Intermediate
+
+For experienced organized-hockey and established recreational players who want good pace and team play below D2 intensity.
+
+D4 — Recreational
+
+Lower-tempo hockey for house-league, adult-entry and recreational backgrounds, with players who have comfortable basic game skills.
+
+Microcopy: Playing history guides placement. Current ability determines fit. D4 is not automatically a learn-to-skate program.
+
+Age categories
+
+H2: Your next chapter has a place here.
+
+Open 18+: Adult players aged 18 and older, with no upper age limit.
+
+40+: Players aged 40 and older.
+
+50+: Players aged 50 and older.
+
+60+: Players aged 60 and older.
+
+Body: Each competition or season publishes the date used to determine age eligibility. Older players may enter younger categories where suitable; younger players cannot enter an older category.
+
+Microcopy: Four levels across four age categories create 16 possible combinations. Programs open only the combinations supported by suitable demand.
+
+Placement process
+
+H2: Tell us the full story.
+
+Body: We start with your self-assessment, then consider playing background, recent results, current pace and the strength of the whole roster, including your strongest skaters and goalie.
+
+Team captains should share accurate histories and flag uncertainty early. Our aim is a field where teams can compete, not one where a label hides the strongest player.
+
+H2: Not sure where you belong?
+
+Body: That’s what the review is for. Tell us where you’ve played, how recently and what your current games feel like. We’ll help you work through the options.
+
+Button: Ask About Placement → /contact?topic=division
+
+10 / OUR STORY — /our-story
+
+Hero
+
+H1: The game doesn’t end. It evolves.
+
+Body: Your schedule changes. Your team changes. The way you get ready for a game might take a little longer. But the feeling when you step onto the ice? That part stays.
+
+Brand story
+
+H2: A Veddie is a hockey vet.
+
+Body: Not necessarily a former pro. Not necessarily the oldest player in the room. A hockey vet is someone with a relationship with the game.
+
+Someone who knows the sound of the room before a big game. Who still remembers a goal from years ago. Who has thought about hanging them up and then checked the schedule for next week.
+
+Veddie is being built for that player.
+
+H2: You still care. So do we.
+
+Body: Adult hockey deserves thoughtful organization, fair competition and an experience that makes players feel valued. We want to bring more of the treatment, atmosphere and recognition of the professional game into the hockey people play for the love of it.
+
+From D1 to D4. From Open to 60+. The level changes. The care should not.
+
+H2: Still got it.
+
+Body: It’s a little confidence. A little humour. And a good reason to pack the bag again.
+
+Button: Find Your Next Chapter → /play
+
+Production note: Add founder names, portraits and a factual founder biography only when supplied. Do not fabricate a founding history, participation numbers or testimonials.
+
+11 / PARTNERS — /partners
+
+Hero
+
+H1: Build more hockey worth showing up for.
+
+Body: Veddie is bringing together teams, independent leagues, arenas and brands around a better adult hockey experience.
+
+Button: Talk Partnerships → #partner-form
+
+League operators
+
+H2: Your league. A bigger stage.
+
+Body: Give qualifying teams something new to chase while keeping the identity and community you’ve already built. We’re interested in working with leagues on Cup qualification, team stories and future cross-league competition.
+
+Tell us about your divisions, season calendar and teams. Let’s explore a partnership that fits.
+
+Button: Bring Your League → #partner-form, league selected
+
+Sponsors
+
+H2: Be part of the night they look forward to.
+
+Body: Help create the moments players notice: the room setup, the team photo, the game highlight or the championship celebration.
+
+We’re developing sponsorship opportunities around events, player amenities and media. Let’s build something useful for players and relevant to your brand.
+
+Button: Explore Sponsorship → #partner-form, sponsor selected
+
+Microcopy: Audience, inventory and deliverables are agreed for each partnership.
+
+Arenas and service partners
+
+H2: Great hockey takes a good local team.
+
+Body: We’d like to hear from arenas, athletic support providers, photographers, videographers, equipment specialists and local businesses who can help deliver the Veddie experience.
+
+Button: Work With Veddie → #partner-form, service selected
+
+12 / FIND YOUR GAME & CONTACT
+
+Find Your Game — /play
+
+H1: What are you playing for?
+
+Body: A title. A weekly team. A great skate. Choose your next game and we’ll point you in the right direction.
+
+Choice — Champions Cup: My team wants to represent our league. → Cup form
+
+Choice — Champions League: My team wants a cross-league challenge. → Champions League form
+
+Choice — Tournaments: We want a standalone event. → Tournament form
+
+Choice — Leagues: I want a team or a full season. → League form
+
+Choice — Pickup: I want my next skate. → Pickup form
+
+Supporting headline: Not sure yet?
+
+Body: Tell us your location, level and what you’re looking for. We’ll help you find a starting point.
+
+Button: Help Me Choose → /contact?topic=help-choosing
+
+Contact — /contact
+
+H1: Let’s talk hockey.
+
+Body: Questions about your division, team entry, pickup or a partnership? Send us a note and we’ll help with the next step.
+
+Fields: Name; Email; Topic; Message.
+
+Topic choices: Choosing a program; Division placement; Team entry; Pickup; Partnership; Other.
+
+Button: Send My Question
+
+Microcopy: We’ll use your details to respond to your enquiry. See our Privacy Policy.
+
+Success headline: Message received.
+
+Success body: Thanks for getting in touch. The Veddie team will reply by email.
+
+Production note: Publish the operator’s verified contact email here once supplied. Do not invent an address or response-time guarantee.
+
+13 / GENERAL FAQ PAGE — /faqs
+
+H1: A few things before you lace up.
+
+What is Veddie?
+
+Veddie is a premium adult hockey brand being built around organized competition, player experience and community. Our five ways to play are Champions Cup, Champions League, Tournaments, Leagues and Pickup.
+
+Do I need to have played at a high level?
+
+No. Our division framework runs from D1 Elite to D4 Recreational. You should choose a program suited to your current ability.
+
+Is Veddie only for older players?
+
+No. Open is for adults aged 18 and older. We also have planned 40+, 50+ and 60+ categories where demand supports them.
+
+Can I join without a team?
+
+Yes. Pickup is for individuals, and league interest forms include an individual-player option. Some tournaments may also offer player placement.
+
+Where can I play?
+
+Locations will be published as programs are confirmed. Tell us your preferred area so we can contact you about suitable opportunities.
+
+What equipment do I need?
+
+Bring your hockey equipment. The required protective equipment and any uniform instructions will be stated in your program rules before registration.
+
+Is there body checking?
+
+Contact rules will be published for each program before registration. Do not assume a division label tells you its checking rules.
+
+What is included?
+
+Each listing will state its game package, amenities, support, media and price. Pickup has a different package from full competitions.
+
+Are players photographed or filmed?
+
+Media coverage varies by program. We will explain coverage, use of images and the applicable consent process before participation.
+
+Can I get a refund?
+
+Each program will show its cancellation, refund and credit rules before payment. Read the terms for the specific booking.
+
+Does joining an interest list guarantee a place?
+
+No. An interest submission is not a booking, acceptance or payment. We will explain the next steps when relevant programs are confirmed.
+
+I still have a question.
+
+We’d like to hear it.
+
+Button: Contact Veddie → /contact
+
+13A / TEAM RANKINGS — /rankings
+
+Hero
+
+Eyebrow: VEDDIE TEAM RANKINGS
+
+H1: Earn your place. Make your name.
+
+Body: Who’s setting the standard? Who’s climbing? Who’s next? The Veddie Team Rankings bring verified Champions League and Champions Cup results together so your team’s reputation is built on the ice.
+
+Primary button: View the Rankings → #rankings
+
+Secondary button: Get Your Team Involved → /play
+
+Leaderboard
+
+H2: See where your team stands.
+
+Body: Choose your skill division and age category to explore the teams competing in the Veddie championship network.
+
+Filters: Skill division — D1, D2, D3, D4; Age category — Open 18+, 40+, 50+, 60+; Region; Ranking date.
+
+Column labels: Rank | Movement | Team | Home League / Region | Rating | Games | W–L–T | Last Played.
+
+Supporting links: How Rankings Work → #methodology; View Team → /teams/[team-slug].
+
+Microcopy: Updated after verified results are published. Last updated: [ACTUAL DATE AND TIME]. Movement compares with the previous published snapshot.
+
+Launch empty state: The first rankings will be earned on the ice.
+
+Launch body: Rankings begin with verified Champions Cup results and will incorporate Champions League as that competition launches. Put your team forward and help set the standard.
+
+Button: Register Cup Interest → /champions-cup#cup-form
+
+Category empty state: No ranked teams in this category yet.
+
+Provisional badge: Provisional — fewer than five eligible games.
+
+Production note: Keep provisional teams in a clearly separate list until they reach the minimum. Do not present unconnected regional fields as a proven national comparison.
+
+How rankings work — public copy
+
+H2: Results build the ranking.
+
+Body: Eligible games from Champions Cup and Champions League feed one rating within each skill division and age category. Results matter, and so does the strength of the opponent. Beating a higher-rated team earns more rating than beating a lower-rated one.
+
+Your team’s rating can rise or fall after each eligible game. Goal margin does not increase the rating change, so running up the score brings no ranking benefit.
+
+Only verified results count. Regular home-league games, standalone tournaments, Veddie Leagues and Pickup are outside this ranking system.
+
+Microcopy: The proposed launch method below must be finalized and published before the first ranked competition. A ranking is a performance measure, not an automatic entry invitation, division assignment or championship title.
+
+Team profile
+
+H1: [TEAM NAME]
+
+Subheading: [AGE CATEGORY] • [SKILL DIVISION] • [HOME LEAGUE / REGION]
+
+Summary labels: Current rank | Rating | Eligible games | W–L–T | Last result | Peak published rank.
+
+H2: The record behind the reputation.
+
+Body: Follow [TEAM NAME] across Champions Cup and Champions League, from each verified result to the next movement in the rankings.
+
+Sections: Recent results; Rating history; Champions Cup finishes; Champions League progress; Honours.
+
+Result fields: Date, competition, round, opponent, official score, outcome, rating change and link to the verified result.
+
+Buttons: View Division Rankings → /rankings with category selected; Share Team Profile → this profile’s public link.
+
+Production note: Keep one persistent team identity across competitions. Show actual earned honours only. A rename preserves history; materially changed rosters or category changes require review.
+
+Rankings FAQs
+
+Do Champions Cup and Champions League count together?
+
+Yes. Eligible games from both competitions contribute to the same rating within your age and skill category.
+
+Does entering more events automatically improve our ranking?
+
+No. More games provide more evidence, but your rating can rise or fall with results. There are no points simply for entering.
+
+Can a D4 team be compared with a D1 team?
+
+Not through one combined ranking. Each age and skill category has its own table.
+
+Why might a Cup winner not be ranked first?
+
+The Cup title reflects that event’s outcome. The ranking reflects the team’s wider eligible record and opponent strength.
+
+Do regular league standings count?
+
+No. Home-league standings may support Cup qualification, but only verified Champions Cup and Champions League games affect this rating.
+
+Can we challenge a result?
+
+Yes. Contact Veddie with the match reference and the disputed detail. Corrections are reviewed against the official record and reflected in the next published update.
+
+Recommended launch rules — internal specification, proposed for adoption
+
+Use an Elo-style rating rather than cumulative participation points. Start each team at 1,000 in its age/skill category. Both competitions use equal game weighting; do not add title bonuses on top of rated wins. Display trophies and event finishes separately.
+
+For each game: expected result E = 1 / (1 + 10^((opponent rating − team rating)/400)); new rating = old rating + 32 × (S − E). S is 1 for a win, 0.5 for a permitted tie and 0 for a loss. Use both pre-game ratings; retain full precision internally and round only for display. Example: two 1,000-rated teams finish with 1,016 for the winner and 984 for the loser.
+
+Use the official final result, including overtime or shootout, as win/loss. Include pool, knockout and finals games; exclude exhibitions, placement/consolation games, cancelled games, byes and unplayed forfeits. An abandoned match is ineligible unless completed as an official played result under the rules. Apply administrative reversals through an audited correction and chronological recalculation.
+
+Process eligible games in actual chronological order, using scheduled start time then unique match ID for a deterministic tie order. If the Cup later becomes the Champions League finals, count each match once.
+
+Publish numbered ranks after five eligible games; show earlier teams as provisional. Sort by full-precision rating, with exact ties sharing rank. Compare rank movement only within the same category and ranking scope; show “New” for first-time ranked teams.
+
+Maintain an ongoing rating across seasons; provide dated snapshots and archived season-end tables. After 12 months without an eligible match, label the team inactive and remove it from the active table, preserving its history. Review identity and roster continuity before reactivation.
+
+A move to a different age/skill category starts a new 1,000 rating in that category; retain prior-category history separately. Do not let captains reset an existing team by renaming it. Final roster-continuity and appeal rules must be published before launch.
+
+At launch, use regional ranking pools within each age/skill category. Ratings from disconnected pools are not directly comparable. A combined table requires a published transition method and sufficient cross-region play; do not promise a national ranking on day one.
+
+Freelancer implementation notes
+
+Provide a verified-result entry workflow, unique team and match IDs, competition/category fields, calculation history, corrections and published snapshots. No self-reported result should change a public rating without verification.
+
+MVP: operator-maintained verified ratings and results are acceptable. Do not imply live automation until implemented. Publish a timestamp and show pending results separately.
+
+Use the same dataset for the homepage top-five module, leaderboard and team profiles. Keep the full methodology accessible beside the leaderboard. Test duplicate-game prevention, corrected results, provisional status, exact ties, category moves and inactive teams.
+
+SEO title: Adult Hockey Team Rankings | Veddie Hockey
+
+Meta description: Follow Veddie team rankings built from verified Champions Cup and Champions League results. Explore divisions, team records and rating movement.
+
+14 / FORMS & SYSTEM COPY
+
+Shared form principles — production notes
+
+Use a short initial form. Do not request full rosters, payment details or medical information at the interest stage. Collect only applicable fields. Product and source-page values should carry through automatically.
+
+Required for all interest forms: Name; Email; Preferred city or area; Age category; Skill level or “Not sure.”
+
+Age options: Open 18+; 40+; 50+; 60+; Not sure.
+
+Level options: D1 — Elite; D2 — Competitive; D3 — Intermediate; D4 — Recreational; Not sure.
+
+Optional shared field: Anything else we should know?
+
+All forms link to the actual Privacy Policy. Optional promotional email consent must be unchecked and separate from submitting an enquiry. Configure approved consent and unsubscribe handling before use.
+
+Champions Cup form
+
+Headline: Put your team forward.
+
+Intro: Tell us about your team. We’ll review your information and contact you as the first Cup takes shape.
+
+Additional required fields: Team name; Home league; Home division; Current or final standing / Not yet known; Season end date / Not yet known; Brief team playing background.
+
+Optional field: Public standings link.
+
+Submit button: Register Team Interest
+
+Below button: No payment. No reserved place. We’ll confirm qualification and event details before registration.
+
+Success: Your team is on our interest list.
+
+Success body: Thanks for putting your team forward. We’ll review your details and contact you as qualification and event information are confirmed.
+
+Champions League form
+
+Headline: Start your team’s next campaign.
+
+Intro: Help us build the regional field. Tell us where and when your team plays.
+
+Additional required fields: Team name; Home league; Home division; Regular playing night; Brief team background.
+
+Optional field: Typical travel area.
+
+Submit button: Register Champions League Interest
+
+Success: You’re on the Champions League interest list.
+
+Success body: We’ll contact you as regions, competition windows and entry details are confirmed.
+
+Tournament form
+
+Headline: Get the team’s next weekend on the radar.
+
+Intro: Tell us the kind of event you’re looking for.
+
+Additional required field: I’m enquiring as a team / Individual player.
+
+Conditional required field: Team name, when team selected.
+
+Optional fields: Preferred dates or months; Preferred destination; Brief team or player background.
+
+Submit button: Get Tournament Updates
+
+Success: You’re on the tournament interest list.
+
+Success body: We’ll email you when relevant tournament details are announced.
+
+League form
+
+Headline: Find your hockey night.
+
+Intro: Bring your team or tell us you’re looking for one.
+
+Additional required fields: Team / Individual; Preferred nights; Skater / Goalie / Team captain.
+
+Conditional required field: Team name, when team selected.
+
+Optional fields: Playing background; Preferred arena area.
+
+Submit button: Join the League Interest List
+
+Success: You’re on the league interest list.
+
+Success body: We’ll contact you when a suitable league or player-placement opportunity becomes available. A roster spot is not yet reserved.
+
+Pickup form
+
+Headline: Find your next skate.
+
+Intro: Share your area and availability so we can point you toward the right ice.
+
+Additional required fields: Skater / Goalie; Preferred nights.
+
+Optional fields: Playing background; Preferred time range.
+
+Submit button: Join the Pickup List
+
+Success: You’re on the Pickup list.
+
+Success body: We’ll email you as suitable sessions open. You’ll book and pay only after reviewing a session’s details.
+
+Partnership form
+
+Headline: Let’s build something for hockey players.
+
+Fields: Name; Work email; Organization; Partnership type; City or region; What would you like to explore?
+
+Types: League; Sponsor; Arena; Service provider; Other.
+
+Submit button: Start the Conversation
+
+Success: Thanks for reaching out.
+
+Success body: We’ll review your enquiry and reply by email.
+
+Shared consent, validation and utility wording
+
+Enquiry notice: We’ll use your details to handle your enquiry and contact you about the program you selected. See our Privacy Policy.
+
+Optional marketing checkbox: Yes, email me Veddie news, new programs and special offers. I can unsubscribe at any time.
+
+Required-field message: Please complete this field.
+
+Email error: Please enter a valid email address.
+
+Submission failure: We couldn’t submit your form. Please try again.
+
+Loading button: Sending…
+
+Duplicate interest message, only if verified: You’re already on this interest list. Contact us if you’d like to update your details.
+
+No matching events: No games match those filters yet. Try another selection or join the interest list.
+
+Full session: This skate is full. Join the waitlist to hear if a place opens.
+
+Waitlist success: You’re on the waitlist. We’ll contact you if a place becomes available. This is not a confirmed booking.
+
+404 headline: This one went wide.
+
+404 body: We couldn’t find that page. Let’s get you back in the game.
+
+404 button: Find Your Game → /play
+
+15 / REUSABLE LIVE EVENT & SESSION COPY
+
+Tournament and Cup detail page — populate only with approved facts
+
+H1: [EVENT NAME]
+
+Intro: [AGE CATEGORY] • [SKILL DIVISION] • [CITY]
+
+Summary: [DATES] at [ARENA]. [MINIMUM GAMES] games guaranteed. [FORMAT SUMMARY].
+
+Price: [CURRENCY][FULL TEAM PRICE] [TAX TREATMENT].
+
+Payment line: [DEPOSIT] due at registration. Balance due [DATE].
+
+H2: Your entry includes
+
+Body: [EXACT GAME SERVICES, ROOM AMENITIES, SUPPORT, MEDIA, AWARDS AND ANY UNIFORMS].
+
+H2: Your road to the title
+
+Body: [POOL OR ROUND FORMAT, ADVANCEMENT, GAME LENGTH, OVERTIME, REST POLICY].
+
+H2: Before you register
+
+Body: Review eligibility, roster deadlines, uniform requirements, cancellation terms and the Player Code.
+
+Button: Apply for Entry OR Register Your Team, according to the actual process.
+
+Microcopy: [EXACT ACCEPTANCE, PAYMENT AND RESERVATION CONDITIONS].
+
+Production note: Never equate application submission with acceptance. Show all mandatory fees before payment.
+
+Live pickup card and detail
+
+Card title: [AREA] • [AGE CATEGORY] • [DIVISION]
+
+Card details: [DAY, DATE] | [START–END TIME] | [ARENA]
+
+Price: [CURRENCY][TOTAL SESSION PRICE] [TAX TREATMENT].
+
+Capacity line: [ACTUAL OPEN SKATER PLACES] skater places available.
+
+Goalie status: [VERIFIED GOALIE STATUS].
+
+Button: Book This Skate
+
+Detail headline: Your next skate is here.
+
+Detail body: Join a [DURATION]-minute [DIVISION] session at [ARENA]. Arrive by [ARRIVAL TIME] and check in with your Veddie host.
+
+Inclusions: [EXACT SESSION PACKAGE].
+
+Policy line: Cancellations: [APPROVED DEADLINE AND REFUND/CREDIT RULE]. Goalie contingency: [APPROVED POLICY].
+
+Confirmation, only after successful booking: You’re booked. See you at the rink.
+
+Confirmation body: Your session is [DATE/TIME] at [ARENA]. Your confirmation includes arrival information, what to bring and your booking terms.
+
+16 / FOOTER & SEARCH COPY
+
+Footer
+
+Brand line: VEDDIE HOCKEY
+
+Tagline: Still got it.
+
+Body: The pro hockey experience for the rest of your career.
+
+Play links: Champions Cup | Champions League | Tournaments | Leagues | Pickup.
+
+Explore links: Team Rankings | The Experience | Find Your Division | Our Story | FAQs.
+
+Connect links: Partnerships | Contact | [VERIFIED SOCIAL LINKS].
+
+Legal links: Privacy | Terms | Refund Policy | Player Code.
+
+Copyright: © [CURRENT YEAR] [CONFIRMED OPERATING ENTITY]. All rights reserved.
+
+Production note: Do not publish unknown social handles, an unconfirmed corporate owner or placeholder policy pages.
+
+Page titles and meta descriptions
+
+Home title: Veddie Hockey | Still Got It.
+
+Description: Discover premium adult hockey with Veddie. Explore Champions Cup, Champions League, tournaments, leagues and pickup. Find your next game.
+
+Champions Cup title: Champions Cup | Veddie Hockey
+
+Description: Give your team a bigger stage. Explore Veddie Champions Cup qualification, divisions and the planned championship experience. Register team interest.
+
+Champions League title: Champions League | Veddie Hockey
+
+Description: Keep your league and chase a bigger title. Explore Veddie’s planned regional cross-league competition and register your team’s interest.
+
+Tournaments title: Adult Hockey Tournaments | Veddie Hockey
+
+Description: Same team. New rivals. Explore Veddie tournament plans and register for event updates by location, skill level and age category.
+
+Leagues title: Adult Hockey Leagues | Veddie Hockey
+
+Description: Make this your hockey night. Register interest in Veddie Leagues as a team or individual and find the right fit for your level and schedule.
+
+Pickup title: Organized Hockey Pickup | Veddie Hockey
+
+Description: Your next skate, upgraded. Join the Veddie Pickup list for organized sessions matched to your area, playing level and availability.
+
+Experience title: The Veddie Experience | Veddie Hockey
+
+Description: Explore the details behind Veddie: prepared rooms, organized games, reviewed competition and moments worth keeping.
+
+Divisions title: Find Your Hockey Division | Veddie Hockey
+
+Description: Understand Veddie’s D1–D4 levels and Open 18+, 40+, 50+ and 60+ categories. Find a fit based on current ability and playing background.
+
+Our Story title: Our Story | Veddie Hockey
+
+Description: A hockey vet is someone who keeps coming back. Meet the idea behind Veddie and the pro hockey experience for the rest of your career.
+
+Partners title: League & Brand Partnerships | Veddie Hockey
+
+Description: Help build a better adult hockey experience. Explore Veddie partnerships for leagues, sponsors, arenas and local service providers.
+
+Play title: Find Your Game | Veddie Hockey
+
+Description: A title, a weekly team or your next skate. Choose how you want to play and register your interest with Veddie Hockey.
+
+Contact title: Contact Veddie Hockey
+
+Description: Ask about Veddie divisions, team entry, pickup and partnerships. Get help finding your next hockey opportunity.
+
+FAQs title: Hockey Questions & Answers | Veddie Hockey
+
+Description: Learn how Veddie works, from skill divisions and age categories to team applications, individual interest and program details.
+
+17 / OPTIONAL PROMOTIONS — DO NOT PUBLISH WITHOUT APPROVAL
+
+Free inaugural Cup variant
+
+Use only if the founder confirms a funded, genuinely zero-entry-fee event and complete terms.
+
+Headline: Earn your place. Play the first Cup on us.
+
+Body: Qualifying teams accepted into the inaugural Veddie Champions Cup pay no team entry fee. Bring your team, represent your league and help write the first chapter.
+
+Button: Apply for the First Cup
+
+Mandatory supporting copy: [ELIGIBLE DIVISIONS, INCLUDED GAMES, CAPACITY, APPLICATION DEADLINE, ACCEPTANCE PROCESS, ALL EXCLUDED COSTS AND ANY DEPOSIT/REFUND CONDITIONS].
+
+Do not call the whole trip “free” if travel, accommodation or other costs remain with teams.
+
+Cash-prize variant
+
+Headline: A Cup to lift. More on the line.
+
+Body: Compete for [APPROVED PRIZE] in [ELIGIBLE DIVISION/EVENT].
+
+Required adjacent detail: [EXACT PRIZE ALLOCATION, ELIGIBILITY, PAYMENT CONDITIONS AND RULES LINK].
+
+Do not advertise a prize pool before it is funded and approved.
+
+Captain nomination / giveaway landing page
+
+Headline: Know a team that belongs here?
+
+Body: Nominate a team you think should be on the Champions Cup radar. Send us its league, division and captain’s name, or share this page with the captain so they can apply.
+
+Button: Nominate a Team
+
+Microcopy: A nomination does not qualify a team or reserve an entry.
+
+Production note: Prefer a captain self-submission link to collecting another person’s private contact details. A proposed $2,000 captain-tag draw needs final contest terms, eligibility, entry mechanics, dates, prize currency, platform requirements and review before any public prize or “tag to enter” wording is added.
+
+18 / FREELANCER BUILD HANDOFF
+
+Visual direction
+
+Use black, cream and one approved accent colour. Strong hockey typography, generous photography and short, readable blocks. The site should feel confident and warm, with real adult players at its centre.
+
+Show the room, tape, towels, hands, skate blades, team reactions, goalies and celebrations. Give D4 and 60+ players the same care as D1. Use genuine brand assets and appropriately licensed imagery; identify staged previews.
+
+Build mobile first. Keep primary buttons visible, forms short and product status clear. Use readable text over imagery and captions for video. Avoid autoplay audio.
+
+Content and functionality
+
+Use one H1 per page and H2s for main sections. Keep labels such as “Body” and “Production note” out of the public site.
+
+Connect every CTA to the specified page or form. Preserve selected product and player type. Send submissions to the verified destination and show success only after successful submission.
+
+Use actual event inventory for prices, availability and remaining-place counters. Do not use fake scarcity, countdowns, ratings, testimonials, team logos or participation claims.
+
+Keep planned products visible with truthful status labels. Replace interest language with registration language only when the specific offering is ready to sell.
+
+Founder inputs needed before public launch
+
+Confirm the operator name, contact email, geographic market, logo, colours and social profiles.
+
+Approve the D1–D4 descriptions, age eligibility date, contact rules, player eligibility and placement process.
+
+Confirm which products accept interest at launch, where forms deliver and who handles follow-up.
+
+Approve the privacy policy, terms, refund rules, Player Code and participant/media consent workflow.
+
+For paid registration: confirm dates, venues, divisions, capacity, inclusions, fees, tax treatment, payment schedule, eligibility, game guarantee and contingency policies.
+
+Decide whether the inaugural Cup is paid or free, whether prizes are funded, and whether a giveaway is proceeding.
+
+Acceptance check
+
+All five offerings have complete pages. Team Rankings, team profiles and the homepage rankings module are included, with launch empty states until verified results exist. Pickup is named consistently. Every button works. Forms submit and confirm correctly. Mobile navigation is usable. All placeholders and internal notes are removed from published pages. No unconfirmed detail appears as a fact. Final approved policies are linked.

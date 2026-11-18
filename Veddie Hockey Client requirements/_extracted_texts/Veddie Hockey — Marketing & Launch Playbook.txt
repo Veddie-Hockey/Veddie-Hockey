@@ -1,0 +1,277 @@
+VEDDIE HOCKEY
+
+Marketing & Launch Playbook • November 14, 2026
+
+Ideas
+
+Pay league owners commission if they get team to enter our champions league or cup
+
+Offer team captains free registration if they put them in or gift card
+
+Hormozi draw - give team captain info and enter draw
+
+Pay before season free jerseys and sticks for team
+
+1. The strategy: earn the team, then earn the season
+
+Build Veddie around an irresistible first experience: qualifying teams play the inaugural Champions Cup with a $0 entry fee, compete for funded cash prizes and receive treatment worth talking about. Use public standings to find teams, public recognition to create interest, and a simple captain claim process to fill the field. Turn that event into recurring pickup bookings, paid tournaments, league registrations and future Champions League entries.
+
+This plan applies offer-design principles associated with Alex Hormozi and the premium recreational-sports experience exemplified by Brodie. It is an independent Veddie strategy, not their authorship or endorsement. Brodie’s useful benchmark is the integrated experience: uniforms, media, organized competition and player recognition. Veddie’s own advantage is hockey identity plus a cross-league qualification story.
+
+The first Cup is a deliberate, capped launch investment. It replaces the earlier playbook’s paid inaugural founding-team recommendation. Later Cups are paid unless a sponsor fully funds entry. Do not confuse a full free field with proof that teams will pay: measure paid follow-on purchases separately.
+
+Working launch market: GTA/southern Ontario. Target the first Cup for April–May 2027, subject to ice and league calendars. Launch Pickup alongside it; use that name year-round. Tournaments includes invitationals. Launch Veddie Leagues and Champions League only after demand and operations are proven.
+
+2. Positioning and the offer people repeat
+
+Master brand: Still got it.
+
+Positioning: The pro hockey experience for the rest of your career.
+
+Team promise: Your league was just the beginning.
+
+Player promise: Bring your gear. We’ll handle the rest.
+
+Captain promise: You bring the team. We take care of the details.
+
+Sell four outcomes: meaningful competition, belonging to a team, recognition worth sharing and less organizing work. Reduce doubt with actual venue details, reviewed divisions, published schedules and real footage. Reduce effort with one captain link, individual player forms and clear reminders. Use genuine capacity limits rather than invented countdowns.
+
+The visible experience is the marketing: prepared dressing rooms, tape, towels, music, warm-up pucks, organized games and a welcoming host. Competitions add officials, scores, standings, qualified athletic support, replay access, selected highlights, team photos and a proper trophy presentation when budgeted. Pickup has a lighter package; never imply that every skate includes full media production or official statistics.
+
+Use the same D1–D4 system throughout: D1 Elite, D2 Competitive, D3 Intermediate and D4 Recreational. Maintain separate interest lists for Open 18+, 40+, 50+ and 60+. These are 16 potential combinations, not a commitment to open 16 divisions. Start with two viable Cup divisions. Age and playing history inform placement; home-league A/B/C labels do not automatically translate into Veddie divisions.
+
+3. Champions Cup: the flagship acquisition campaign
+
+The inaugural offer
+
+Proposed pilot: 16 teams in two divisions of eight. Each division has two pools of four, three pool games per team, semifinals and a final: 15 games per division and 30 overall. Three guaranteed games, up to five for finalists. Final format, ice duration and rest rules must be published before acceptance.
+
+Headline: You earned the invitation. We’re covering the entry.
+
+Offer: $0 team entry for the inaugural selected field; three guaranteed games; the published Veddie competition package; a division title and funded cash prize; founding-team recognition and first access to the next paid edition. Teams provide their own gear, uniforms and travel. State any excluded costs clearly.
+
+Recommendation: no entry deposit for this free pilot. Secure commitment through signed captain acceptance, roster deadlines and reconfirmation. Keep two reviewed standby teams per division. If a refundable attendance bond becomes necessary, disclose the amount and refund conditions beside every free claim before taking it; do not quietly add a mandatory fee.
+
+Qualification is the campaign
+
+Proposed sporting rule: top 25% of final regular-season standings, rounded up, plus the playoff champion. Deduplicate teams qualifying both ways. Qualification makes a team eligible to apply; it does not guarantee one of 16 pilot places. Oversubscribed divisions use published selection criteria: verified eligibility, appropriate calibre, complete application and league representation, with a disclosed tie-break method. Keep any inaugural wildcards limited and explicitly labelled.
+
+Before seasons finish, run the Road to the Cup watchlist: teams currently inside the qualification line. After final results are checked, publish Eligible for invitation. Only after captain acceptance and roster approval use Confirmed entrant. This distinction keeps the campaign exciting without telling teams they have already secured a place.
+
+RinkCircuit standings-to-captain workflow
+
+RinkCircuit is the user-specified starting source; its exact website, coverage and access method were not independently resolved for this document. No live standings scrape or team qualification assessment has been completed. First obtain the exact directory URL or league export, then follow the process below.
+
+1. Build the source register: league, arena, region, season, division, standings URL, playoff URL, source access terms and league contact. Start with partner leagues and public pages within the pilot travel radius.
+
+2. Prefer an authorized export or API. Otherwise collect permitted public standings with a rate-limited process; do not bypass sign-in, access controls or site restrictions. Ask leagues to supply data where automated access is unavailable.
+
+3. Store league + season + division + team as the unique key. Capture rank, team count, games played, points, final/provisional status, source URL and retrieval time. Retain source evidence and refresh weekly, then after the final league result.
+
+4. Apply the proposed top-quartile rule to final official rank. Use the league’s own tie-break order. Flag unresolved ties, incomplete seasons, mixed divisions and playoff champions for human review.
+
+5. Have the competition lead approve the eligibility list and review current roster strength. Qualification and D1–D4 placement are separate decisions.
+
+6. Produce a league-specific graphic and team claim page. Use factual team names; get permission for logos and co-branding. Identify Veddie as independent unless a partnership is signed.
+
+7. Reach captains through league introductions, public team channels and voluntary claims. Do not scrape personal player contact details or assume public data gives permission for bulk promotional email.
+
+8. Track corrections and remove stale qualification claims promptly. Publish an easy correction route.
+
+Captain pipeline fields: team key, qualification evidence, eligibility status, proposed division, captain self-verified contact, consent/source, campaign/referral code, last contact, next action, roster completeness, acceptance status and follow-on purchase. Stages: identified → verified eligible → captain reached → claimed → roster reviewed → accepted → reconfirmed → attended → paid repeat customer.
+
+Paid posts and the captain discovery loop
+
+Create one carousel per league or local area. Slide 1: Your league was just the beginning. Slides 2–4: verified eligible teams and their home divisions. Final slide: Captains, claim your team’s invitation. Put the season, verification date, source and limited-field qualification caveat on the landing page; keep the key caveat visible in the ad.
+
+Route clicks to a prefilled team page with three options: I’m the captain; I play on this team; I want updates. A teammate gets a link to forward privately. The captain confirms team identity, email, home league and availability. Do not collect someone else’s private phone number through the referral form. Verify the claimant through the league or a team-controlled channel.
+
+Use geographic creative and broad local hockey audiences available in the ad platform. Do not promise the ability to target members of specific teams. Retarget consenting site visitors and engaged audiences where permitted. Optimize for verified captain claims and accepted teams, not comments.
+
+The $2,000 draw and cash prizes
+
+Keep two separate promotions. Promotional draw: one CAD $2,000 cash prize to an eligible individual. Sporting awards: proposed CAD $2,000 to the winning team in each of two Cup divisions, CAD $4,000 total. Combined proposed cash commitment: CAD $6,000. These are planning amounts, not announced or funded prizes.
+
+Preserve the intent behind tag the captain, but separate discovery from entry. Run the draw on a Veddie landing page with no purchase necessary; do not make tagging, sharing, following, team registration or marketing consent a condition of entry or better odds. A separate team-claim flow lets captains identify themselves. Use organic team recognition and private forwarding to drive captain discovery without rewarding social tags.
+
+Facebook’s reported promotion restrictions make tag-to-enter unsuitable for a cross-platform launch. The current primary Meta policy page was inaccessible during review; recheck platform-specific rules before publication rather than assuming Facebook and Instagram rules are identical. The landing-page mechanic avoids dependence on that unresolved detail.
+
+Before publishing, finalize Ontario-focused contest rules with the draw administrator: eligible age and geography, opening/closing times, one prize and its value, entry limits, random selection, odds statement, skill-testing requirement, notification and redraw process, privacy, platform releases and payout deadline. Separate optional marketing consent from contest administration. Get the final rules reviewed for the actual jurisdiction. A draw entry is not a qualified hockey lead.
+
+Cash awards should reward winning legitimate divisions, not attract ringers. Publish roster locks, player-history checks, protest rules and prize-payment terms before entry. Fund the awards before advertising them. Do not increase a public prize on the assumption that a sponsor will eventually pay.
+
+Conversion and follow-up
+
+Day 0: send the claimed team its eligibility summary, event facts and roster link. Day 2: answer the captain’s main obstacle. Day 5: request the roster and availability. Day 9: close the application loop or move it to follow-up. Contact only through an appropriate opted-in or otherwise permitted route; stop on request. Use a captain concierge for promising teams rather than a long generic sequence.
+
+At 21 days before the Cup, verify the playable roster and division. At 14 days, publish the schedule and team pack. At seven days and 48 hours, reconfirm attendance. Missing a published commitment deadline releases the place to a standby team after notice. Do not fill a competitive vacancy with an unsuitable team merely to preserve headcount.
+
+4. Marketing plan for every offering
+
+Champions League — represent your league
+
+Buyer: league operators first, team captains second. Promise: your best teams can represent your league on a bigger stage while remaining in your home competition. Format: regional in-season ties leading to a finals event, with published travel limits and round windows.
+
+Acquisition: approach a focused list of local leagues with a co-branded qualification pack, predictable scheduling and a clear statement that joining does not require moving home leagues. Give partners a qualification badge, standings widget or update graphic, captain nomination form and season-end announcement copy. Seek three anchor league partners for a pilot; this is a target, not an existing relationship.
+
+Conversion: secure league interest → verify captain demand → approve rosters → publish the full pathway and maximum fees → collect deposits under clear terms. Promote draw night, rivalries, road-game stories and the next round. Give eliminated teams a relevant tournament or pickup invitation without implying they remain in contention.
+
+Recommended long-term architecture: Champions League is the season-long pathway and Champions Cup its finals destination. Keep the inaugural Cup standalone. Before selling Champions League, state how many finals places are reserved for League qualifiers versus direct home-league qualifiers; avoid selling the same finals seat twice. Measure signed partners, accepted teams, on-time ties, paid renewal and contribution per team.
+
+Pickup — the easiest way to experience Veddie
+
+Buyer: individual players who want a dependable skate at the right level. Offer: one reliable night, balanced teams, two confirmed goalies, a host and the published essentials package. Run one session per viable segment; maintain separate waitlists before adding ice.
+
+Acquisition: invite Cup players, use arena and pro-shop QR codes, local hockey communities, alumni groups and short room-to-ice videos. Advertise the actual location, time, calibre, available spots and all-in price. Run local search campaigns once a location and checkout page exist.
+
+Trial: a capped sponsor-funded first-skate allocation for new players, or an honestly described paid first skate. Keep most capacity paid so the demand test is meaningful. Test a single session against a four-session pass; publish cancellation and expiry terms. Referral proposal: CAD $10 booking credit after a new referred player completes a paid skate, capped at CAD $50 per customer per month and subject to margin review.
+
+Retention: send the next booking link after the skate, release regular-player priority access on a predictable schedule, and follow up after a missed week. Collect calibre feedback and maintain goalie backups. Measure paid occupancy, first-to-second paid booking within 30 days, no-shows and contribution per session. Pilot targets: at least 80% paid capacity and 50% new-player repeat booking over six sessions.
+
+Tournaments and invitationals — a reason to get the team together
+
+Buyer: established teams, alumni groups and age-specific cohorts, including teams that did not qualify for the Cup. Offer: a clearly themed weekend with reviewed divisions, guaranteed games and the Veddie competition package. Themes: Rivalry Weekend, Alumni Invitational, 40+ Showcase and Season Tune-Up.
+
+Acquisition: Cup waitlists and non-qualifiers, captain referrals, partner leagues, local creators and destination-specific ads. Lead with a reason to attend plus exact date and location. Keep tournament entry open or curated; do not dilute the earned Champions Cup badge.
+
+Conversion: one team page, full price and inclusions, game guarantee, payment schedule and realistic cancellation deadline. Use a founding-captain bonus such as a team portrait rather than routine deep discounts. Reward referrals only after the referred team’s paid entry clears and the refund window closes.
+
+Retention: send team photos and the next relevant event within 72 hours, then request a deposit for a dated future event. Measure captain-to-paid-team conversion, paid field completion before arena exposure increases, repeat teams and contribution. Start with one tournament after the Cup proves delivery.
+
+Veddie Leagues — make this your hockey night
+
+Buyer: whole-team captains plus free agents. Offer: a consistent night, appropriate competition, organized administration, season storytelling and a clearly priced uniform/media package. Start with six to eight comparable teams in one area.
+
+Acquisition: convert Cup and tournament captains; form teams from repeat Pickup cohorts; host a captain preview and a media-day sample. Use separate landing pages for Bring a team and Join a team. Search ads should describe the actual area and available night.
+
+Conversion: publish total season price, games, playoffs, jersey terms, payment schedule and minimum launch threshold. Offer a short priority-registration window to founding participants. Take deposits with explicit refund terms if the league does not launch. Do not advertise a low per-game equivalent while hiding the full season commitment.
+
+Retention: release fixtures early, publish weekly player stories, resolve calibre problems promptly and open renewal before the playoffs end. Measure paid teams, free-agent placement, on-time collections, attendance, renewal deposits and season contribution. Keep partner-league participants in the cross-league products unless they independently choose a Veddie league.
+
+5. Content that players distribute for you
+
+Build five recurring series: Road to the Cup for qualification; Still Got It for player identity; Inside the Room for visible experience; Captain’s Corner for team stories; and Next Shift for the next booking. Give D3, D4 and older age groups the same production care as elite players.
+
+Weekly starting cadence: Monday standings/watchlist graphic; Tuesday player story; Wednesday 15–30 second experience video; Thursday captain or rival-team feature; Friday available-session or claim reminder; weekend authentic event coverage. Every piece has one relevant action. Reuse approved footage with participant permissions and clear creator sponsorship disclosures.
+
+Event capture list: arrival, prepared room, equipment details, warm-up, goals and saves, bench reactions, captain interviews, award presentation and team portraits. Deliver a useful shareable package within the promised window. Share footage directly with participants who opted in; let them choose whether to post. Do not use stock or staged footage as evidence of a past Veddie event.
+
+Creator plan: recruit three to five local hockey creators or respected captains for a hosted preview. Agree on deliverables, audience fit, compensation and disclosure. Track a unique link to completed registrations. A small local creator who fills a skate is more useful than broad reach outside the venue’s catchment.
+
+6. Ready-to-adapt campaign copy
+
+QUALIFICATION WATCHLIST
+
+The race to the Veddie Champions Cup is on. These teams are currently inside the qualification line in [league/division]. Final qualification follows verified season results. Captains: check your team and register interest at [link].
+
+VERIFIED TEAM AD
+
+[Team names]: your results have earned eligibility to apply for the inaugural Veddie Champions Cup. $0 entry for the selected founding field. Three guaranteed games. A bigger stage for your team. Captains: claim your invitation at [link]. Limited places; roster and division approval required. [Date/venue once confirmed.]
+
+DRAW AD — PUBLISH ONLY WITH FINAL RULES
+
+Still got it? Enter the Veddie launch draw for a chance to win CAD $2,000. No purchase necessary. One prize. Open to [approved age/residency]. Closes [date/time/time zone]. Odds depend on eligible entries; skill-testing question required. Enter and read the rules at [link]. No tag or share required.
+
+PICKUP AD
+
+Your next skate, sorted. [Day/time], [arena], [calibre]. Balanced teams. Goalies ready. Tape, towels and tunes. [All-in price]. Book your spot: [link].
+
+CHAMPIONS LEAGUE AD
+
+Your league. Your colours. A bigger stage. Represent your home league in Veddie’s regional Champions League. Captains and league organizers: join the pilot interest list at [link].
+
+TOURNAMENT AD
+
+Get the team back together. [Tournament name], [date], [arena]. [Guaranteed games], reviewed divisions and the full published Veddie experience. Team entries: [price and link].
+
+LEAGUE AD
+
+Make [night] your hockey night. A full Veddie season at [arena]: [games], [division], [included package]. Bring your team or join one. See the full season price and register: [link].
+
+CAPTAIN CONVERSATION
+
+Your team looks eligible based on [verified season/result]. We’re covering entry for the inaugural selected field. Here are the dates, game guarantee and division-review process. Would your group be available? If so, use this claim link and we’ll help with the roster.
+
+7. Sponsorship and launch economics
+
+Sell tangible inventory: presenting partner, division prize partner, Pickup trial partner, towel/tape partner and media partner. Pitch local employers, equipment retailers, physiotherapy businesses, dealerships and other relevant brands. Give each package a defined fee, category terms, deliverables and reporting. Quote audience numbers only when supported; do not sell participant contact lists.
+
+Illustrative first-Cup budget in CAD, not vendor quotes: 30 games × 1.25 booked hours × $400 ice/hour = $15,000; officials and game staff $6,000; host/athletic coverage $4,000; media $4,000; supplies/laundry $2,000; trophies/admin/insurance allowance $2,000; division cash prizes $4,000; draw $2,000; paid media $3,000. Subtotal $42,000; 15% contingency $6,300; planning ceiling $48,300. Replace every allowance with actual quotes, taxes and appropriate coverage; increase the ceiling or reduce scope if necessary before launch.
+
+Illustrative funding target: presenting partner $15,000 + two division partners at $5,000 + three supporting partners at $2,000 = $31,000 cash. This leaves $17,300 of owner-funded acquisition investment. These are targets, not commitments. In-kind value only reduces costs it actually replaces; it is not cash to pay the arena.
+
+At 16 teams and 15 players each, the model implies 240 participants: $3,019 gross spend per team or $201 per participant; after the illustrative sponsorship, $1,081 per team or $72 per participant. Count unique attendees, not roster names, in actual reporting. This is a substantial launch investment: the reusable content, partner relationships and paid repeat business must justify it.
+
+Recovery calculation: required paid repeat customers = owner-funded launch cost ÷ contribution per repeat customer over the chosen payback period. Example: $17,300 ÷ $150 = 116 customers, about 48% of 240 participants. The $150 is an unproven scenario, not a forecast. Use actual incremental contribution after delivery costs, refunds and repeat-acquisition spend. If the economics fail, reduce event scope before promises go public.
+
+Before bookings become nonrefundable, approve a cash plan covering all committed costs, prizes and contingency through collected sponsor funds plus an explicit owner budget. If funding is insufficient, shrink the inaugural field before advertising the offer. Protect the promised experience and cash awards; do not solve a funding gap with surprise participant charges.
+
+8. Paid media, measurement and decision rules
+
+Initial CAD $3,000 ad test: $1,200 team-recognition/captain claims; $600 experience creative; $600 retargeting; $300 Pickup demand; $300 draw. Keep draw spending small until it demonstrably produces hockey customers. Reallocate weekly based on verified claims, accepted teams and paid bookings.
+
+Test three hooks: earned qualification, visible pro treatment and the free founding field. Use separate campaign links and record first source, latest source and referral code. The draw database remains separate from the captain pipeline. Do not count a contest entrant as a sales lead without demonstrated hockey interest.
+
+Illustrative Cup funnel target: 120 verified eligible teams → 60 captain claims → 32 completed roster applications → 16 accepted teams plus four reviewed standby teams. These are planning assumptions. If the source universe is smaller or the funnel stalls, adjust the field or partner approach; do not fabricate eligibility to meet a target.
+
+Weekly scorecard: verified eligible teams; captain reach rate; cost per verified claim; roster completion; acceptance and attendance; paid Pickup bookings; 30-day repeat bookings; paid next-event deposits; contracted and collected sponsorship; actual launch cash exposure. Track by product, geography, division and source.
+
+Pause a creative after spending twice the allowable lead cost without a verified lead, once tracking is confirmed. Allowable lead cost = expected lead-to-paid conversion × expected contribution per customer × the share of contribution allocated to acquisition. Example: 20% × $150 × 50% = $15 per lead. Treat the free Cup as its own capped experiment; do not justify unlimited spend using hypothetical lifetime value.
+
+Post-Cup gates: 90% accepted-team attendance; at least 70% captains indicating return interest; 25% of unique attendees making a paid Veddie purchase within 60 days; and a documented path to recovering the acquisition investment. These are proposed management targets. Stated intent is useful feedback; paid transactions determine commercial validation.
+
+9. Launch calendar and accountability
+
+Days 1–14: General manager selects pilot area and venue options; competition lead finalizes qualification and placement; growth lead resolves the RinkCircuit source and begins league introductions; finance lead replaces the budget assumptions with quotes. Build captain and Pickup interest pages.
+
+Days 15–30: obtain funding commitments, establish the cash ceiling, collect initial captain demand and create genuine preview content. Prepare contest rules, tracking and creative. Secure the venue and staffing only within the approved exposure. Begin provisional watchlists while seasons remain underway.
+
+Days 31–60: launch small paid tests, publish weekly watchlists and close partner introductions. Review claims daily. Grow Pickup waitlists by actual location/time/calibre. Start the draw only when rules, funding and administration are ready.
+
+Days 61–90: optimize on captain claims and paid Pickup demand, confirm operational partners and prepare the finals-results verification process. November–February work builds the pipeline; final Cup qualification must wait for the applicable spring season results. A 90-day plan is not an excuse to certify unfinished standings.
+
+Final 30 days before the Cup: verify final eligibility, approve the selected field, complete rosters, maintain standby teams and publish schedules. During the event, deliver the experience and capture proof. Within 72 hours, send promised media and relevant next steps. At 14, 30 and 60 days, review paid conversion and retention.
+
+Growth lead owns captain pipeline, ads, partners and conversion. Competition lead owns standings verification and placement. Experience lead owns on-site delivery and media. Finance lead owns cash, prizes and contribution. General manager makes the field-size and launch decisions. A small team may combine roles, but every responsibility has one named owner.
+
+10. The next sale begins at the first Cup
+
+At registration, capture each player’s preferred location, calibre and next product interest with separate marketing permission. During the Cup, display the next real Pickup dates and tournament interest page. Within 72 hours, send the team its media and one relevant offer. Within seven days, hold a captain feedback call. Within 30 days, request a paid deposit for a confirmed future event or season.
+
+Route by need: an individual who wants more ice gets Pickup; an intact team wanting another weekend gets Tournaments; a captain seeking a regular home gets Veddie Leagues; a strong team staying in its home league gets Champions League. Merchandise supports identity but should not distract from repeat playing revenue.
+
+The operating principle: use the free Cup to prove that Veddie is worth paying for. The trophy creates the moment. The experience creates the story. The next paid booking creates the business.
+
+Sources and planning notes
+
+Veddie brand, offerings, classification and original launch baseline:
+
+https://docs.google.com/document/d/1HbRdYeMvct8dnAoQbKgFa_42OPXn9sMc7pwhUefwJVM/edit
+
+The current request changes the inaugural Cup to free entry and uses Pickup as the year-round product name.
+
+Brodie official experience benchmark, reviewed November 14, 2026:
+
+https://www.brodierec.com/
+
+Used as a product-experience reference, not evidence for Veddie pricing, demand or projected conversion.
+
+Competition Bureau, promotional contests and enforcement guidance:
+
+https://competition-bureau.canada.ca/en/deceptive-marketing-practices/types-deceptive-marketing-practices/promotional-contests
+
+https://competition-bureau.canada.ca/en/promotional-contests-enforcement-guidelines
+
+Supports clear prize values, eligibility/odds disclosures, accessible rules and timely awards. Final local rules require review before launch.
+
+Meta policy link for pre-publication verification:
+
+https://www.facebook.com/policies_center/pages_groups_events
+
+Primary page could not be fully accessed. Secondary implementation reference:
+
+https://www.shortstack.com/help/facebook-promotion-guidelines/
+
+Use the independent landing-page draw described above and confirm current platform requirements before paid publication.
+
+All budgets, prize amounts, funnel assumptions, incentive amounts, sponsor packages and performance targets in this document are proposed for approval and testing. No ads, contests, scraping jobs, outreach, sponsorship commitments or event registrations have been launched by preparing this playbook.
