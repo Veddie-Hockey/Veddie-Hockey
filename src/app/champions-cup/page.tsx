@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Trophy, Shield, Sparkles, CheckCircle2, ArrowRight, Award } from "lucide-react";
 import LeadCaptureForm from "@/components/LeadCaptureForm";
+import QualificationCalculator from "@/components/QualificationCalculator";
 
 export const metadata: Metadata = {
   title: "Champions Cup | Veddie Hockey",
@@ -194,7 +195,7 @@ export default function ChampionsCupPage() {
             </div>
           </div>
 
-          <div className="p-6 rounded-xl bg-brand-card border border-brand-border flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="p-6 rounded-xl bg-brand-card border border-brand-border flex flex-col sm:flex-row items-center justify-between gap-4 mb-16">
             <span className="text-xs text-brand-muted">
               Standings verified against official home-league records prior to formal tournament invitations.
             </span>
@@ -206,6 +207,9 @@ export default function ChampionsCupPage() {
               <ArrowRight className="w-3.5 h-3.5" />
             </a>
           </div>
+
+          {/* Interactive Calculator */}
+          <QualificationCalculator />
         </div>
       </section>
 

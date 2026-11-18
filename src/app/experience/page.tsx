@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { PRO_FEATURES, ProFeature } from "@/data/proFeatures";
+import LockerRoomVisualizer from "@/components/LockerRoomVisualizer";
 import {
   Sparkles,
   DoorClosed,
@@ -135,6 +136,13 @@ export default function ExperiencePage() {
               </button>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* LOCKER ROOM VISUALIZER */}
+      <section className="py-12 bg-brand-black border-b border-brand-border">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <LockerRoomVisualizer />
         </div>
       </section>
 

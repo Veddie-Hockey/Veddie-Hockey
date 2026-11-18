@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Trophy, Shield, CheckCircle2, AlertCircle, ArrowRight, ExternalLink } from "lucide-react";
+import QualificationCalculator from "@/components/QualificationCalculator";
 
 export const metadata: Metadata = {
   title: "Road to the Cup Watchlist | Veddie Hockey",
@@ -197,6 +198,11 @@ export default function RoadToTheCupPage() {
             </div>
           </div>
         ))}
+      </div>
+
+      {/* Interactive Qualification Calculator */}
+      <div className="mb-16">
+        <QualificationCalculator />
       </div>
 
       {/* Standings Verification CTA */}
