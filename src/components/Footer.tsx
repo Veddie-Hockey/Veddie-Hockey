@@ -85,6 +85,16 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/road-to-the-cup" className="hover:text-brand-accent transition-colors">
+                  Road to the Cup
+                </Link>
+              </li>
+              <li>
+                <Link href="/nominate" className="hover:text-brand-accent transition-colors">
+                  Nominate a Team
+                </Link>
+              </li>
+              <li>
                 <Link href="/experience" className="hover:text-brand-accent transition-colors flex items-center gap-1.5">
                   <Sparkles className="w-3.5 h-3.5 text-brand-accent" />
                   The Experience
@@ -122,6 +132,11 @@ export default function Footer() {
               <li>
                 <Link href="/contact" className="hover:text-brand-accent transition-colors">
                   Contact Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/admin" className="text-brand-accent hover:underline transition-colors text-xs font-medium">
+                  Organizer Desk &rarr;
                 </Link>
               </li>
               <li className="pt-2 border-t border-brand-border/60">
