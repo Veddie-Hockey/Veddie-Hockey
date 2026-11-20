@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
+import { sendLeadToGHL } from "@/lib/ghl";
 
 const leadsFilePath = path.join(process.cwd(), "src", "data", "leads.json");
 const tmpLeadsFilePath = path.join("/tmp", "leads.json");
@@ -81,6 +82,11 @@ export async function POST(request: Request) {
     const currentLeads = getStoredLeads();
     currentLeads.unshift(newLead);
     saveLeads(currentLeads);
+
+    // Sync lead to GoHighLevel (GHL) in background
+    sendLeadToGHL(newLead).catch((err) => {
+      console.error("[GHL] Background sync error:", err);
+    });
 
     return NextResponse.json({
       success: true,
