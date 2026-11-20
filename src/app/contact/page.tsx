@@ -5,7 +5,7 @@ import LeadCaptureForm from "@/components/LeadCaptureForm";
 export const metadata: Metadata = {
   title: "Contact Veddie Hockey",
   description:
-    "Ask about Veddie divisions, team entry, pickup and partnerships. Get help finding your next hockey opportunity.",
+    "Ask about Veddie divisions, team entry, and partnerships. Get help finding your next hockey opportunity.",
 };
 
 interface ContactPageProps {
@@ -33,7 +33,7 @@ export default function ContactPage({ searchParams }: ContactPageProps) {
         </h1>
 
         <p className="text-base sm:text-lg text-brand-muted max-w-xl mx-auto">
-          Questions about your division, team entry, pickup or a partnership? Send us a note and we’ll help with the next step.
+          Questions about your division, team entry, or a partnership? Send us a note and we’ll help with the next step.
         </p>
       </div>
 

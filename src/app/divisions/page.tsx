@@ -131,9 +131,6 @@ export default function DivisionsPage() {
                     >
                       {div.code} — {div.name}
                     </span>
-                    <span className="text-xs text-brand-muted font-mono">
-                      Tier {div.code}
-                    </span>
                   </div>
 
                   <h3 className="text-xl font-athletic text-brand-cream mb-2">

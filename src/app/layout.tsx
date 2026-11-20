@@ -13,7 +13,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Veddie Hockey | Still Got It.",
   description:
-    "Discover premium adult hockey with Veddie. Explore Champions Cup, Champions League, tournaments, leagues and pickup. Find your next game.",
+    "Discover premium adult hockey with Veddie. Explore Champions Cup, Champions League, tournaments, and leagues. Find your next game.",
   icons: {
     icon: "/veddie-logo.png",
   },

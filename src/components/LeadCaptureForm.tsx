@@ -293,7 +293,6 @@ export default function LeadCaptureForm({
                 <option value="Choosing a program">Choosing a program</option>
                 <option value="Division placement">Division placement</option>
                 <option value="Team entry">Team entry</option>
-                <option value="Pickup">Pickup</option>
                 <option value="Partnership">Partnership</option>
                 <option value="Other">Other</option>
               </select>

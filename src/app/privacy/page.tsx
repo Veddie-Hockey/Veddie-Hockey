@@ -38,7 +38,7 @@ export default function PrivacyPage() {
         <section className="bg-brand-surface p-6 rounded-xl border border-brand-border">
           <h2 className="text-lg font-athletic text-brand-cream mb-2">3. How We Use Your Information</h2>
           <p className="text-brand-muted">
-            We use collected data solely to: evaluate division balance; notify you of opening tournaments, leagues, and pickup sessions; organize match schedules; and maintain verified team Elo ratings. We never sell or rent your personal data to third-party advertisers.
+            We use collected data solely to: evaluate division balance; notify you of opening tournaments and leagues; organize match schedules; and maintain verified team Elo ratings. We never sell or rent your personal data to third-party advertisers.
           </p>
         </section>
 

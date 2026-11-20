@@ -12,7 +12,7 @@ export default function FAQsPage() {
   const faqs = [
     {
       q: "What is Veddie?",
-      a: "Veddie is a premium adult hockey brand being built around organized competition, player experience and community. Our five ways to play are Champions Cup, Champions League, Tournaments, Leagues and Pickup.",
+      a: "Veddie is a premium adult hockey brand being built around organized competition, player experience and community. Our offerings include Champions Cup, Champions League, Tournaments, and Leagues.",
     },
     {
       q: "Do I need to have played at a high level?",
@@ -24,7 +24,7 @@ export default function FAQsPage() {
     },
     {
       q: "Can I join without a team?",
-      a: "Yes. Pickup is for individuals, and league interest forms include an individual-player option. Some tournaments may also offer individual player placement.",
+      a: "Yes. League interest forms include an individual-player option, and some tournaments may also offer individual player placement.",
     },
     {
       q: "Where can I play?",
@@ -40,7 +40,7 @@ export default function FAQsPage() {
     },
     {
       q: "What is included?",
-      a: "Each listing will state its game package, amenities, support, media and price. Pickup has a different package from full championship competitions.",
+      a: "Each listing will state its game package, amenities, support, media and price for the specific competition.",
     },
     {
       q: "Are players photographed or filmed?",

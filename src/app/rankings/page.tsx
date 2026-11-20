@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import { TEAMS_DATA, TeamProfile } from "@/data/rankings";
-import EloInteractiveSandbox from "@/components/EloInteractiveSandbox";
 import {
   Shield,
   Search,
@@ -264,7 +263,7 @@ export default function RankingsPage() {
                 <Info className="w-3.5 h-3.5 text-brand-accent" />
                 Updated after verified match results are published. Teams under 5 games shown as Provisional.
               </span>
-              <a href="#methodology" className="text-brand-accent hover:underline font-semibold">
+              <a href="#faqs" className="text-brand-accent hover:underline font-semibold">
                 How Rankings Work &rarr;
               </a>
             </div>
@@ -272,46 +271,22 @@ export default function RankingsPage() {
         </div>
       </section>
 
-      {/* METHODOLOGY & INTERACTIVE SANDBOX */}
-      <section id="methodology" className="py-24 bg-brand-surface border-b border-brand-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-16">
-            <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2">
-                Mathematical Model
-              </span>
-              <h2 className="text-3xl sm:text-5xl font-athletic text-brand-cream tracking-tight mb-6">
-                How the Elo rating system works.
-              </h2>
-              <div className="space-y-4 text-sm text-brand-muted leading-relaxed">
-                <p>
-                  Rather than accumulating hollow participation points, Veddie uses a modified competitive Elo system designed to reward opponent quality.
-                </p>
-                <div className="p-4 rounded-xl bg-brand-card border border-brand-border space-y-2 text-xs">
-                  <p><strong>Base Rating:</strong> Every new team starts at 1,000 points in its respective division.</p>
-                  <p><strong>Sensitivity:</strong> Fixed $K=32$ weight per match. Beating a higher-rated opponent yields significantly larger rating gains than beating an unranked team.</p>
-                  <p><strong>Provisional Threshold:</strong> Numbered ranks appear after 5 verified matches. Earlier teams display as Provisional.</p>
-                  <p><strong>Scope:</strong> Rating pools operate within each skill division and age bracket. Excludes forfeits and unplayed exhibitions.</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Interactive Sandbox Widget */}
-            <div>
-              <EloInteractiveSandbox />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* FAQs */}
-      <section className="py-20 bg-brand-navy px-4 sm:px-6 lg:px-8">
+      <section id="faqs" className="py-20 bg-brand-navy px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-athletic text-brand-cream tracking-tight mb-8 text-center">
             Rankings FAQs
           </h2>
 
           <div className="space-y-4">
+            <div className="p-6 rounded-2xl bg-brand-surface border border-brand-border">
+              <h3 className="font-athletic text-brand-cream text-lg mb-2">
+                How do you rank the teams?
+              </h3>
+              <p className="text-sm text-brand-muted leading-relaxed">
+                We use the Elo rating system to rank teams based on Champions League and Champions Cup results. After each game, the winner gains points and the losing team gives up points. The change depends on how the two teams were rated before the game. Beating a higher-rated team earns you more points than beating a lower-rated team.
+              </p>
+            </div>
             <div className="p-6 rounded-2xl bg-brand-surface border border-brand-border">
               <h3 className="font-athletic text-brand-cream text-lg mb-2">
                 Do Champions Cup and Champions League count together?

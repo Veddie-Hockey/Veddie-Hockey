@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Trophy, Swords, Calendar, Users, Zap, HelpCircle, ArrowRight } from "lucide-react";
+import { Trophy, Swords, Calendar, Users, HelpCircle, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Find Your Game | Veddie Hockey",
@@ -41,14 +41,6 @@ export default function PlayPage() {
       href: "/leagues#league-form",
       icon: Users,
       badge: "Accepting Interest",
-    },
-    {
-      title: "Pickup",
-      tagline: "I want my next skate.",
-      description: "Balanced drop-in sessions with dedicated hosts, tape, towels, and free goalie slots.",
-      href: "/pickup#pickup-form",
-      icon: Zap,
-      badge: "Summer 2027",
     },
   ];
 

@@ -4,14 +4,11 @@ import {
   Swords,
   Calendar,
   Users,
-  Zap,
   ArrowRight,
   Shield,
   Sparkles,
   CheckCircle2,
   ChevronRight,
-  Star,
-  Activity,
 } from "lucide-react";
 import { TEAMS_DATA } from "@/data/rankings";
 
@@ -21,10 +18,11 @@ export default function HomePage() {
   return (
     <div className="flex flex-col">
       {/* =========================================================================
-          01 / HERO (60% RINK NAVY BASE + HERITAGE CREAM HEADLINE + SIGNAL RED CTA)
-          Brand Guide Page 1, 3, 5, 10
+          HERO SECTION
+          Client Edit 2: Removed red line, removed "01 Identity", removed "Still Got It".
+          Keep main content beneath each label.
       ========================================================================= */}
-      <section className="relative min-h-[640px] lg:min-h-[750px] flex items-center justify-center bg-brand-navy border-b border-brand-border overflow-hidden px-4 sm:px-6 lg:px-8 py-20">
+      <section className="relative min-h-[640px] lg:min-h-[720px] flex items-center justify-center bg-brand-navy border-b border-brand-border overflow-hidden px-4 sm:px-6 lg:px-8 py-20">
         {/* Authentic Hockey Arena Background */}
         <div
           className="absolute inset-0 bg-cover bg-center filter brightness-40 scale-105 pointer-events-none"
@@ -36,30 +34,15 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/75 to-brand-navy/60 pointer-events-none" />
 
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          {/* Brand Guide Top Red Accent Bar */}
-          <div className="flex justify-center mb-6">
-            <div className="h-1.5 w-12 bg-brand-red rounded-full shadow-lg shadow-brand-red/40" />
-          </div>
-
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-card/90 backdrop-blur-md border border-brand-border text-brand-cream text-xs font-bold tracking-widest uppercase mb-6 shadow-xl">
-            <span className="w-2 h-2 rounded-full bg-brand-red animate-pulse" />
-            01 / IDENTITY — STILL GOT IT.
-          </div>
-
-          <h1 className="text-5xl sm:text-7xl lg:text-8xl font-athletic tracking-tight text-brand-cream mb-4 font-black">
-            STILL GOT IT.
-          </h1>
-
-          <p className="text-xl sm:text-2xl text-brand-cream font-bold tracking-wide uppercase mb-6 font-athletic">
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-athletic tracking-tight text-brand-cream mb-6 font-black uppercase">
             The pro hockey experience for the rest of your career.
-          </p>
+          </h1>
 
           <p className="text-base sm:text-lg text-slate-200 max-w-2xl mx-auto mb-10 leading-relaxed font-sans">
             The room. The rivalry. The feeling of burying one when it matters. Veddie brings it all together with organized competition, professional touches, and a genuine hockey community.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-            {/* Brand Guide Page 5 standard: "Use navy text on red buttons and test final digital contrast." */}
             <Link
               href="/play"
               className="w-full sm:w-auto px-9 py-4 rounded-xl bg-brand-red text-brand-navy font-black uppercase tracking-wider text-sm hover:bg-brand-red-hover transition-all shadow-xl hover:shadow-brand-red/30 active:scale-95 flex items-center justify-center gap-2"
@@ -83,21 +66,11 @@ export default function HomePage() {
       </section>
 
       {/* =========================================================================
-          02 / BRAND FOUNDATION (30% HERITAGE CREAM SECTION)
-          Brand Guide Page 2: "THE GAME CONTINUES. Experienced players. Meaningful competition."
-          Brand Guide Page 5: 30% Heritage Cream layout standard
+          BRAND FOUNDATION
+          Client Edit 2: Removed red line & "02 Brand Foundation"
       ========================================================================= */}
       <section className="py-24 bg-brand-cream text-brand-navy border-b border-brand-cream-dark">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          {/* Top Red Accent Bar */}
-          <div className="flex justify-center mb-4">
-            <div className="h-1.5 w-12 bg-brand-red rounded-full" />
-          </div>
-
-          <span className="text-xs font-bold uppercase tracking-wider text-brand-slate block mb-2 font-athletic">
-            02 / BRAND FOUNDATION
-          </span>
-
           <h2 className="text-4xl sm:text-6xl font-athletic text-brand-navy tracking-tight mb-4 font-black">
             THE GAME CONTINUES.
           </h2>
@@ -132,34 +105,26 @@ export default function HomePage() {
       </section>
 
       {/* =========================================================================
-          03 / FIVE WAYS TO PLAY (BRAND GUIDE PAGE 10 DIGITAL APPLICATIONS CARDS)
-          100% Real Hockey Photography • Crisp Contrast • High-Visibility Red/Cream Badges
+          FOUR WAYS TO PLAY
+          Client Edit 2: Removed red line & "08 Voice & Naming"
+          Client Edit 3: Removed Pickup (now 4 offerings: Cup, League, Tournaments, Leagues)
       ========================================================================= */}
       <section className="py-24 bg-brand-navy border-b border-brand-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            {/* Top Red Accent Bar */}
-            <div className="flex justify-center mb-4">
-              <div className="h-1.5 w-12 bg-brand-red rounded-full" />
-            </div>
-
-            <span className="text-xs font-bold uppercase tracking-wider text-brand-cream/80 block mb-2 font-athletic">
-              08 / VOICE & NAMING — ONE MASTER BRAND
-            </span>
-
             <h2 className="text-4xl sm:text-6xl font-athletic text-brand-cream tracking-tight mb-4 font-black">
               NEXT CHAPTER.
             </h2>
 
             <p className="text-base sm:text-lg text-slate-300 font-sans">
-              Chase a championship. Build a weekly ritual. Or just get out for a great skate. Find the Veddie program that fits your game.
+              Chase a championship. Build a weekly ritual. Or get the team together for a tournament. Find the Veddie program that fits your game.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* ---------------- CARD 1: CHAMPIONS CUP ---------------- */}
             <div className="bg-[#0b203a] border-2 border-[#1c3f6e] hover:border-brand-red rounded-2xl overflow-hidden flex flex-col justify-between transition-all group hover:shadow-2xl hover:shadow-brand-red/15">
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-44 overflow-hidden">
                 <div
                   className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500 filter brightness-85"
                   style={{
@@ -167,27 +132,26 @@ export default function HomePage() {
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0b203a] via-transparent to-transparent" />
-                {/* Brand Guide High-Visibility Badge */}
                 <span className="absolute top-4 right-4 text-xs font-black uppercase tracking-wider px-3 py-1.5 rounded-md bg-brand-red text-brand-navy shadow-lg">
                   Accepting Interest
                 </span>
               </div>
-              <div className="p-7 pt-3 flex-1 flex flex-col justify-between">
+              <div className="p-6 pt-3 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-2xl font-athletic text-brand-cream tracking-tight mb-1 font-black">
+                  <h3 className="text-xl font-athletic text-brand-cream tracking-tight mb-1 font-black">
                     Champions Cup
                   </h3>
-                  <h4 className="text-sm font-bold text-brand-cream/90 mb-3 font-sans">
+                  <h4 className="text-xs font-bold text-brand-cream/90 mb-3 font-sans">
                     Your league was just the beginning.
                   </h4>
-                  <p className="text-sm text-slate-200 leading-relaxed font-sans mb-6">
+                  <p className="text-xs text-slate-200 leading-relaxed font-sans mb-6">
                     Represent your home league against qualifying teams in Veddie’s flagship championship. Fresh rivals, a pro atmosphere, funded cash prizes and zero entry fee for the inaugural pilot.
                   </p>
                 </div>
                 <div className="pt-4 border-t border-brand-border">
                   <Link
                     href="/champions-cup"
-                    className="w-full py-3 px-4 rounded-xl bg-brand-red text-brand-navy font-black text-xs uppercase tracking-wider hover:bg-brand-red-hover transition-all flex items-center justify-between shadow-md"
+                    className="w-full py-2.5 px-4 rounded-xl bg-brand-red text-brand-navy font-black text-xs uppercase tracking-wider hover:bg-brand-red-hover transition-all flex items-center justify-between shadow-md"
                   >
                     <span>Register Interest</span>
                     <ChevronRight className="w-4 h-4 stroke-[3]" />
@@ -198,7 +162,7 @@ export default function HomePage() {
 
             {/* ---------------- CARD 2: CHAMPIONS LEAGUE ---------------- */}
             <div className="bg-[#0b203a] border-2 border-[#1c3f6e] hover:border-brand-cream rounded-2xl overflow-hidden flex flex-col justify-between transition-all group hover:shadow-2xl">
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-44 overflow-hidden">
                 <div
                   className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500 filter brightness-85"
                   style={{
@@ -210,33 +174,33 @@ export default function HomePage() {
                   Planned Offering
                 </span>
               </div>
-              <div className="p-7 pt-3 flex-1 flex flex-col justify-between">
+              <div className="p-6 pt-3 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-2xl font-athletic text-brand-cream tracking-tight mb-1 font-black">
+                  <h3 className="text-xl font-athletic text-brand-cream tracking-tight mb-1 font-black">
                     Champions League
                   </h3>
-                  <h4 className="text-sm font-bold text-brand-cream/90 mb-3 font-sans">
+                  <h4 className="text-xs font-bold text-brand-cream/90 mb-3 font-sans">
                     Keep your league. Chase a bigger title.
                   </h4>
-                  <p className="text-sm text-slate-200 leading-relaxed font-sans mb-6">
+                  <p className="text-xs text-slate-200 leading-relaxed font-sans mb-6">
                     A planned cross-league competition alongside your regular season. Regional knockout rounds. A meaningful championship banner to hang next to your home league hardware.
                   </p>
                 </div>
                 <div className="pt-4 border-t border-brand-border">
                   <Link
                     href="/champions-league"
-                    className="w-full py-3 px-4 rounded-xl bg-brand-cream text-brand-navy font-bold text-xs uppercase tracking-wider hover:bg-white transition-all flex items-center justify-between shadow-md"
+                    className="w-full py-2.5 px-4 rounded-xl bg-brand-cream text-brand-navy font-bold text-xs uppercase tracking-wider hover:bg-white transition-all flex items-center justify-between shadow-md"
                   >
-                    <span>Explore Champions League</span>
+                    <span>Explore League</span>
                     <ChevronRight className="w-4 h-4 stroke-[3]" />
                   </Link>
                 </div>
               </div>
             </div>
 
-            {/* ---------------- CARD 3: TOURNAMENTS (AUTHENTIC HOCKEY - NO SOCCER BALL) ---------------- */}
+            {/* ---------------- CARD 3: TOURNAMENTS ---------------- */}
             <div className="bg-[#0b203a] border-2 border-[#1c3f6e] hover:border-brand-red rounded-2xl overflow-hidden flex flex-col justify-between transition-all group hover:shadow-2xl hover:shadow-brand-red/15">
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-44 overflow-hidden">
                 <div
                   className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500 filter brightness-85"
                   style={{
@@ -248,33 +212,33 @@ export default function HomePage() {
                   Accepting Interest
                 </span>
               </div>
-              <div className="p-7 pt-3 flex-1 flex flex-col justify-between">
+              <div className="p-6 pt-3 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-2xl font-athletic text-brand-cream tracking-tight mb-1 font-black">
+                  <h3 className="text-xl font-athletic text-brand-cream tracking-tight mb-1 font-black">
                     Tournaments
                   </h3>
-                  <h4 className="text-sm font-bold text-brand-cream/90 mb-3 font-sans">
+                  <h4 className="text-xs font-bold text-brand-cream/90 mb-3 font-sans">
                     Same team. New rivals.
                   </h4>
-                  <p className="text-sm text-slate-200 leading-relaxed font-sans mb-6">
+                  <p className="text-xs text-slate-200 leading-relaxed font-sans mb-6">
                     Get the team together for a standalone tournament with reviewed divisions, a proper hockey atmosphere, three guaranteed games, and zero sandbagging nonsense.
                   </p>
                 </div>
                 <div className="pt-4 border-t border-brand-border">
                   <Link
                     href="/tournaments"
-                    className="w-full py-3 px-4 rounded-xl bg-brand-red text-brand-navy font-black text-xs uppercase tracking-wider hover:bg-brand-red-hover transition-all flex items-center justify-between shadow-md"
+                    className="w-full py-2.5 px-4 rounded-xl bg-brand-red text-brand-navy font-black text-xs uppercase tracking-wider hover:bg-brand-red-hover transition-all flex items-center justify-between shadow-md"
                   >
-                    <span>Register Team Interest</span>
+                    <span>Register Team</span>
                     <ChevronRight className="w-4 h-4 stroke-[3]" />
                   </Link>
                 </div>
               </div>
             </div>
 
-            {/* ---------------- CARD 4: LEAGUES (AUTHENTIC HOCKEY - NO SOCCER GOAL) ---------------- */}
+            {/* ---------------- CARD 4: LEAGUES ---------------- */}
             <div className="bg-[#0b203a] border-2 border-[#1c3f6e] hover:border-brand-red rounded-2xl overflow-hidden flex flex-col justify-between transition-all group hover:shadow-2xl hover:shadow-brand-red/15">
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-44 overflow-hidden">
                 <div
                   className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500 filter brightness-85"
                   style={{
@@ -286,67 +250,26 @@ export default function HomePage() {
                   Accepting Interest
                 </span>
               </div>
-              <div className="p-7 pt-3 flex-1 flex flex-col justify-between">
+              <div className="p-6 pt-3 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-2xl font-athletic text-brand-cream tracking-tight mb-1 font-black">
+                  <h3 className="text-xl font-athletic text-brand-cream tracking-tight mb-1 font-black">
                     Leagues
                   </h3>
-                  <h4 className="text-sm font-bold text-brand-cream/90 mb-3 font-sans">
+                  <h4 className="text-xs font-bold text-brand-cream/90 mb-3 font-sans">
                     Make this your hockey night.
                   </h4>
-                  <p className="text-sm text-slate-200 leading-relaxed font-sans mb-6">
+                  <p className="text-xs text-slate-200 leading-relaxed font-sans mb-6">
                     A consistent weekly game. A team to call your own. A season of rivalries, recognition and reasons to get to the rink. Join as an intact team or register as an individual player.
                   </p>
                 </div>
                 <div className="pt-4 border-t border-brand-border">
                   <Link
                     href="/leagues"
-                    className="w-full py-3 px-4 rounded-xl bg-brand-red text-brand-navy font-black text-xs uppercase tracking-wider hover:bg-brand-red-hover transition-all flex items-center justify-between shadow-md"
+                    className="w-full py-2.5 px-4 rounded-xl bg-brand-red text-brand-navy font-black text-xs uppercase tracking-wider hover:bg-brand-red-hover transition-all flex items-center justify-between shadow-md"
                   >
                     <span>Explore Leagues</span>
                     <ChevronRight className="w-4 h-4 stroke-[3]" />
                   </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* ---------------- CARD 5: PICKUP (PAGE 8: "USE PICKUP, NOT SUMMER PICKUP") ---------------- */}
-            <div className="bg-[#0b203a] border-2 border-[#1c3f6e] hover:border-brand-cream rounded-2xl overflow-hidden flex flex-col justify-between transition-all group hover:shadow-2xl lg:col-span-2">
-              <div className="relative h-48 overflow-hidden">
-                <div
-                  className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500 filter brightness-85"
-                  style={{
-                    backgroundImage: "url('/images/hockey/pickup.jpg')",
-                  }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0b203a] via-transparent to-transparent" />
-                <span className="absolute top-4 right-4 text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-md bg-brand-cream text-brand-navy shadow-lg">
-                  Summer 2027 Launch
-                </span>
-              </div>
-              <div className="p-7 pt-3 flex-1 flex flex-col justify-between">
-                <div>
-                  <h3 className="text-2xl font-athletic text-brand-cream tracking-tight mb-1 font-black">
-                    Pickup
-                  </h3>
-                  <h4 className="text-sm font-bold text-brand-cream/90 mb-3 font-sans">
-                    Your next skate, upgraded.
-                  </h4>
-                  <p className="text-sm text-slate-200 leading-relaxed font-sans max-w-2xl mb-6">
-                    Organized skates, balanced teams, and the Veddie touches that make getting to the rink worth it. No lopsided rosters, no ghosting goalies, no messy group-chat headaches. Vetted goalies play free.
-                  </p>
-                </div>
-                <div className="pt-4 border-t border-brand-border flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                  <Link
-                    href="/pickup"
-                    className="py-3 px-6 rounded-xl bg-brand-cream text-brand-navy font-bold text-xs uppercase tracking-wider hover:bg-white transition-all inline-flex items-center gap-2 shadow-md"
-                  >
-                    <span>Explore Pickup</span>
-                    <ChevronRight className="w-4 h-4 stroke-[3]" />
-                  </Link>
-                  <span className="text-xs text-brand-cream/80 font-mono">
-                    Pay-per-skate • Free goalie network
-                  </span>
                 </div>
               </div>
             </div>
@@ -355,16 +278,13 @@ export default function HomePage() {
       </section>
 
       {/* =========================================================================
-          04 / THE EXPERIENCE (07 / ART DIRECTION — MAKE THE PLAYER THE HERO)
-          Brand Guide Page 7: Clean athletic geometry, real hockey moments & breathing room
+          THE EXPERIENCE
+          Client Edit 2: Removed red line & "07 Art Direction"
+          Client Edit 4: Changed button text to "See the Veddie Experience" (no 29 features reference)
       ========================================================================= */}
       <section className="py-24 bg-brand-navy border-b border-brand-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mb-16">
-            <div className="h-1.5 w-12 bg-brand-red rounded-full mb-4" />
-            <span className="text-xs font-bold uppercase tracking-wider text-brand-cream/80 block mb-2 font-athletic">
-              07 / ART DIRECTION — MAKE THE PLAYER THE HERO
-            </span>
             <h2 className="text-4xl sm:text-6xl font-athletic text-brand-cream tracking-tight mb-4 font-black">
               You may not play in the show. We’ll treat you like you do.
             </h2>
@@ -439,11 +359,12 @@ export default function HomePage() {
             <p className="text-xs text-brand-muted font-sans">
               Real hockey. Proper treatment. Exact amenities confirmed with each program before registration.
             </p>
+            {/* Client Edit 4: Changed button text to "See the Veddie Experience" */}
             <Link
               href="/experience"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-brand-red text-brand-navy text-xs font-black uppercase tracking-wider hover:bg-brand-red-hover transition-all shadow-lg"
             >
-              See the Full 29-Feature Veddie Experience
+              See the Veddie Experience
               <ArrowRight className="w-4 h-4 stroke-[3]" />
             </Link>
           </div>
@@ -451,19 +372,11 @@ export default function HomePage() {
       </section>
 
       {/* =========================================================================
-          05 / COMPETITION LABELS (EXACT REPRODUCTION OF BRAND GUIDE PAGE 9)
-          Brand Guide Page 9: "EVERY LEVEL COUNTS." Heritage Cream background
-          4 Division row strips + Age categories + Rankings presentation
+          COMPETITION LABELS
+          Client Edit 2: Removed red line & "09 Competition Labels"
       ========================================================================= */}
       <section className="py-24 bg-brand-cream text-brand-navy border-b border-brand-cream-dark">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Top Red Accent Bar */}
-          <div className="h-1.5 w-12 bg-brand-red rounded-full mb-4" />
-
-          <span className="text-xs font-bold uppercase tracking-wider text-brand-slate block mb-2 font-athletic">
-            09 / COMPETITION LABELS
-          </span>
-
           <h2 className="text-4xl sm:text-6xl font-athletic text-brand-navy tracking-tight mb-4 font-black">
             EVERY LEVEL COUNTS.
           </h2>
@@ -472,7 +385,7 @@ export default function HomePage() {
             Use the same naming hierarchy across registration, event graphics, schedules and results.
           </p>
 
-          {/* 4 Division Row Strips (Direct from Brand Guide Page 9) */}
+          {/* 4 Division Row Strips */}
           <div className="space-y-3 mb-12">
             <div className="bg-white rounded-xl p-5 shadow-sm border border-brand-navy/10 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <span className="font-athletic font-black text-lg text-brand-navy tracking-tight">
@@ -511,7 +424,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Two-Column Matrix (Direct from Brand Guide Page 9) */}
+          {/* Two-Column Matrix */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8 border-t border-brand-navy/15 mb-10">
             <div>
               <h3 className="text-xl font-athletic text-brand-navy font-black mb-3">
@@ -556,16 +469,13 @@ export default function HomePage() {
       </section>
 
       {/* =========================================================================
-          06 / TEAM RANKINGS (RINK NAVY + ELO LEADERBOARD)
+          TEAM RANKINGS
+          Client Edit 2: Removed red line & "Verified Competition"
       ========================================================================= */}
       <section className="py-24 bg-brand-navy border-b border-brand-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
             <div>
-              <div className="h-1.5 w-12 bg-brand-red rounded-full mb-4" />
-              <span className="text-xs font-bold uppercase tracking-wider text-brand-cream/80 block mb-2 font-athletic">
-                Verified Competition
-              </span>
               <h2 className="text-4xl sm:text-6xl font-athletic text-brand-cream tracking-tight mb-4 font-black">
                 Don’t just win the night. Build your reputation.
               </h2>
@@ -645,17 +555,13 @@ export default function HomePage() {
       </section>
 
       {/* =========================================================================
-          07 / ONBOARDING STEPS (BRAND GUIDE PAGE 8: "YOU GET THE TEAM TOGETHER...")
+          ONBOARDING STEPS
+          Client Edit 2: Removed red line & "08 Voice in Practice"
+          Client Edit 3: Removed Pickup reference in Step 1
       ========================================================================= */}
       <section className="py-24 bg-brand-navy border-b border-brand-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-3xl mx-auto mb-16">
-            <div className="flex justify-center mb-4">
-              <div className="h-1.5 w-12 bg-brand-red rounded-full" />
-            </div>
-            <span className="text-xs font-bold uppercase tracking-wider text-brand-cream/80 block mb-2 font-athletic">
-              08 / VOICE IN PRACTICE
-            </span>
             <h2 className="text-4xl sm:text-6xl font-athletic text-brand-cream tracking-tight mb-4 font-black">
               You get the team together. We’ll handle the details.
             </h2>
@@ -670,7 +576,7 @@ export default function HomePage() {
                 Pick your game.
               </h3>
               <p className="text-sm text-slate-200 leading-relaxed font-sans">
-                Choose a championship, tournament, league or pickup skate that matches what you and your team want.
+                Choose a championship, tournament, or league that matches what you and your team want.
               </p>
             </div>
 
@@ -710,25 +616,18 @@ export default function HomePage() {
       </section>
 
       {/* =========================================================================
-          08 / FINAL CALL TO ACTION (HERITAGE CREAM BANNER WITH SIGNAL RED CTA)
-          Brand Guide Page 5, 8, 10
+          FINAL CALL TO ACTION
+          Client Edit 2: Removed red line & "VEDDIE HOCKEY • STILL GOT IT."
+          Client Edit 3: Removed pickup reference
       ========================================================================= */}
       <section className="py-24 bg-brand-navy px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto rounded-3xl bg-brand-cream text-brand-navy p-10 sm:p-16 shadow-2xl border-4 border-brand-cream-dark text-center relative overflow-hidden">
-          <div className="flex justify-center mb-6">
-            <div className="h-1.5 w-12 bg-brand-red rounded-full" />
-          </div>
-
-          <span className="text-xs font-bold uppercase tracking-widest text-brand-slate block mb-2 font-athletic">
-            VEDDIE HOCKEY • STILL GOT IT.
-          </span>
-
           <h2 className="text-4xl sm:text-6xl font-athletic text-brand-navy tracking-tight mb-4 font-black">
             The next chapter still has your name on it.
           </h2>
 
           <p className="text-lg text-brand-slate mb-10 max-w-xl mx-auto font-sans font-medium">
-            Bring your team. Find your team. Or just find your next skate. Experience pro adult hockey built for the rest of your career.
+            Bring your team. Find your team. Experience pro adult hockey built for the rest of your career.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

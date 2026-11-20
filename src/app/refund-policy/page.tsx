@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Refund Policy | Veddie Hockey",
-  description: "Official Refund and Cancellation Policy for Veddie Hockey tournaments, leagues, and pickup sessions.",
+  description: "Official Refund and Cancellation Policy for Veddie Hockey tournaments and leagues.",
 };
 
 export default function RefundPolicyPage() {
@@ -31,14 +31,7 @@ export default function RefundPolicyPage() {
         </section>
 
         <section className="bg-brand-surface p-6 rounded-xl border border-brand-border">
-          <h2 className="text-lg font-athletic text-brand-cream mb-2">3. Pickup Sessions</h2>
-          <p className="text-brand-muted">
-            Drop-in pickup skaters may cancel and receive a full credit or refund up to 24 hours prior to the scheduled ice time. Cancellations inside 24 hours are non-refundable as ice costs are fixed.
-          </p>
-        </section>
-
-        <section className="bg-brand-surface p-6 rounded-xl border border-brand-border">
-          <h2 className="text-lg font-athletic text-brand-cream mb-2">4. Event Force Majeure / Arena Closures</h2>
+          <h2 className="text-lg font-athletic text-brand-cream mb-2">3. Event Force Majeure / Arena Closures</h2>
           <p className="text-brand-muted">
             If an event or ice session is canceled due to arena mechanical failures, severe weather, or municipal emergencies, Veddie will offer rescheduled ice times or full credits.
           </p>

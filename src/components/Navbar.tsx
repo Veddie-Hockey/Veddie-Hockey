@@ -7,18 +7,9 @@ import {
   ChevronDown,
   Menu,
   X,
-  Trophy,
-  Swords,
-  Calendar,
-  Users,
-  Zap,
-  Shield,
-  Sparkles,
   ArrowRight,
-  Briefcase,
-  Building,
-  Mail,
   MapPin,
+  Mail,
 } from "lucide-react";
 
 export default function Navbar() {
@@ -26,42 +17,12 @@ export default function Navbar() {
   const [playDropdownOpen, setPlayDropdownOpen] = useState(false);
   const [companyDropdownOpen, setCompanyDropdownOpen] = useState(false);
 
+  // Client Edit 1, 3 & 7: Only names, no descriptions, no badges, no icons, no Pickup
   const playItems = [
-    {
-      name: "Champions Cup",
-      href: "/champions-cup",
-      tagline: "Flagship Invitation Championship",
-      icon: Trophy,
-      badge: "Accepting Interest",
-    },
-    {
-      name: "Champions League",
-      href: "/champions-league",
-      tagline: "Cross-League Midweek Circuit",
-      icon: Swords,
-      badge: "Planned",
-    },
-    {
-      name: "Tournaments",
-      href: "/tournaments",
-      tagline: "Standalone Weekend Invitationals",
-      icon: Calendar,
-      badge: "Accepting Interest",
-    },
-    {
-      name: "Leagues",
-      href: "/leagues",
-      tagline: "Consistent Weekly Hockey Nights",
-      icon: Users,
-      badge: "Accepting Interest",
-    },
-    {
-      name: "Pickup",
-      href: "/pickup",
-      tagline: "Upgraded Organized Ice Time",
-      icon: Zap,
-      badge: "Summer 2027",
-    },
+    { name: "Champions Cup", href: "/champions-cup" },
+    { name: "Champions League", href: "/champions-league" },
+    { name: "Tournaments", href: "/tournaments" },
+    { name: "Leagues", href: "/leagues" },
   ];
 
   return (
@@ -98,62 +59,37 @@ export default function Navbar() {
                 <ChevronDown className={`w-4 h-4 transition-transform ${playDropdownOpen ? "rotate-180" : ""}`} />
               </button>
 
+              {/* Client Edit 1 & 7: Clean dropdown showing only offering names as text links */}
               {playDropdownOpen && (
-                <div className="absolute top-full left-0 w-84 bg-brand-surface border border-brand-border rounded-2xl shadow-2xl p-2 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
-                  <div className="px-3 py-2 text-xs font-bold text-brand-muted uppercase tracking-wider border-b border-brand-border/50">
-                    Five Ways to Play
-                  </div>
-                  <div className="mt-1 space-y-1">
-                    {playItems.map((item) => {
-                      const Icon = item.icon;
-                      return (
-                        <Link
-                          key={item.name}
-                          href={item.href}
-                          onClick={() => setPlayDropdownOpen(false)}
-                          className="flex items-start gap-3 p-2.5 rounded-xl hover:bg-brand-card transition-all group"
-                        >
-                          <div className="p-2 bg-brand-card group-hover:bg-brand-accent/20 rounded-lg transition-colors text-brand-cream group-hover:text-brand-accent">
-                            <Icon className="w-4 h-4" />
-                          </div>
-                          <div className="flex-1">
-                            <div className="flex items-center justify-between">
-                              <span className="text-sm font-semibold text-brand-cream group-hover:text-brand-accent transition-colors">
-                                {item.name}
-                              </span>
-                              <span
-                                className={`text-[10px] uppercase font-black tracking-wider px-2 py-0.5 rounded shadow-sm ${
-                                  item.badge === "Accepting Interest"
-                                    ? "bg-brand-red text-brand-navy font-black"
-                                    : "bg-brand-cream text-brand-navy font-bold"
-                                }`}
-                              >
-                                {item.badge}
-                              </span>
-                            </div>
-                            <p className="text-xs text-brand-muted mt-0.5">{item.tagline}</p>
-                          </div>
-                        </Link>
-                      );
-                    })}
+                <div className="absolute top-full left-0 w-56 bg-brand-surface border border-brand-border rounded-xl shadow-2xl p-2 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
+                  <div className="space-y-1">
+                    {playItems.map((item) => (
+                      <Link
+                        key={item.name}
+                        href={item.href}
+                        onClick={() => setPlayDropdownOpen(false)}
+                        className="block px-4 py-2.5 rounded-lg hover:bg-brand-card text-sm font-semibold text-brand-cream hover:text-brand-accent transition-colors"
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
                   </div>
                 </div>
               )}
             </div>
 
+            {/* Client Edit 6: Removed icons beside Team Rankings and The Experience */}
             <Link
               href="/rankings"
-              className="text-sm font-semibold tracking-wide uppercase text-brand-cream hover:text-brand-accent transition-colors flex items-center gap-1.5"
+              className="text-sm font-semibold tracking-wide uppercase text-brand-cream hover:text-brand-accent transition-colors"
             >
-              <Shield className="w-4 h-4 text-brand-accent" />
               Team Rankings
             </Link>
 
             <Link
               href="/experience"
-              className="text-sm font-semibold tracking-wide uppercase text-brand-cream hover:text-brand-accent transition-colors flex items-center gap-1.5"
+              className="text-sm font-semibold tracking-wide uppercase text-brand-cream hover:text-brand-accent transition-colors"
             >
-              <Sparkles className="w-4 h-4 text-brand-accent" />
               The Experience
             </Link>
 
@@ -317,18 +253,9 @@ export default function Navbar() {
                 key={item.name}
                 href={item.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="flex items-center justify-between px-3 py-2 text-sm text-brand-cream hover:bg-brand-card rounded-md font-medium"
+                className="block px-3 py-2 text-sm text-brand-cream hover:bg-brand-card rounded-md font-medium"
               >
-                <span>{item.name}</span>
-                <span
-                  className={`text-[10px] uppercase font-black tracking-wider px-2 py-0.5 rounded ${
-                    item.badge === "Accepting Interest"
-                      ? "bg-brand-red text-brand-navy"
-                      : "bg-brand-cream text-brand-navy"
-                  }`}
-                >
-                  {item.badge}
-                </span>
+                {item.name}
               </Link>
             ))}
           </div>

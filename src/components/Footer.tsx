@@ -161,11 +161,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/pickup" className="hover:text-brand-accent transition-colors">
-                  Pickup
-                </Link>
-              </li>
-              <li>
                 <Link href="/play" className="text-brand-accent hover:underline inline-flex items-center gap-1 font-semibold pt-1">
                   Find Your Game &rarr;
                 </Link>
