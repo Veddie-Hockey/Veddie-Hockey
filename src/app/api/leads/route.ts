@@ -83,10 +83,12 @@ export async function POST(request: Request) {
     currentLeads.unshift(newLead);
     saveLeads(currentLeads);
 
-    // Sync lead to GoHighLevel (GHL) in background
-    sendLeadToGHL(newLead).catch((err) => {
-      console.error("[GHL] Background sync error:", err);
-    });
+    // Sync lead to GoHighLevel (GHL) - awaited so serverless Lambdas (Vercel) don't cut off requests
+    try {
+      await sendLeadToGHL(newLead);
+    } catch (err) {
+      console.error("[GHL] Sync error:", err);
+    }
 
     return NextResponse.json({
       success: true,

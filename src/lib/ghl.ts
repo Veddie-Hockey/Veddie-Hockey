@@ -59,16 +59,31 @@ export async function sendLeadToGHL(lead: LeadPayload) {
 
   // Build notes summary from extra form fields
   const detailLines: string[] = [];
+  if (lead.topic) detailLines.push(`Topic: ${lead.topic}`);
   if (lead.type) detailLines.push(`Program / Form Type: ${lead.type}`);
+  if (lead.city) detailLines.push(`City / Region: ${lead.city}`);
   if (lead.teamName) detailLines.push(`Team Name: ${lead.teamName}`);
   if (lead.homeLeague) detailLines.push(`Home League: ${lead.homeLeague}`);
-  if (lead.divisionPreference || lead.preferredDivision) {
-    detailLines.push(`Division: ${lead.divisionPreference || lead.preferredDivision}`);
+  if (lead.homeDivision) detailLines.push(`Home Division: ${lead.homeDivision}`);
+  if (lead.divisionPreference || lead.preferredDivision || lead.skillLevel) {
+    detailLines.push(`Division / Level: ${lead.divisionPreference || lead.preferredDivision || lead.skillLevel}`);
   }
-  if (lead.preferredNight) detailLines.push(`Preferred Night: ${lead.preferredNight}`);
   if (lead.ageCategory) detailLines.push(`Age Category: ${lead.ageCategory}`);
-  if (lead.topic) detailLines.push(`Topic: ${lead.topic}`);
+  if (lead.currentStanding) detailLines.push(`Current Standing: ${lead.currentStanding}`);
+  if (lead.standingsLink) detailLines.push(`Standings Link: ${lead.standingsLink}`);
+  if (lead.seasonEndDate) detailLines.push(`Season End: ${lead.seasonEndDate}`);
+  if (lead.enquiryType) detailLines.push(`Enquiry Type: ${lead.enquiryType}`);
+  if (lead.position) detailLines.push(`Position: ${lead.position}`);
+  if (lead.preferredNights || lead.preferredNight) {
+    detailLines.push(`Preferred Night(s): ${lead.preferredNights || lead.preferredNight}`);
+  }
+  if (lead.preferredTimeRange) detailLines.push(`Preferred Time: ${lead.preferredTimeRange}`);
+  if (lead.playingBackground) detailLines.push(`Playing Background: ${lead.playingBackground}`);
+  if (lead.organization) detailLines.push(`Organization: ${lead.organization}`);
+  if (lead.partnerType) detailLines.push(`Partner Type: ${lead.partnerType}`);
+  if (lead.exploreMessage) detailLines.push(`Partner Notes: ${lead.exploreMessage}`);
   if (lead.message) detailLines.push(`Message:\n${lead.message}`);
+  if (lead.anythingElse) detailLines.push(`Additional Notes:\n${lead.anythingElse}`);
 
   const contactData = {
     locationId,
