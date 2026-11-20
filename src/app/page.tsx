@@ -24,7 +24,7 @@ export default function HomePage() {
           01 / HERO (60% RINK NAVY BASE + HERITAGE CREAM HEADLINE + SIGNAL RED CTA)
           Brand Guide Page 1, 3, 5, 10
       ========================================================================= */}
-      <section className="relative min-h-[90vh] flex items-center justify-center bg-brand-navy border-b border-brand-border overflow-hidden px-4 sm:px-6 lg:px-8 py-24">
+      <section className="relative min-h-[640px] lg:min-h-[750px] flex items-center justify-center bg-brand-navy border-b border-brand-border overflow-hidden px-4 sm:px-6 lg:px-8 py-20">
         {/* Authentic Hockey Arena Background */}
         <div
           className="absolute inset-0 bg-cover bg-center filter brightness-40 scale-105 pointer-events-none"
@@ -163,8 +163,7 @@ export default function HomePage() {
                 <div
                   className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500 filter brightness-85"
                   style={{
-                    backgroundImage:
-                      "url('https://images.unsplash.com/photo-1580748141549-71748dbe0bdc?auto=format&fit=crop&w=800&q=80')",
+                    backgroundImage: "url('/images/hockey/champions-cup.jpg')",
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0b203a] via-transparent to-transparent" />
@@ -203,8 +202,7 @@ export default function HomePage() {
                 <div
                   className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500 filter brightness-85"
                   style={{
-                    backgroundImage:
-                      "url('https://images.unsplash.com/photo-1515703407324-5f753eed2311?auto=format&fit=crop&w=800&q=80')",
+                    backgroundImage: "url('/images/hockey/champions-league.jpg')",
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0b203a] via-transparent to-transparent" />
@@ -242,8 +240,7 @@ export default function HomePage() {
                 <div
                   className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500 filter brightness-85"
                   style={{
-                    backgroundImage:
-                      "url('https://images.unsplash.com/photo-1526676037777-05a232554f77?auto=format&fit=crop&w=800&q=80')",
+                    backgroundImage: "url('/images/hockey/tournaments.jpg')",
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0b203a] via-transparent to-transparent" />
@@ -281,8 +278,7 @@ export default function HomePage() {
                 <div
                   className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500 filter brightness-85"
                   style={{
-                    backgroundImage:
-                      "url('https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=800&q=80')",
+                    backgroundImage: "url('/images/hockey/leagues.jpg')",
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0b203a] via-transparent to-transparent" />
@@ -320,8 +316,7 @@ export default function HomePage() {
                 <div
                   className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500 filter brightness-85"
                   style={{
-                    backgroundImage:
-                      "url('https://images.unsplash.com/photo-1588856122822-b4c6e9309ec9?auto=format&fit=crop&w=1200&q=80')",
+                    backgroundImage: "url('/images/hockey/pickup.jpg')",
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0b203a] via-transparent to-transparent" />

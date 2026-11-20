@@ -61,7 +61,7 @@ export default function CompanyPage() {
       {/* =========================================================================
           01 / HERO (RINK NAVY + ARENA PHOTOGRAPHY + BRAND ACCENT)
       ========================================================================= */}
-      <section className="relative min-h-[60vh] flex items-center justify-center bg-brand-navy border-b border-brand-border px-4 sm:px-6 lg:px-8 py-20 text-center overflow-hidden">
+      <section className="relative min-h-[480px] lg:min-h-[540px] flex items-center justify-center bg-brand-navy border-b border-brand-border px-4 sm:px-6 lg:px-8 py-20 text-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-25 filter brightness-50 pointer-events-none"
           style={{
