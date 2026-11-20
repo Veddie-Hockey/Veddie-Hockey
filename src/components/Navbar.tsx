@@ -121,7 +121,13 @@ export default function Navbar() {
                               <span className="text-sm font-semibold text-brand-cream group-hover:text-brand-accent transition-colors">
                                 {item.name}
                               </span>
-                              <span className="text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded bg-brand-card text-brand-muted border border-brand-border">
+                              <span
+                                className={`text-[10px] uppercase font-black tracking-wider px-2 py-0.5 rounded shadow-sm ${
+                                  item.badge === "Accepting Interest"
+                                    ? "bg-brand-red text-brand-navy font-black"
+                                    : "bg-brand-cream text-brand-navy font-bold"
+                                }`}
+                              >
                                 {item.badge}
                               </span>
                             </div>
@@ -259,7 +265,7 @@ export default function Navbar() {
                         }}
                       />
                       <div className="relative z-20">
-                        <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-brand-accent text-brand-black w-fit mb-2 inline-block">
+                        <span className="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded bg-brand-red text-brand-navy w-fit mb-2 inline-block shadow-sm">
                           Careers
                         </span>
                         <h4 className="text-lg font-athletic text-brand-cream font-bold">
@@ -268,7 +274,7 @@ export default function Navbar() {
                         <p className="text-xs text-brand-muted mt-0.5 mb-2">
                           Build the adult hockey league of the future with us.
                         </p>
-                        <span className="text-xs font-bold text-brand-accent group-hover:underline inline-flex items-center gap-1">
+                        <span className="text-xs font-bold text-brand-cream group-hover:underline inline-flex items-center gap-1">
                           See open roles &rarr;
                         </span>
                       </div>
@@ -283,7 +289,7 @@ export default function Navbar() {
           <div className="flex items-center gap-4">
             <Link
               href="/play"
-              className="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-brand-accent text-brand-black text-sm font-bold tracking-wider uppercase hover:bg-brand-accent-hover transition-all shadow-lg hover:shadow-brand-accent/20 active:scale-95"
+              className="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-brand-red text-brand-navy text-sm font-black tracking-wider uppercase hover:bg-brand-red-hover transition-all shadow-lg hover:shadow-brand-red/20 active:scale-95"
             >
               Find Your Game
             </Link>
@@ -314,7 +320,13 @@ export default function Navbar() {
                 className="flex items-center justify-between px-3 py-2 text-sm text-brand-cream hover:bg-brand-card rounded-md font-medium"
               >
                 <span>{item.name}</span>
-                <span className="text-[10px] uppercase font-bold tracking-wider text-brand-accent">
+                <span
+                  className={`text-[10px] uppercase font-black tracking-wider px-2 py-0.5 rounded ${
+                    item.badge === "Accepting Interest"
+                      ? "bg-brand-red text-brand-navy"
+                      : "bg-brand-cream text-brand-navy"
+                  }`}
+                >
                   {item.badge}
                 </span>
               </Link>
@@ -370,7 +382,7 @@ export default function Navbar() {
             <Link
               href="/play"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full inline-flex items-center justify-center px-4 py-3 rounded-xl bg-brand-accent text-brand-black text-sm font-bold tracking-wider uppercase text-center"
+              className="w-full inline-flex items-center justify-center px-4 py-3 rounded-xl bg-brand-red text-brand-navy text-sm font-black tracking-wider uppercase text-center shadow-lg"
             >
               Find Your Game
             </Link>

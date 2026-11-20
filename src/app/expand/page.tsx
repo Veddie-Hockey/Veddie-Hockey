@@ -57,8 +57,12 @@ export default function ExpandPage() {
     <div className="flex flex-col py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto w-full">
       {/* Hero */}
       <div className="text-center max-w-3xl mx-auto mb-16">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-accent/40 text-brand-accent text-xs font-bold tracking-widest uppercase mb-6">
-          <Trophy className="w-4 h-4" />
+        <div className="flex justify-center mb-4">
+          <div className="h-1.5 w-12 bg-brand-red rounded-full" />
+        </div>
+
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-card border border-brand-border text-brand-cream text-xs font-bold tracking-widest uppercase mb-6 shadow-lg">
+          <Trophy className="w-4 h-4 text-brand-red" />
           EXPAND VEDDIE HOCKEY
         </div>
 
@@ -66,7 +70,7 @@ export default function ExpandPage() {
           Bring the Pro Experience to Your City.
         </h1>
 
-        <p className="text-base sm:text-lg text-brand-muted max-w-xl mx-auto font-sans">
+        <p className="text-base sm:text-lg text-slate-300 max-w-xl mx-auto font-sans">
           Whether you want a Veddie division in your hometown, want to launch a league, host events at your arena, or become an ambassador, let’s build together.
         </p>
       </div>
@@ -78,14 +82,14 @@ export default function ExpandPage() {
             setActiveTab("request-city");
             setSubmitted(false);
           }}
-          className={`p-4 rounded-2xl border text-left transition-all ${
+          className={`p-4 rounded-2xl border-2 text-left transition-all ${
             activeTab === "request-city"
-              ? "bg-brand-accent text-brand-navy border-brand-accent shadow-lg shadow-brand-accent/20"
-              : "bg-brand-surface border-brand-border text-brand-cream hover:border-brand-accent/50"
+              ? "bg-brand-red text-brand-navy border-brand-red shadow-lg shadow-brand-red/25"
+              : "bg-[#0b203a] border-[#1c3f6e] text-brand-cream hover:border-brand-cream"
           }`}
         >
           <MapPin className="w-5 h-5 mb-2" />
-          <h3 className="font-athletic text-sm font-bold block">Request A City</h3>
+          <h3 className="font-athletic text-sm font-black block">Request A City</h3>
           <p className="text-[11px] opacity-80 mt-0.5">Bring Veddie to your rink</p>
         </button>
 
@@ -94,14 +98,14 @@ export default function ExpandPage() {
             setActiveTab("start-league");
             setSubmitted(false);
           }}
-          className={`p-4 rounded-2xl border text-left transition-all ${
+          className={`p-4 rounded-2xl border-2 text-left transition-all ${
             activeTab === "start-league"
-              ? "bg-brand-accent text-brand-navy border-brand-accent shadow-lg shadow-brand-accent/20"
-              : "bg-brand-surface border-brand-border text-brand-cream hover:border-brand-accent/50"
+              ? "bg-brand-red text-brand-navy border-brand-red shadow-lg shadow-brand-red/25"
+              : "bg-[#0b203a] border-[#1c3f6e] text-brand-cream hover:border-brand-cream"
           }`}
         >
           <Trophy className="w-5 h-5 mb-2" />
-          <h3 className="font-athletic text-sm font-bold block">Start A League</h3>
+          <h3 className="font-athletic text-sm font-black block">Start A League</h3>
           <p className="text-[11px] opacity-80 mt-0.5">Launch a regional circuit</p>
         </button>
 
@@ -110,14 +114,14 @@ export default function ExpandPage() {
             setActiveTab("venue");
             setSubmitted(false);
           }}
-          className={`p-4 rounded-2xl border text-left transition-all ${
+          className={`p-4 rounded-2xl border-2 text-left transition-all ${
             activeTab === "venue"
-              ? "bg-brand-accent text-brand-navy border-brand-accent shadow-lg shadow-brand-accent/20"
-              : "bg-brand-surface border-brand-border text-brand-cream hover:border-brand-accent/50"
+              ? "bg-brand-red text-brand-navy border-brand-red shadow-lg shadow-brand-red/25"
+              : "bg-[#0b203a] border-[#1c3f6e] text-brand-cream hover:border-brand-cream"
           }`}
         >
           <Building className="w-5 h-5 mb-2" />
-          <h3 className="font-athletic text-sm font-bold block">Venue Partnership</h3>
+          <h3 className="font-athletic text-sm font-black block">Venue Partnership</h3>
           <p className="text-[11px] opacity-80 mt-0.5">Host Veddie at your facility</p>
         </button>
 
@@ -126,20 +130,20 @@ export default function ExpandPage() {
             setActiveTab("ambassador");
             setSubmitted(false);
           }}
-          className={`p-4 rounded-2xl border text-left transition-all ${
+          className={`p-4 rounded-2xl border-2 text-left transition-all ${
             activeTab === "ambassador"
-              ? "bg-brand-accent text-brand-navy border-brand-accent shadow-lg shadow-brand-accent/20"
-              : "bg-brand-surface border-brand-border text-brand-cream hover:border-brand-accent/50"
+              ? "bg-brand-red text-brand-navy border-brand-red shadow-lg shadow-brand-red/25"
+              : "bg-[#0b203a] border-[#1c3f6e] text-brand-cream hover:border-brand-cream"
           }`}
         >
           <Star className="w-5 h-5 mb-2" />
-          <h3 className="font-athletic text-sm font-bold block">Become An Ambassador</h3>
+          <h3 className="font-athletic text-sm font-black block">Become An Ambassador</h3>
           <p className="text-[11px] opacity-80 mt-0.5">Lead your local community</p>
         </button>
       </div>
 
       {/* Form Card */}
-      <div className="bg-brand-surface border border-brand-border rounded-2xl p-8 sm:p-12 shadow-2xl">
+      <div className="bg-[#0b203a] border-2 border-[#1c3f6e] rounded-2xl p-8 sm:p-12 shadow-2xl">
         {submitted ? (
           <div className="text-center py-10 max-w-md mx-auto">
             <div className="w-16 h-16 bg-brand-accent/20 rounded-full flex items-center justify-center mx-auto mb-4 text-brand-accent">
@@ -300,7 +304,7 @@ export default function ExpandPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-4 px-6 rounded-xl bg-brand-accent text-brand-navy font-bold uppercase tracking-wider text-sm hover:bg-brand-accent-hover transition-all flex items-center justify-center gap-2"
+              className="w-full py-4 px-6 rounded-xl bg-brand-red text-brand-navy font-black uppercase tracking-wider text-sm hover:bg-brand-red-hover transition-all flex items-center justify-center gap-2 shadow-xl hover:shadow-brand-red/30 active:scale-95"
             >
               {loading ? (
                 <>
