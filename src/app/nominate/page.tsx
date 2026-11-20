@@ -207,7 +207,7 @@ export default function NominatePage() {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full py-3.5 px-6 rounded-lg bg-brand-accent text-brand-black font-bold uppercase tracking-wider text-sm hover:bg-brand-accent-hover transition-all"
+                className="w-full py-3.5 px-6 rounded-lg bg-brand-accent text-brand-navy font-bold font-bold uppercase tracking-wider text-sm hover:bg-brand-accent-hover transition-all"
               >
                 {loading ? "Recording Nomination..." : "Nominate Team"}
               </button>

@@ -174,7 +174,7 @@ export default function RoadToTheCupPage() {
                                 ? "bg-brand-ice/20 text-brand-ice border-brand-ice/40"
                                 : team.status === "Playoff Bubble"
                                 ? "bg-brand-card text-brand-cream border-brand-border"
-                                : "bg-brand-black text-brand-muted border-brand-border"
+                                : "bg-brand-navy text-brand-muted border-brand-border"
                             }`}
                           >
                             {team.status}
@@ -187,7 +187,7 @@ export default function RoadToTheCupPage() {
               </table>
             </div>
 
-            <div className="px-6 py-3 bg-brand-black/50 border-t border-brand-border text-[11px] text-brand-muted flex items-center justify-between">
+            <div className="px-6 py-3 bg-brand-navy/50 border-t border-brand-border text-[11px] text-brand-muted flex items-center justify-between">
               <span>Cutoff line indicated after position #{league.qualifyingPlaces}.</span>
               <Link
                 href="/champions-cup#cup-form"
@@ -215,7 +215,7 @@ export default function RoadToTheCupPage() {
         </p>
         <Link
           href="/champions-cup#cup-form"
-          className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-brand-accent text-brand-black text-xs font-bold uppercase tracking-wider hover:bg-brand-accent-hover transition-all"
+          className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-brand-accent text-brand-navy font-bold text-xs font-bold uppercase tracking-wider hover:bg-brand-accent-hover transition-all"
         >
           Put Your Team Forward
           <ArrowRight className="w-4 h-4" />

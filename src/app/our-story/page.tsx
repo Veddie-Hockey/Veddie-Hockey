@@ -12,7 +12,7 @@ export default function OurStoryPage() {
   return (
     <div className="flex flex-col">
       {/* HERO */}
-      <section className="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-b from-brand-black via-brand-surface to-brand-black border-b border-brand-border px-4 sm:px-6 lg:px-8 py-20 text-center">
+      <section className="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-b from-brand-navy via-brand-surface to-brand-navy border-b border-brand-border px-4 sm:px-6 lg:px-8 py-20 text-center">
         <div className="max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-border text-brand-accent text-xs font-bold tracking-widest uppercase mb-6">
             <Heart className="w-4 h-4" />
@@ -30,7 +30,7 @@ export default function OurStoryPage() {
       </section>
 
       {/* ESSAY / MANIFESTO */}
-      <section className="py-24 bg-brand-black border-b border-brand-border">
+      <section className="py-24 bg-brand-navy border-b border-brand-border">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 text-brand-cream/90 text-base sm:text-lg leading-relaxed">
           <p>
             Somewhere between minor hockey banquets, junior tryouts, college teams, or adult-learn-to-play clinics, every hockey player realizes the same thing: <strong className="text-brand-cream">you don’t play in the NHL, but you still care just as much.</strong>
@@ -56,7 +56,7 @@ export default function OurStoryPage() {
           <div className="pt-8 flex flex-col sm:flex-row items-center gap-4">
             <Link
               href="/experience"
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-accent text-brand-black font-bold uppercase tracking-wider text-sm hover:bg-brand-accent-hover transition-all text-center"
+              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-accent text-brand-navy font-bold font-bold uppercase tracking-wider text-sm hover:bg-brand-accent-hover transition-all text-center"
             >
               See The Experience
             </Link>

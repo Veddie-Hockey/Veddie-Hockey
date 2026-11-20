@@ -13,7 +13,7 @@ export default function ChampionsLeaguePage() {
   return (
     <div className="flex flex-col">
       {/* HERO */}
-      <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-b from-brand-black via-brand-surface to-brand-black border-b border-brand-border px-4 sm:px-6 lg:px-8 py-20 text-center">
+      <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-b from-brand-navy via-brand-surface to-brand-navy border-b border-brand-border px-4 sm:px-6 lg:px-8 py-20 text-center">
         <div className="max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-border text-brand-muted text-xs font-bold tracking-widest uppercase mb-6">
             <Swords className="w-4 h-4 text-brand-accent" />
@@ -31,7 +31,7 @@ export default function ChampionsLeaguePage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
             <a
               href="#league-form"
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-accent text-brand-black font-bold uppercase tracking-wider text-sm hover:bg-brand-accent-hover transition-all shadow-xl hover:shadow-brand-accent/20"
+              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-accent text-brand-navy font-bold font-bold uppercase tracking-wider text-sm hover:bg-brand-accent-hover transition-all shadow-xl hover:shadow-brand-accent/20"
             >
               Register Team Interest
             </a>
@@ -50,7 +50,7 @@ export default function ChampionsLeaguePage() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section id="how-it-works" className="py-24 bg-brand-black border-b border-brand-border">
+      <section id="how-it-works" className="py-24 bg-brand-navy border-b border-brand-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mb-16">
             <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2">
@@ -122,7 +122,7 @@ export default function ChampionsLeaguePage() {
             </div>
             <a
               href="#league-form"
-              className="px-6 py-3.5 rounded-xl bg-brand-accent text-brand-black text-xs font-bold uppercase tracking-wider hover:bg-brand-accent-hover transition-all shrink-0"
+              className="px-6 py-3.5 rounded-xl bg-brand-accent text-brand-navy font-bold text-xs font-bold uppercase tracking-wider hover:bg-brand-accent-hover transition-all shrink-0"
             >
               Put Your Region on the Map
             </a>
@@ -131,7 +131,7 @@ export default function ChampionsLeaguePage() {
       </section>
 
       {/* LEAD CAPTURE FORM */}
-      <section className="py-24 bg-brand-black px-4 sm:px-6 lg:px-8">
+      <section className="py-24 bg-brand-navy px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center mb-12">
           <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2">
             Regional Interest

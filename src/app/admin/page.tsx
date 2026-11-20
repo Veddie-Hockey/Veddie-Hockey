@@ -251,7 +251,7 @@ export default function AdminPage() {
             onClick={() => setActiveTab("leads")}
             className={`px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-1.5 ${
               activeTab === "leads"
-                ? "bg-brand-accent text-brand-black shadow-md"
+                ? "bg-brand-accent text-brand-navy font-bold shadow-md"
                 : "text-brand-muted hover:text-brand-cream"
             }`}
           >
@@ -262,7 +262,7 @@ export default function AdminPage() {
             onClick={() => setActiveTab("elo")}
             className={`px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-1.5 ${
               activeTab === "elo"
-                ? "bg-brand-accent text-brand-black shadow-md"
+                ? "bg-brand-accent text-brand-navy font-bold shadow-md"
                 : "text-brand-muted hover:text-brand-cream"
             }`}
           >
@@ -273,7 +273,7 @@ export default function AdminPage() {
             onClick={() => setActiveTab("proforma")}
             className={`px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-1.5 ${
               activeTab === "proforma"
-                ? "bg-brand-accent text-brand-black shadow-md"
+                ? "bg-brand-accent text-brand-navy font-bold shadow-md"
                 : "text-brand-muted hover:text-brand-cream"
             }`}
           >
@@ -294,7 +294,7 @@ export default function AdminPage() {
                   onClick={() => setLeadFilter(t)}
                   className={`px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all ${
                     leadFilter === t
-                      ? "bg-brand-accent text-brand-black"
+                      ? "bg-brand-accent text-brand-navy font-bold"
                       : "bg-brand-surface text-brand-muted hover:text-brand-cream border border-brand-border"
                   }`}
                 >
@@ -489,7 +489,7 @@ export default function AdminPage() {
 
               {/* Live Preview */}
               {eloPreview && teamA && teamB && (
-                <div className="p-4 rounded-xl bg-brand-black border border-brand-border flex items-center justify-between text-xs">
+                <div className="p-4 rounded-xl bg-brand-navy border border-brand-border flex items-center justify-between text-xs">
                   <div>
                     <span className="text-brand-muted block">Projected Rating Impact:</span>
                     <span className="text-brand-cream font-bold">
@@ -510,7 +510,7 @@ export default function AdminPage() {
 
               <button
                 type="submit"
-                className="w-full py-3.5 px-6 rounded-lg bg-brand-accent text-brand-black font-bold uppercase tracking-wider text-sm hover:bg-brand-accent-hover transition-all shadow-lg"
+                className="w-full py-3.5 px-6 rounded-lg bg-brand-accent text-brand-navy font-bold font-bold uppercase tracking-wider text-sm hover:bg-brand-accent-hover transition-all shadow-lg"
               >
                 Log Official Result & Update Elo Ratings
               </button>
@@ -575,7 +575,7 @@ export default function AdminPage() {
                   }}
                   className={`px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider ${
                     pfTeams === 8
-                      ? "bg-brand-accent text-brand-black"
+                      ? "bg-brand-accent text-brand-navy font-bold"
                       : "bg-brand-card border border-brand-border text-brand-muted"
                   }`}
                 >
@@ -588,7 +588,7 @@ export default function AdminPage() {
                   }}
                   className={`px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider ${
                     pfTeams === 40
-                      ? "bg-brand-accent text-brand-black"
+                      ? "bg-brand-accent text-brand-navy font-bold"
                       : "bg-brand-card border border-brand-border text-brand-muted"
                   }`}
                 >
@@ -714,7 +714,7 @@ export default function AdminPage() {
             </div>
 
             {/* Cost Breakdown Table */}
-            <div className="bg-brand-black p-5 rounded-xl border border-brand-border">
+            <div className="bg-brand-navy p-5 rounded-xl border border-brand-border">
               <h4 className="text-xs font-bold uppercase tracking-wider text-brand-muted mb-3">
                 Cost Structure Summary
               </h4>

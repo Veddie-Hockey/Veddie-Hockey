@@ -14,7 +14,7 @@ export default function ChampionsCupPage() {
   return (
     <div className="flex flex-col">
       {/* HERO */}
-      <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-b from-brand-black via-brand-surface to-brand-black border-b border-brand-border px-4 sm:px-6 lg:px-8 py-20 text-center">
+      <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-b from-brand-navy via-brand-surface to-brand-navy border-b border-brand-border px-4 sm:px-6 lg:px-8 py-20 text-center">
         <div className="max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-accent/40 text-brand-accent text-xs font-bold tracking-widest uppercase mb-6">
             <Trophy className="w-4 h-4" />
@@ -32,7 +32,7 @@ export default function ChampionsCupPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
             <a
               href="#cup-form"
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-accent text-brand-black font-bold uppercase tracking-wider text-sm hover:bg-brand-accent-hover transition-all shadow-xl hover:shadow-brand-accent/20"
+              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-accent text-brand-navy font-bold font-bold uppercase tracking-wider text-sm hover:bg-brand-accent-hover transition-all shadow-xl hover:shadow-brand-accent/20"
             >
               Register Team Interest
             </a>
@@ -51,7 +51,7 @@ export default function ChampionsCupPage() {
       </section>
 
       {/* REASON TO PLAY */}
-      <section className="py-20 bg-brand-black border-b border-brand-border">
+      <section className="py-20 bg-brand-navy border-b border-brand-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-athletic text-brand-cream tracking-tight mb-6">
             Same team. Bigger stage.
@@ -134,7 +134,7 @@ export default function ChampionsCupPage() {
       </section>
 
       {/* QUALIFICATION RULES */}
-      <section id="qualification" className="py-24 bg-brand-black border-b border-brand-border">
+      <section id="qualification" className="py-24 bg-brand-navy border-b border-brand-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mb-16">
             <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2">
@@ -201,7 +201,7 @@ export default function ChampionsCupPage() {
             </span>
             <a
               href="#cup-form"
-              className="inline-flex items-center gap-2 px-6 py-2.5 rounded-lg bg-brand-accent text-brand-black text-xs font-bold uppercase tracking-wider hover:bg-brand-accent-hover transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-2.5 rounded-lg bg-brand-accent text-brand-navy font-bold text-xs font-bold uppercase tracking-wider hover:bg-brand-accent-hover transition-colors"
             >
               Put Your Team Forward
               <ArrowRight className="w-3.5 h-3.5" />
@@ -275,7 +275,7 @@ export default function ChampionsCupPage() {
       </section>
 
       {/* FORM SECTION */}
-      <section className="py-24 bg-brand-black px-4 sm:px-6 lg:px-8">
+      <section className="py-24 bg-brand-navy px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center mb-12">
           <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2">
             Inaugural Edition

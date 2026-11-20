@@ -104,20 +104,20 @@ export default function LockerRoomVisualizer() {
               onClick={() => setSelectedHotspot(spot)}
               className={`p-3.5 rounded-xl border text-left transition-all flex flex-col justify-between group ${
                 isSelected
-                  ? "bg-brand-accent text-brand-black border-brand-accent shadow-lg shadow-brand-accent/20"
+                  ? "bg-brand-accent text-brand-navy font-bold border-brand-accent shadow-lg shadow-brand-accent/20"
                   : "bg-brand-card border-brand-border text-brand-cream hover:border-brand-accent/50"
               }`}
             >
               <div
                 className={`p-2 rounded-lg mb-2 w-fit ${
-                  isSelected ? "bg-brand-black/20 text-brand-black" : "bg-brand-surface text-brand-accent"
+                  isSelected ? "bg-brand-navy/20 text-brand-navy font-bold" : "bg-brand-surface text-brand-accent"
                 }`}
               >
                 <Icon className="w-4 h-4" />
               </div>
               <span
                 className={`text-xs font-athletic font-bold uppercase tracking-wider block ${
-                  isSelected ? "text-brand-black" : "text-brand-cream group-hover:text-brand-accent"
+                  isSelected ? "text-brand-navy font-bold" : "text-brand-cream group-hover:text-brand-accent"
                 }`}
               >
                 {spot.title}

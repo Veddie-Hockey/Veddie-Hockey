@@ -96,7 +96,7 @@ export default function TeamProfilePage({ params }: TeamPageProps) {
           </p>
 
           {/* Stats Summary Bar */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 rounded-xl bg-brand-black/60 border border-brand-border text-center">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 rounded-xl bg-brand-navy/60 border border-brand-border text-center">
             <div>
               <span className="text-[11px] font-bold uppercase tracking-wider text-brand-muted block">
                 Total Games

@@ -99,7 +99,7 @@ export default function FAQsPage() {
         </p>
         <Link
           href="/contact"
-          className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-brand-accent text-brand-black text-xs font-bold uppercase tracking-wider hover:bg-brand-accent-hover transition-all"
+          className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-brand-accent text-brand-navy font-bold text-xs font-bold uppercase tracking-wider hover:bg-brand-accent-hover transition-all"
         >
           Contact Veddie
           <ArrowRight className="w-4 h-4" />

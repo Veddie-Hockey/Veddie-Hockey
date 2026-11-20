@@ -35,7 +35,7 @@ export default function PartnersPage() {
   return (
     <div className="flex flex-col">
       {/* HERO */}
-      <section className="relative min-h-[55vh] flex items-center justify-center bg-gradient-to-b from-brand-black via-brand-surface to-brand-black border-b border-brand-border px-4 sm:px-6 lg:px-8 py-20 text-center">
+      <section className="relative min-h-[55vh] flex items-center justify-center bg-gradient-to-b from-brand-navy via-brand-surface to-brand-navy border-b border-brand-border px-4 sm:px-6 lg:px-8 py-20 text-center">
         <div className="max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-border text-brand-accent text-xs font-bold tracking-widest uppercase mb-6">
             <Handshake className="w-4 h-4" />
@@ -53,7 +53,7 @@ export default function PartnersPage() {
       </section>
 
       {/* PARTNERSHIP TIERS */}
-      <section className="py-20 bg-brand-black border-b border-brand-border">
+      <section className="py-20 bg-brand-navy border-b border-brand-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {partnerTypes.map((tier) => {

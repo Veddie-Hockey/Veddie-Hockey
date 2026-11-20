@@ -13,7 +13,7 @@ export default function PickupPage() {
   return (
     <div className="flex flex-col">
       {/* HERO */}
-      <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-b from-brand-black via-brand-surface to-brand-black border-b border-brand-border px-4 sm:px-6 lg:px-8 py-20 text-center">
+      <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-b from-brand-navy via-brand-surface to-brand-navy border-b border-brand-border px-4 sm:px-6 lg:px-8 py-20 text-center">
         <div className="max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-accent/40 text-brand-accent text-xs font-bold tracking-widest uppercase mb-6">
             <Zap className="w-4 h-4" />
@@ -31,7 +31,7 @@ export default function PickupPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
             <a
               href="#pickup-form"
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-accent text-brand-black font-bold uppercase tracking-wider text-sm hover:bg-brand-accent-hover transition-all shadow-xl hover:shadow-brand-accent/20"
+              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-accent text-brand-navy font-bold font-bold uppercase tracking-wider text-sm hover:bg-brand-accent-hover transition-all shadow-xl hover:shadow-brand-accent/20"
             >
               Join the Pickup List
             </a>
@@ -50,7 +50,7 @@ export default function PickupPage() {
       </section>
 
       {/* THREE PILLARS */}
-      <section id="pickup-details" className="py-24 bg-brand-black border-b border-brand-border">
+      <section id="pickup-details" className="py-24 bg-brand-navy border-b border-brand-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mb-16">
             <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2">
@@ -155,7 +155,7 @@ export default function PickupPage() {
               <span className="text-xs text-brand-muted">Sample upcoming session card preview</span>
               <a
                 href="#pickup-form"
-                className="w-full sm:w-auto px-6 py-2.5 rounded-lg bg-brand-accent text-brand-black text-xs font-bold uppercase tracking-wider hover:bg-brand-accent-hover transition-all text-center"
+                className="w-full sm:w-auto px-6 py-2.5 rounded-lg bg-brand-accent text-brand-navy font-bold text-xs font-bold uppercase tracking-wider hover:bg-brand-accent-hover transition-all text-center"
               >
                 Join Summer 2027 Priority List
               </a>
@@ -165,7 +165,7 @@ export default function PickupPage() {
       </section>
 
       {/* LEAD CAPTURE FORM */}
-      <section className="py-24 bg-brand-black px-4 sm:px-6 lg:px-8">
+      <section className="py-24 bg-brand-navy px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center mb-12">
           <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2">
             Summer 2027 Early Access

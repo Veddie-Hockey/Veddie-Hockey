@@ -86,7 +86,7 @@ export default function ExperiencePage() {
   return (
     <div className="flex flex-col">
       {/* HERO */}
-      <section className="relative min-h-[65vh] flex items-center justify-center bg-gradient-to-b from-brand-black via-brand-surface to-brand-black border-b border-brand-border px-4 sm:px-6 lg:px-8 py-20 text-center">
+      <section className="relative min-h-[65vh] flex items-center justify-center bg-gradient-to-b from-brand-navy via-brand-surface to-brand-navy border-b border-brand-border px-4 sm:px-6 lg:px-8 py-20 text-center">
         <div className="max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-accent/40 text-brand-accent text-xs font-bold tracking-widest uppercase mb-6">
             <Sparkles className="w-4 h-4" />
@@ -104,7 +104,7 @@ export default function ExperiencePage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/play"
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-accent text-brand-black font-bold uppercase tracking-wider text-sm hover:bg-brand-accent-hover transition-all shadow-xl hover:shadow-brand-accent/20"
+              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-accent text-brand-navy font-bold font-bold uppercase tracking-wider text-sm hover:bg-brand-accent-hover transition-all shadow-xl hover:shadow-brand-accent/20"
             >
               Find Your Game
             </Link>
@@ -119,7 +119,7 @@ export default function ExperiencePage() {
       </section>
 
       {/* FILTER TABS */}
-      <section className="py-12 bg-brand-black border-b border-brand-border sticky top-20 z-30 backdrop-blur-md bg-brand-black/90">
+      <section className="py-12 bg-brand-navy border-b border-brand-border sticky top-20 z-30 backdrop-blur-md bg-brand-navy/90">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
             {categories.map((cat) => (
@@ -128,7 +128,7 @@ export default function ExperiencePage() {
                 onClick={() => setActiveCategory(cat)}
                 className={`px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider whitespace-nowrap transition-all ${
                   activeCategory === cat
-                    ? "bg-brand-accent text-brand-black shadow-lg shadow-brand-accent/20"
+                    ? "bg-brand-accent text-brand-navy font-bold shadow-lg shadow-brand-accent/20"
                     : "bg-brand-surface border border-brand-border text-brand-muted hover:text-brand-cream"
                 }`}
               >
@@ -140,7 +140,7 @@ export default function ExperiencePage() {
       </section>
 
       {/* LOCKER ROOM VISUALIZER */}
-      <section className="py-12 bg-brand-black border-b border-brand-border">
+      <section className="py-12 bg-brand-navy border-b border-brand-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <LockerRoomVisualizer />
         </div>
@@ -182,7 +182,7 @@ export default function ExperiencePage() {
       </section>
 
       {/* FINAL BOTTOM CALLOUT */}
-      <section className="py-24 bg-brand-black px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-24 bg-brand-navy px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl sm:text-5xl font-athletic text-brand-cream tracking-tight mb-4">
             Ready to experience adult hockey the right way?
@@ -192,7 +192,7 @@ export default function ExperiencePage() {
           </p>
           <Link
             href="/play"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-brand-accent text-brand-black font-bold uppercase tracking-wider text-sm hover:bg-brand-accent-hover transition-all"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-brand-accent text-brand-navy font-bold font-bold uppercase tracking-wider text-sm hover:bg-brand-accent-hover transition-all"
           >
             Find Your Game
             <ArrowRight className="w-4 h-4" />

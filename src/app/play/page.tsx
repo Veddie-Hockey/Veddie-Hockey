@@ -118,7 +118,7 @@ export default function PlayPage() {
         </p>
         <Link
           href="/contact?topic=help-choosing"
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-brand-accent text-brand-black text-xs font-bold uppercase tracking-wider hover:bg-brand-accent-hover transition-all"
+          className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-brand-accent text-brand-navy font-bold text-xs font-bold uppercase tracking-wider hover:bg-brand-accent-hover transition-all"
         >
           Help Me Choose
           <ArrowRight className="w-4 h-4" />

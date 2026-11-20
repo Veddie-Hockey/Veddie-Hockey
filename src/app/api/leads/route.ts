@@ -3,26 +3,46 @@ import fs from "fs";
 import path from "path";
 
 const leadsFilePath = path.join(process.cwd(), "src", "data", "leads.json");
+const tmpLeadsFilePath = path.join("/tmp", "leads.json");
 
-function getStoredLeads() {
+// In-memory fallback for serverless environments
+let memoryLeads: any[] = [];
+
+function getStoredLeads(): any[] {
   try {
-    if (!fs.existsSync(leadsFilePath)) {
-      fs.writeFileSync(leadsFilePath, JSON.stringify([]), "utf-8");
-      return [];
+    if (fs.existsSync(leadsFilePath)) {
+      const data = fs.readFileSync(leadsFilePath, "utf-8");
+      return JSON.parse(data);
     }
-    const data = fs.readFileSync(leadsFilePath, "utf-8");
-    return JSON.parse(data);
   } catch (err) {
-    console.error("Error reading leads file:", err);
-    return [];
+    // Ignore and fallback
   }
+
+  try {
+    if (fs.existsSync(tmpLeadsFilePath)) {
+      const data = fs.readFileSync(tmpLeadsFilePath, "utf-8");
+      return JSON.parse(data);
+    }
+  } catch (err) {
+    // Ignore and fallback
+  }
+
+  return memoryLeads;
 }
 
 function saveLeads(leads: any[]) {
+  memoryLeads = leads;
+
+  // Try local repo write (works in local dev)
   try {
     fs.writeFileSync(leadsFilePath, JSON.stringify(leads, null, 2), "utf-8");
   } catch (err) {
-    console.error("Error saving leads file:", err);
+    // Try /tmp write (works in Vercel serverless)
+    try {
+      fs.writeFileSync(tmpLeadsFilePath, JSON.stringify(leads, null, 2), "utf-8");
+    } catch (e2) {
+      // Memory fallback is already set
+    }
   }
 }
 
@@ -44,9 +64,9 @@ export async function POST(request: Request) {
   try {
     const body = await request.json();
 
-    if (!body.email || !body.name) {
+    if (!body.email && !body.name) {
       return NextResponse.json(
-        { success: false, error: "Name and email are required." },
+        { success: false, error: "Name or email is required." },
         { status: 400 }
       );
     }

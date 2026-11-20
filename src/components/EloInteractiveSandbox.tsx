@@ -90,7 +90,7 @@ export default function EloInteractiveSandbox() {
           onClick={() => setOutcome("W")}
           className={`px-4 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all ${
             outcome === "W"
-              ? "bg-brand-green text-brand-black shadow-md shadow-brand-green/20"
+              ? "bg-brand-green text-brand-navy font-bold shadow-md shadow-brand-green/20"
               : "bg-brand-card border border-brand-border text-brand-muted hover:text-brand-cream"
           }`}
         >
@@ -100,7 +100,7 @@ export default function EloInteractiveSandbox() {
           onClick={() => setOutcome("T")}
           className={`px-4 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all ${
             outcome === "T"
-              ? "bg-brand-accent text-brand-black shadow-md shadow-brand-accent/20"
+              ? "bg-brand-accent text-brand-navy font-bold shadow-md shadow-brand-accent/20"
               : "bg-brand-card border border-brand-border text-brand-muted hover:text-brand-cream"
           }`}
         >
@@ -119,7 +119,7 @@ export default function EloInteractiveSandbox() {
       </div>
 
       {/* Calculation Summary Card */}
-      <div className="p-4 rounded-xl bg-brand-black/60 border border-brand-border flex flex-col sm:flex-row items-center justify-around gap-4 text-center">
+      <div className="p-4 rounded-xl bg-brand-navy/60 border border-brand-border flex flex-col sm:flex-row items-center justify-around gap-4 text-center">
         <div>
           <span className="text-xs text-brand-muted block uppercase">Team A New Rating</span>
           <span className="text-2xl font-athletic text-brand-cream">

@@ -56,7 +56,7 @@ export default function DivisionsPage() {
       code: "D4",
       name: "Recreational",
       tagline: "True Rec, Adult-Learners & House League",
-      badgeColor: "text-brand-muted border-brand-border bg-brand-black",
+      badgeColor: "text-brand-muted border-brand-border bg-brand-navy",
       description:
         "Teams primarily from house-league, adult-entry and lower-level recreational backgrounds. No former professionals and no players whose current ability materially exceeds the division. A strong AAA player is not automatically eligible simply because they never played junior.",
       background: [
@@ -71,7 +71,7 @@ export default function DivisionsPage() {
   return (
     <div className="flex flex-col">
       {/* HERO */}
-      <section className="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-b from-brand-black via-brand-surface to-brand-black border-b border-brand-border px-4 sm:px-6 lg:px-8 py-20 text-center">
+      <section className="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-b from-brand-navy via-brand-surface to-brand-navy border-b border-brand-border px-4 sm:px-6 lg:px-8 py-20 text-center">
         <div className="max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-border text-brand-accent text-xs font-bold tracking-widest uppercase mb-6">
             <Shield className="w-4 h-4" />
@@ -89,7 +89,7 @@ export default function DivisionsPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/play"
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-accent text-brand-black font-bold uppercase tracking-wider text-sm hover:bg-brand-accent-hover transition-all shadow-xl hover:shadow-brand-accent/20"
+              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-accent text-brand-navy font-bold font-bold uppercase tracking-wider text-sm hover:bg-brand-accent-hover transition-all shadow-xl hover:shadow-brand-accent/20"
             >
               Find Your Game
             </Link>
@@ -104,7 +104,7 @@ export default function DivisionsPage() {
       </section>
 
       {/* SKILL DIVISIONS BREAKDOWN */}
-      <section className="py-24 bg-brand-black border-b border-brand-border">
+      <section className="py-24 bg-brand-navy border-b border-brand-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mb-16">
             <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2">
@@ -231,7 +231,7 @@ export default function DivisionsPage() {
           </p>
           <Link
             href="/contact?topic=Division%20placement"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-brand-accent text-brand-black text-xs font-bold uppercase tracking-wider hover:bg-brand-accent-hover transition-all"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-brand-accent text-brand-navy font-bold text-xs font-bold uppercase tracking-wider hover:bg-brand-accent-hover transition-all"
           >
             Request Division Review
             <ArrowRight className="w-4 h-4" />

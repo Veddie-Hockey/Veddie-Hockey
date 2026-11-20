@@ -40,7 +40,7 @@ export default function RankingsPage() {
   return (
     <div className="flex flex-col">
       {/* HERO */}
-      <section className="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-b from-brand-black via-brand-surface to-brand-black border-b border-brand-border px-4 sm:px-6 lg:px-8 py-20 text-center">
+      <section className="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-b from-brand-navy via-brand-surface to-brand-navy border-b border-brand-border px-4 sm:px-6 lg:px-8 py-20 text-center">
         <div className="max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-accent/40 text-brand-accent text-xs font-bold tracking-widest uppercase mb-6">
             <Shield className="w-4 h-4" />
@@ -58,7 +58,7 @@ export default function RankingsPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="#rankings"
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-accent text-brand-black font-bold uppercase tracking-wider text-sm hover:bg-brand-accent-hover transition-all shadow-xl hover:shadow-brand-accent/20"
+              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-accent text-brand-navy font-bold font-bold uppercase tracking-wider text-sm hover:bg-brand-accent-hover transition-all shadow-xl hover:shadow-brand-accent/20"
             >
               View the Rankings
             </a>
@@ -73,7 +73,7 @@ export default function RankingsPage() {
       </section>
 
       {/* LEADERBOARD SECTION */}
-      <section id="rankings" className="py-20 bg-brand-black border-b border-brand-border">
+      <section id="rankings" className="py-20 bg-brand-navy border-b border-brand-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
             <div>
@@ -112,7 +112,7 @@ export default function RankingsPage() {
                     onClick={() => setSelectedDivision(div)}
                     className={`px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all ${
                       selectedDivision === div
-                        ? "bg-brand-accent text-brand-black"
+                        ? "bg-brand-accent text-brand-navy font-bold"
                         : "bg-brand-card text-brand-muted hover:text-brand-cream"
                     }`}
                   >
@@ -135,7 +135,7 @@ export default function RankingsPage() {
                     onClick={() => setSelectedAge(age)}
                     className={`px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all ${
                       selectedAge === age
-                        ? "bg-brand-accent text-brand-black"
+                        ? "bg-brand-accent text-brand-navy font-bold"
                         : "bg-brand-card text-brand-muted hover:text-brand-cream"
                     }`}
                   >
@@ -305,7 +305,7 @@ export default function RankingsPage() {
       </section>
 
       {/* FAQs */}
-      <section className="py-20 bg-brand-black px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-brand-navy px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-athletic text-brand-cream tracking-tight mb-8 text-center">
             Rankings FAQs

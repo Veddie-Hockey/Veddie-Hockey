@@ -885,7 +885,7 @@ export default function LeadCaptureForm({
           <button
             type="submit"
             disabled={loading}
-            className="w-full py-3.5 px-6 rounded-lg bg-brand-accent text-brand-black font-bold uppercase tracking-wider text-sm hover:bg-brand-accent-hover active:scale-[0.99] transition-all flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed shadow-lg hover:shadow-brand-accent/20"
+            className="w-full py-3.5 px-6 rounded-lg bg-brand-accent text-brand-navy font-bold font-bold uppercase tracking-wider text-sm hover:bg-brand-accent-hover active:scale-[0.99] transition-all flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed shadow-lg hover:shadow-brand-accent/20"
           >
             {loading ? (
               <>
