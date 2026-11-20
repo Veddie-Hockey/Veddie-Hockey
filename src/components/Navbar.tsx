@@ -3,11 +3,28 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ChevronDown, Menu, X, Trophy, Swords, Calendar, Users, Zap, Shield, Sparkles } from "lucide-react";
+import {
+  ChevronDown,
+  Menu,
+  X,
+  Trophy,
+  Swords,
+  Calendar,
+  Users,
+  Zap,
+  Shield,
+  Sparkles,
+  ArrowRight,
+  Briefcase,
+  Building,
+  Mail,
+  MapPin,
+} from "lucide-react";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [playDropdownOpen, setPlayDropdownOpen] = useState(false);
+  const [companyDropdownOpen, setCompanyDropdownOpen] = useState(false);
 
   const playItems = [
     {
@@ -48,7 +65,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-brand-black/95 backdrop-blur-md border-b border-brand-border">
+    <header className="sticky top-0 z-50 bg-brand-navy/95 backdrop-blur-md border-b border-brand-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -65,7 +82,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-7">
             {/* Play Dropdown */}
             <div
               className="relative"
@@ -82,7 +99,7 @@ export default function Navbar() {
               </button>
 
               {playDropdownOpen && (
-                <div className="absolute top-full left-0 w-80 bg-brand-surface border border-brand-border rounded-xl shadow-2xl p-2 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
+                <div className="absolute top-full left-0 w-84 bg-brand-surface border border-brand-border rounded-2xl shadow-2xl p-2 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
                   <div className="px-3 py-2 text-xs font-bold text-brand-muted uppercase tracking-wider border-b border-brand-border/50">
                     Five Ways to Play
                   </div>
@@ -94,9 +111,9 @@ export default function Navbar() {
                           key={item.name}
                           href={item.href}
                           onClick={() => setPlayDropdownOpen(false)}
-                          className="flex items-start gap-3 p-2.5 rounded-lg hover:bg-brand-card transition-all group"
+                          className="flex items-start gap-3 p-2.5 rounded-xl hover:bg-brand-card transition-all group"
                         >
-                          <div className="p-2 bg-brand-card group-hover:bg-brand-accent/20 rounded-md transition-colors text-brand-cream group-hover:text-brand-accent">
+                          <div className="p-2 bg-brand-card group-hover:bg-brand-accent/20 rounded-lg transition-colors text-brand-cream group-hover:text-brand-accent">
                             <Icon className="w-4 h-4" />
                           </div>
                           <div className="flex-1">
@@ -141,19 +158,132 @@ export default function Navbar() {
               Find Your Division
             </Link>
 
-            <Link
-              href="/our-story"
-              className="text-sm font-semibold tracking-wide uppercase text-brand-cream hover:text-brand-accent transition-colors"
+            {/* Company Mega-Menu (like Brodie Rec) */}
+            <div
+              className="relative"
+              onMouseEnter={() => setCompanyDropdownOpen(true)}
+              onMouseLeave={() => setCompanyDropdownOpen(false)}
             >
-              Our Story
-            </Link>
+              <button
+                className="flex items-center gap-1.5 text-sm font-semibold tracking-wide uppercase text-brand-cream hover:text-brand-accent transition-colors py-2"
+                onClick={() => setCompanyDropdownOpen(!companyDropdownOpen)}
+                aria-expanded={companyDropdownOpen}
+              >
+                Company
+                <ChevronDown className={`w-4 h-4 transition-transform ${companyDropdownOpen ? "rotate-180" : ""}`} />
+              </button>
+
+              {companyDropdownOpen && (
+                <div className="absolute top-full right-0 w-[580px] bg-brand-surface border border-brand-border rounded-2xl shadow-2xl p-6 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
+                  <div className="grid grid-cols-2 gap-6">
+                    {/* Left Links */}
+                    <div className="space-y-4">
+                      <div>
+                        <span className="text-xs font-bold text-brand-muted uppercase tracking-wider block mb-2">
+                          Veddie
+                        </span>
+                        <ul className="space-y-2">
+                          <li>
+                            <Link
+                              href="/company"
+                              onClick={() => setCompanyDropdownOpen(false)}
+                              className="text-base font-bold text-brand-cream hover:text-brand-accent transition-colors block"
+                            >
+                              About &mdash;
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/our-story"
+                              onClick={() => setCompanyDropdownOpen(false)}
+                              className="text-base font-bold text-brand-cream hover:text-brand-accent transition-colors block"
+                            >
+                              Our Story &mdash;
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/company#careers"
+                              onClick={() => setCompanyDropdownOpen(false)}
+                              className="text-sm font-medium text-brand-muted hover:text-brand-cream transition-colors block"
+                            >
+                              Careers
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div className="pt-2 border-t border-brand-border">
+                        <span className="text-xs font-bold text-brand-muted uppercase tracking-wider block mb-2">
+                          Connect
+                        </span>
+                        <ul className="space-y-1.5 text-xs text-brand-muted">
+                          <li>
+                            <Link
+                              href="/contact"
+                              onClick={() => setCompanyDropdownOpen(false)}
+                              className="text-sm font-bold text-brand-cream hover:text-brand-accent transition-colors block"
+                            >
+                              Contact &mdash;
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/company#investors"
+                              onClick={() => setCompanyDropdownOpen(false)}
+                              className="text-sm font-bold text-brand-cream hover:text-brand-accent transition-colors block"
+                            >
+                              Investors
+                            </Link>
+                          </li>
+                          <li className="pt-1 text-brand-cream font-medium">info@veddiehockey.com</li>
+                          <li className="text-[11px] text-brand-muted">
+                            Toronto HQ • Greater Toronto Area, Ontario
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    {/* Right Card: We're Hiring (Brodie Style) */}
+                    <Link
+                      href="/company#careers"
+                      onClick={() => setCompanyDropdownOpen(false)}
+                      className="group relative rounded-xl overflow-hidden border border-brand-border bg-brand-card hover:border-brand-accent transition-all flex flex-col justify-end p-5"
+                    >
+                      <div className="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/60 to-transparent z-10" />
+                      <div
+                        className="absolute inset-0 bg-cover bg-center filter brightness-60 group-hover:scale-105 transition-transform duration-300"
+                        style={{
+                          backgroundImage:
+                            "url('https://images.unsplash.com/photo-1515703407324-5f753eed2311?auto=format&fit=crop&w=600&q=80')",
+                        }}
+                      />
+                      <div className="relative z-20">
+                        <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-brand-accent text-brand-black w-fit mb-2 inline-block">
+                          Careers
+                        </span>
+                        <h4 className="text-lg font-athletic text-brand-cream font-bold">
+                          We’re Hiring.
+                        </h4>
+                        <p className="text-xs text-brand-muted mt-0.5 mb-2">
+                          Build the adult hockey league of the future with us.
+                        </p>
+                        <span className="text-xs font-bold text-brand-accent group-hover:underline inline-flex items-center gap-1">
+                          See open roles &rarr;
+                        </span>
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
           </nav>
 
           {/* Action Button & Mobile Menu Toggle */}
           <div className="flex items-center gap-4">
             <Link
               href="/play"
-              className="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-lg bg-brand-accent text-brand-black text-sm font-bold tracking-wider uppercase hover:bg-brand-accent-hover transition-all shadow-lg hover:shadow-brand-accent/20 active:scale-95"
+              className="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-brand-accent text-brand-black text-sm font-bold tracking-wider uppercase hover:bg-brand-accent-hover transition-all shadow-lg hover:shadow-brand-accent/20 active:scale-95"
             >
               Find Your Game
             </Link>
@@ -214,18 +344,18 @@ export default function Navbar() {
               Find Your Division
             </Link>
             <Link
-              href="/our-story"
+              href="/company"
               onClick={() => setMobileMenuOpen(false)}
               className="block px-3 py-2 text-sm text-brand-cream hover:bg-brand-card rounded-md font-medium uppercase tracking-wide"
             >
-              Our Story
+              Company (About & Careers)
             </Link>
             <Link
-              href="/faqs"
+              href="/expand"
               onClick={() => setMobileMenuOpen(false)}
               className="block px-3 py-2 text-sm text-brand-cream hover:bg-brand-card rounded-md font-medium uppercase tracking-wide"
             >
-              FAQs
+              Expand Veddie
             </Link>
             <Link
               href="/contact"
@@ -240,7 +370,7 @@ export default function Navbar() {
             <Link
               href="/play"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full inline-flex items-center justify-center px-4 py-3 rounded-lg bg-brand-accent text-brand-black text-sm font-bold tracking-wider uppercase text-center"
+              className="w-full inline-flex items-center justify-center px-4 py-3 rounded-xl bg-brand-accent text-brand-black text-sm font-bold tracking-wider uppercase text-center"
             >
               Find Your Game
             </Link>

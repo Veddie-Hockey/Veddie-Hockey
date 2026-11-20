@@ -10,30 +10,41 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          black: "#0A0C0E",
-          surface: "#121518",
-          card: "#181C20",
-          "card-hover": "#20252B",
-          border: "#2A3038",
-          "border-light": "#3B434E",
-          muted: "#94A0B0",
-          cream: "#F5F2EB",
-          "cream-light": "#FAF8F5",
-          "cream-dark": "#DDD5C4",
-          accent: "#D4A325",
-          "accent-hover": "#E6B536",
-          "accent-dark": "#A87E13",
+          // Official standards from Veddie_Hockey_Brand_Guide.pdf:
+          // Rink Navy (60%): #06162B
+          // Heritage Cream (30%): #F7ECD6
+          // Signal Red (10% accent): #F21429
+          // Slate (secondary text/details): #586575
+          navy: "#06162B",
+          black: "#030B17",
+          surface: "#0A1F3B",
+          card: "#0E2749",
+          "card-hover": "#14335E",
+          border: "#1B3B68",
+          "border-light": "#284E85",
+          slate: "#586575",
+          muted: "#94A3B8",
+          cream: "#F7ECD6",
+          "cream-light": "#FBF5E8",
+          "cream-dark": "#EAD7B5",
+          accent: "#F21429", // Signal Red
+          "accent-hover": "#D90F23",
+          red: "#F21429",
+          "red-hover": "#D90F23",
+          gold: "#D4A325",
           ice: "#38BDF8",
-          red: "#E11D48",
-          green: "#10B981"
+          green: "#10B981",
         },
       },
       fontFamily: {
-        heading: ["Impact", "Teko", "Oswald", "system-ui", "sans-serif"],
-        sans: ["Inter", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
+        // Universal Inter font family across all headers and UI
+        sans: ["var(--font-inter)", "Inter", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
+        heading: ["var(--font-inter)", "Inter", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
       },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      letterSpacing: {
+        tightest: "-0.04em",
+        tighter: "-0.03em",
+        tight: "-0.02em",
       },
     },
   },
