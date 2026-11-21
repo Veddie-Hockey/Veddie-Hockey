@@ -18,10 +18,35 @@ import {
   TrendingUp,
   Lock,
   LogOut,
+  Database,
+  ExternalLink,
 } from "lucide-react";
 
 export default function AdminPage() {
-  const [activeTab, setActiveTab] = useState<"leads" | "elo" | "proforma">("leads");
+  const [activeTab, setActiveTab] = useState<"leads" | "elo" | "proforma" | "plaionn">("leads");
+
+  // Plaionn Sync State
+  const [plaionnSyncing, setPlaionnSyncing] = useState(false);
+  const [plaionnResult, setPlaionnResult] = useState<any>(null);
+  const [plaionnError, setPlaionnError] = useState<string | null>(null);
+
+  const handleSyncPlaionn = async () => {
+    setPlaionnSyncing(true);
+    setPlaionnError(null);
+    try {
+      const res = await fetch("/api/integrations/plaionn", { method: "POST" });
+      const data = await res.json();
+      if (!res.ok || !data.success) {
+        setPlaionnError(data.message || data.error || "Failed to sync with Plaionn");
+      } else {
+        setPlaionnResult(data);
+      }
+    } catch (err: any) {
+      setPlaionnError(err?.message || "Network error while connecting to Plaionn");
+    } finally {
+      setPlaionnSyncing(false);
+    }
+  };
 
   // Auth state - Nov 21 Edit: Put /admin behind a login
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
@@ -378,6 +403,17 @@ export default function AdminPage() {
           >
             <Calculator className="w-4 h-4" />
             Pro Forma Simulator
+          </button>
+          <button
+            onClick={() => setActiveTab("plaionn")}
+            className={`px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-1.5 ${
+              activeTab === "plaionn"
+                ? "bg-brand-accent text-brand-navy font-bold shadow-md"
+                : "text-brand-muted hover:text-brand-cream"
+            }`}
+          >
+            <Database className="w-4 h-4" />
+            Plaionn Sync
           </button>
         </div>
       </div>
@@ -836,6 +872,139 @@ export default function AdminPage() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* TAB 4: PLAIONN DATA SYNC */}
+      {activeTab === "plaionn" && (
+        <div className="space-y-6">
+          <div className="p-8 rounded-2xl bg-brand-surface border border-brand-border">
+            <div className="max-w-2xl mb-8">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-accent/20 text-brand-accent text-xs font-bold uppercase tracking-wider mb-3">
+                <Database className="w-3.5 h-3.5" />
+                PLAIONN SPORTS GROUP DATA INTEGRATION
+              </div>
+              <h2 className="text-3xl font-athletic text-brand-cream tracking-tight mb-2">
+                Sync Verified Standings & Rankings
+              </h2>
+              <p className="text-sm text-brand-muted leading-relaxed">
+                Connect directly with the Plaionn league platform to automatically pull verified team standings, calculate Top 25% Champions Cup qualifiers, and update power rankings.
+              </p>
+            </div>
+
+            {/* Status alerts */}
+            {plaionnError && (
+              <div className="mb-6 p-4 rounded-xl bg-brand-red/10 border border-brand-red/30 flex items-start gap-3 text-brand-red text-xs">
+                <AlertCircle className="w-5 h-5 shrink-0 mt-0.5" />
+                <div>
+                  <div className="font-bold">Sync Error</div>
+                  <div className="mt-0.5">{plaionnError}</div>
+                </div>
+              </div>
+            )}
+
+            {plaionnResult && (
+              <div className="mb-6 p-4 rounded-xl bg-brand-green/10 border border-brand-green/30 flex items-start gap-3 text-brand-green text-xs">
+                <CheckCircle2 className="w-5 h-5 shrink-0 mt-0.5" />
+                <div>
+                  <div className="font-bold">{plaionnResult.message}</div>
+                  <div className="text-[11px] text-brand-muted mt-1">
+                    Last Synced: {new Date(plaionnResult.syncedAt).toLocaleString()}
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* Sync Action & Config Details */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+              <div className="p-5 rounded-xl bg-brand-card border border-brand-border">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-brand-muted block mb-1">
+                  API Endpoint Target
+                </span>
+                <span className="text-xs font-mono text-brand-cream break-all block">
+                  /api/v1/veddie
+                </span>
+                <span className="text-[11px] text-brand-muted mt-2 block">
+                  Configured via PLAIONN_API_URL
+                </span>
+              </div>
+
+              <div className="p-5 rounded-xl bg-brand-card border border-brand-border">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-brand-muted block mb-1">
+                  Qualification Formula
+                </span>
+                <span className="text-sm font-bold text-brand-cream block">
+                  Top 25% (ceiling(N ÷ 4))
+                </span>
+                <span className="text-[11px] text-brand-muted mt-1 block">
+                  e.g., 10 teams sends 3 to Champions Cup
+                </span>
+              </div>
+
+              <div className="p-5 rounded-xl bg-brand-card border border-brand-border">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-brand-muted block mb-1">
+                  Rankings Engine
+                </span>
+                <span className="text-sm font-bold text-brand-cream block">
+                  Plaionn Cross-League ELO
+                </span>
+                <span className="text-[11px] text-brand-muted mt-1 block">
+                  Base 1000 + (Pts × 25) + (Diff × 5)
+                </span>
+              </div>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-4">
+              <button
+                onClick={handleSyncPlaionn}
+                disabled={plaionnSyncing}
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-brand-accent text-brand-navy font-bold text-xs uppercase tracking-wider hover:bg-brand-accent-hover transition-all disabled:opacity-50 shadow-lg"
+              >
+                <RefreshCw className={`w-4 h-4 ${plaionnSyncing ? "animate-spin" : ""}`} />
+                {plaionnSyncing ? "Syncing from Plaionn..." : "Sync From Plaionn Now"}
+              </button>
+
+              <a
+                href="/api/integrations/plaionn"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-4 py-3.5 rounded-xl bg-brand-card border border-brand-border text-brand-cream text-xs font-bold uppercase tracking-wider hover:border-brand-accent transition-colors"
+              >
+                <span>View Integration API Payload</span>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
+            </div>
+
+            {/* Synced Data Preview if available */}
+            {plaionnResult?.data?.leagues?.length > 0 && (
+              <div className="mt-8 pt-8 border-t border-brand-border">
+                <h3 className="text-base font-athletic text-brand-cream tracking-tight mb-4">
+                  Synced Leagues & Divisions
+                </h3>
+                <div className="space-y-4">
+                  {plaionnResult.data.leagues.map((league: any) => (
+                    <div key={league.leagueId} className="p-4 rounded-xl bg-brand-card border border-brand-border">
+                      <div className="font-bold text-brand-cream text-sm mb-2">
+                        {league.leagueName}
+                      </div>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                        {league.divisions.map((div: any) => (
+                          <div key={div.divisionId} className="p-3 rounded-lg bg-brand-surface border border-brand-border/60">
+                            <div className="flex items-center justify-between font-semibold text-brand-cream">
+                              <span>{div.divisionName}</span>
+                              <span className="text-[11px] text-brand-accent">
+                                {div.totalTeams} Teams · {div.qualifierQuota} Qualifiers
+                              </span>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </div>
       )}
