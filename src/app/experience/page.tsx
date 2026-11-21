@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { PRO_FEATURES, ProFeature } from "@/data/proFeatures";
+import { PRO_FEATURES, ProFeature, FeatureCategory } from "@/data/proFeatures";
 import LockerRoomVisualizer from "@/components/LockerRoomVisualizer";
+import ShareToCaptainButton from "@/components/ShareToCaptainButton";
 import {
   Sparkles,
   DoorClosed,
@@ -14,10 +15,8 @@ import {
   Music,
   ShieldCheck,
   Disc,
-  Megaphone,
   Volume2,
-  Radio,
-  BarChart3,
+  TrendingUp,
   HeartPulse,
   Wrench,
   Package,
@@ -27,12 +26,13 @@ import {
   Tv,
   Star,
   Mic,
+  Mic2,
   Coffee,
-  Newspaper,
   Award,
-  UserCheck,
-  Flame,
+  Users,
+  BarChart3,
   ArrowRight,
+  Shield,
 } from "lucide-react";
 
 // Icon mapping helper
@@ -45,10 +45,8 @@ const ICON_MAP: Record<string, any> = {
   Music,
   ShieldCheck,
   Disc,
-  Megaphone,
   Volume2,
-  Radio,
-  BarChart3,
+  TrendingUp,
   HeartPulse,
   Wrench,
   Sparkles,
@@ -59,24 +57,23 @@ const ICON_MAP: Record<string, any> = {
   Tv,
   Star,
   Mic,
+  Mic2,
   Coffee,
-  Newspaper,
   Award,
-  UserCheck,
-  Flame,
-  Whistle: Radio,
+  Users,
+  BarChart3,
+};
+
+const PILLAR_LINES: Record<string, string> = {
+  "The room": "Ready before you are.",
+  "The game": "Hockey that counts.",
+  "The coverage": "A final score worth keeping.",
 };
 
 export default function ExperiencePage() {
   const [activeCategory, setActiveCategory] = useState<string>("All");
 
-  const categories = [
-    "All",
-    "Dressing Room & Prep",
-    "Game Day Atmosphere",
-    "Staff & Equipment Care",
-    "Media & Recognition",
-  ];
+  const categories = ["All", "The room", "The game", "The coverage"];
 
   const filteredFeatures =
     activeCategory === "All"
@@ -86,27 +83,27 @@ export default function ExperiencePage() {
   return (
     <div className="flex flex-col">
       {/* HERO */}
-      <section className="relative min-h-[65vh] flex items-center justify-center bg-gradient-to-b from-brand-navy via-brand-surface to-brand-navy border-b border-brand-border px-4 sm:px-6 lg:px-8 py-20 text-center">
+      <section className="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-b from-brand-navy via-brand-surface to-brand-navy border-b border-brand-border px-4 sm:px-6 lg:px-8 py-20 text-center">
         <div className="max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-accent/40 text-brand-accent text-xs font-bold tracking-widest uppercase mb-6">
             <Sparkles className="w-4 h-4" />
             THE VEDDIE EXPERIENCE
           </div>
 
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-athletic text-brand-cream tracking-tight mb-6 font-black">
-            You may not play in the show. We’ll treat you like you do.
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-athletic text-brand-cream tracking-tight mb-6 font-black uppercase">
+            You don’t have to be a pro to feel like one.
           </h1>
 
-          <p className="text-base sm:text-xl text-brand-muted max-w-2xl mx-auto mb-10 leading-relaxed">
-            Adult hockey players have spent decades settling for dirty dressing rooms, missing referees, 11:45 PM ice times and zero recognition. We’re changing that standard with 29 specific touches built around how hockey players deserve to be treated.
+          <p className="text-base sm:text-xl text-brand-muted max-w-2xl mx-auto mb-10 leading-relaxed font-sans">
+            Your name on the stall, real refs, real standings, and a final score worth keeping. Discover the touches that make a Veddie hockey weekend different.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
             <Link
               href="/play"
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-accent text-brand-navy font-bold font-bold uppercase tracking-wider text-sm hover:bg-brand-accent-hover transition-all shadow-xl hover:shadow-brand-accent/20"
+              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-red text-brand-navy font-black uppercase tracking-wider text-sm hover:bg-brand-red-hover transition-all shadow-xl hover:shadow-brand-red/30 active:scale-95"
             >
-              Find Your Game
+              See the April Events
             </Link>
             <Link
               href="/divisions"
@@ -115,40 +112,103 @@ export default function ExperiencePage() {
               Explore Divisions
             </Link>
           </div>
+
+          <div>
+            <ShareToCaptainButton variant="minimal" />
+          </div>
         </div>
       </section>
 
-      {/* FILTER TABS */}
-      <section className="py-12 bg-brand-navy border-b border-brand-border sticky top-20 z-30 backdrop-blur-md bg-brand-navy/90">
+      {/* THREE PILLAR CARDS OVERVIEW */}
+      <section className="py-16 bg-brand-navy border-b border-brand-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setActiveCategory(cat)}
-                className={`px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider whitespace-nowrap transition-all ${
-                  activeCategory === cat
-                    ? "bg-brand-accent text-brand-navy font-bold shadow-lg shadow-brand-accent/20"
-                    : "bg-brand-surface border border-brand-border text-brand-muted hover:text-brand-cream"
-                }`}
-              >
-                {cat} {cat === "All" ? `(${PRO_FEATURES.length})` : ""}
-              </button>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="p-8 rounded-2xl bg-brand-surface border border-brand-border">
+              <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2">
+                Pillar 01
+              </span>
+              <h2 className="text-2xl font-athletic text-brand-cream font-bold mb-1">
+                The room.
+              </h2>
+              <p className="text-sm font-semibold text-brand-cream/80 mb-3 italic">
+                “Ready before you are.”
+              </p>
+              <p className="text-xs text-brand-muted leading-relaxed">
+                Your name on the stall, tape ready, fresh towels, and your team playlist on.
+              </p>
+            </div>
+
+            <div className="p-8 rounded-2xl bg-brand-surface border border-brand-border">
+              <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2">
+                Pillar 02
+              </span>
+              <h2 className="text-2xl font-athletic text-brand-cream font-bold mb-1">
+                The game.
+              </h2>
+              <p className="text-sm font-semibold text-brand-cream/80 mb-3 italic">
+                “Hockey that counts.”
+              </p>
+              <p className="text-xs text-brand-muted leading-relaxed">
+                Real refs, divisions that fit, standings that update, and something on the line.
+              </p>
+            </div>
+
+            <div className="p-8 rounded-2xl bg-brand-surface border border-brand-border">
+              <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2">
+                Pillar 03
+              </span>
+              <h2 className="text-2xl font-athletic text-brand-cream font-bold mb-1">
+                The coverage.
+              </h2>
+              <p className="text-sm font-semibold text-brand-cream/80 mb-3 italic">
+                “A final score worth keeping.”
+              </p>
+              <p className="text-xs text-brand-muted leading-relaxed">
+                Matchup cards, a final-score graphic, highlight clips, and a high-resolution team photo.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* LOCKER ROOM VISUALIZER */}
-      <section className="py-12 bg-brand-navy border-b border-brand-border">
+      <section className="py-16 bg-brand-navy border-b border-brand-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <LockerRoomVisualizer />
         </div>
       </section>
 
-      {/* 29 PRO FEATURES GRID */}
+      {/* FULL FEATURES LIST */}
       <section className="py-20 bg-brand-surface border-b border-brand-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl sm:text-5xl font-athletic text-brand-cream tracking-tight mb-4 font-black">
+              Everything but the pro contract.
+            </h2>
+            <p className="text-sm sm:text-base text-brand-muted font-sans">
+              Filter by pillar to see what’s ready at every event, exclusive to the Champions Cup, or in development.
+            </p>
+          </div>
+
+          {/* FILTER TABS */}
+          <div className="flex items-center justify-center gap-2 overflow-x-auto pb-6 mb-12 scrollbar-none">
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setActiveCategory(cat)}
+                className={`px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider whitespace-nowrap transition-all ${
+                  activeCategory === cat
+                    ? "bg-brand-red text-brand-navy font-black shadow-lg"
+                    : "bg-brand-card border border-brand-border text-brand-muted hover:text-brand-cream"
+                }`}
+              >
+                {cat}
+                {cat !== "All" && PILLAR_LINES[cat] ? ` — ${PILLAR_LINES[cat]}` : ""}
+              </button>
+            ))}
+          </div>
+
+          {/* FEATURES GRID */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredFeatures.map((feat) => {
               const Icon = ICON_MAP[feat.iconName] || Sparkles;
@@ -162,11 +222,22 @@ export default function ExperiencePage() {
                       <div className="p-3 rounded-xl bg-brand-surface text-brand-accent group-hover:bg-brand-accent/20 transition-colors">
                         <Icon className="w-5 h-5" />
                       </div>
-                      <span className="text-[10px] font-bold uppercase tracking-wider text-brand-muted">
-                        {feat.category}
+                      <span
+                        className={`text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md ${
+                          feat.availability === "At every event"
+                            ? "bg-brand-green/15 text-brand-green border border-brand-green/30"
+                            : feat.availability === "Champions Cup only"
+                            ? "bg-brand-red/15 text-brand-red border border-brand-red/30"
+                            : "bg-brand-surface text-brand-muted border border-brand-border"
+                        }`}
+                      >
+                        {feat.availability}
                       </span>
                     </div>
 
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-brand-muted block mb-1">
+                      {feat.category}
+                    </span>
                     <h3 className="text-lg font-athletic text-brand-cream tracking-tight mb-2 group-hover:text-brand-accent transition-colors">
                       {feat.title}
                     </h3>
@@ -184,19 +255,22 @@ export default function ExperiencePage() {
       {/* FINAL BOTTOM CALLOUT */}
       <section className="py-24 bg-brand-navy px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl sm:text-5xl font-athletic text-brand-cream tracking-tight mb-4">
-            Ready to experience adult hockey the right way?
+          <h2 className="text-3xl sm:text-5xl font-athletic text-brand-cream tracking-tight mb-4 font-black">
+            You bring the game. We bring the show.
           </h2>
-          <p className="text-base text-brand-muted mb-8">
-            Tell us where you play and let’s get you or your team on the ice.
+          <p className="text-base text-brand-muted mb-8 max-w-xl mx-auto">
+            April events in the GTA: The Veddie Invitational and Champions Cup. Reserve your squad’s place on the ice.
           </p>
-          <Link
-            href="/play"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-brand-accent text-brand-navy font-bold font-bold uppercase tracking-wider text-sm hover:bg-brand-accent-hover transition-all"
-          >
-            Find Your Game
-            <ArrowRight className="w-4 h-4" />
-          </Link>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link
+              href="/play"
+              className="inline-flex items-center gap-2 px-9 py-4 rounded-xl bg-brand-red text-brand-navy font-black uppercase tracking-wider text-sm hover:bg-brand-red-hover transition-all shadow-xl active:scale-95"
+            >
+              See the April Events
+              <ArrowRight className="w-4 h-4 stroke-[3]" />
+            </Link>
+            <ShareToCaptainButton />
+          </div>
         </div>
       </section>
     </div>

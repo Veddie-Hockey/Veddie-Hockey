@@ -18,6 +18,9 @@ interface LeadCaptureFormProps {
   id?: string;
   defaultTopic?: string;
   className?: string;
+  hideHeading?: boolean;
+  buttonText?: string;
+  microcopy?: string;
 }
 
 export default function LeadCaptureForm({
@@ -25,6 +28,9 @@ export default function LeadCaptureForm({
   id,
   defaultTopic,
   className = "",
+  hideHeading = false,
+  buttonText,
+  microcopy,
 }: LeadCaptureFormProps) {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -93,7 +99,7 @@ export default function LeadCaptureForm({
       return;
     }
 
-    if (type === "cup" || type === "champions-league") {
+    if ((type === "cup" || type === "champions-league") && formData.enquiryType !== "Individual") {
       if (!formData.teamName.trim()) {
         setError("Please provide your team name.");
         return;
@@ -133,33 +139,32 @@ export default function LeadCaptureForm({
   // Render Success Message based on form type
   if (submitted) {
     let successHeadline = "Information received.";
-    let successBody = "Thank you for getting in touch. The Veddie team will reply by email.";
+    let successBody = "Thank you for getting in touch. The Veddie team will reply by email within 2 business days.";
 
     if (type === "cup") {
-      successHeadline = "Your team is on our interest list.";
+      successHeadline = "We check your standings, then confirm your spot.";
       successBody =
-        "Thanks for putting your team forward. We’ll review your details and contact you as qualification and event information are confirmed.";
+        "Thanks for putting your team forward. The Veddie competition desk will check your home-league standings and reply within 2 business days. No payment today.";
+    } else if (type === "tournaments") {
+      successHeadline = "Tournament inquiry received.";
+      successBody =
+        "Thanks! The Veddie tournament desk reviews team placement and replies with full Invitational details within 2 business days.";
     } else if (type === "champions-league") {
       successHeadline = "You’re on the Champions League interest list.";
       successBody =
-        "We’ll contact you as regions, competition windows and entry details are confirmed.";
-    } else if (type === "tournaments") {
-      successHeadline = "You’re on the tournament interest list.";
-      successBody = "We’ll email you when relevant tournament details are announced.";
+        "Thanks! Our regional competition desk reviews team applications and follows up within 2 business days.";
     } else if (type === "leagues") {
       successHeadline = "You’re on the league interest list.";
       successBody =
-        "We’ll contact you when a suitable league or player-placement opportunity becomes available. A roster spot is not yet reserved.";
-    } else if (type === "pickup") {
-      successHeadline = "You’re on the Pickup list.";
-      successBody =
-        "We’ll email you as suitable sessions open. You’ll book and pay only after reviewing a session’s details.";
+        "Thanks! Our operations desk will review your division preference and follow up within 2 business days when placements open.";
     } else if (type === "partners") {
-      successHeadline = "Thanks for reaching out.";
-      successBody = "We’ll review your enquiry and reply by email.";
+      successHeadline = "Partnership inquiry received.";
+      successBody =
+        "Thanks for reaching out. Our director of partnerships reviews proposals and will reply within 2 business days.";
     } else if (type === "contact") {
-      successHeadline = "Message received.";
-      successBody = "Thanks for getting in touch. The Veddie team will reply by email.";
+      successHeadline = "Thanks. We’ll reply within 2 business days.";
+      successBody =
+        "We have received your message. The Veddie operations team will reply by email. Or DM us on Instagram: INVITE for the Invitational, CUP for the Champions Cup.";
     }
 
     return (
@@ -189,41 +194,46 @@ export default function LeadCaptureForm({
   // Titles and button labels
   let headline = "Join the List";
   let intro = "Share your details with Veddie Hockey.";
-  let submitButtonText = "Submit";
-  let microDisclaimer = "No payment. No reserved place. We’ll confirm details before registration.";
+  let submitButtonText = buttonText || "Submit";
+  let microDisclaimer = microcopy !== undefined ? microcopy : "";
 
   if (type === "cup") {
-    headline = "Put your team forward.";
+    headline = "Check your team’s eligibility.";
     intro =
-      "Tell us about your team. We’ll review your information and contact you as the first Cup takes shape.";
-    submitButtonText = "Register Team Interest";
+      "Tell us about your team. We check your standings, then confirm your spot. No payment today.";
+    submitButtonText = buttonText || "Check My Team's Eligibility";
     microDisclaimer =
-      "No payment. No reserved place. We’ll confirm qualification and event details before registration.";
+      microcopy !== undefined
+        ? microcopy
+        : "We check your standings, then confirm your spot. No payment today.";
   } else if (type === "champions-league") {
-    headline = "Start your team’s next campaign.";
+    headline = "Join the Champions League interest list.";
     intro = "Help us build the regional field. Tell us where and when your team plays.";
-    submitButtonText = "Register Champions League Interest";
+    submitButtonText = buttonText || "Join the Champions League interest list";
+    microDisclaimer = microcopy !== undefined ? microcopy : "";
   } else if (type === "tournaments") {
-    headline = "Get the team’s next weekend on the radar.";
-    intro = "Tell us the kind of event you’re looking for.";
-    submitButtonText = "Get Tournament Updates";
+    headline = "Get Invitational details.";
+    intro = "Tell us about your squad. Open, 40+, 50+ and 60+.";
+    submitButtonText = buttonText || "Get Invitational details";
+    microDisclaimer =
+      microcopy !== undefined
+        ? microcopy
+        : "We check team placement and reply within 2 business days. No payment today.";
   } else if (type === "leagues") {
     headline = "Find your hockey night.";
-    intro = "Bring your team or tell us you’re looking for one.";
-    submitButtonText = "Join the League Interest List";
-  } else if (type === "pickup") {
-    headline = "Find your next skate.";
-    intro = "Share your area and availability so we can point you toward the right ice.";
-    submitButtonText = "Join the Pickup List";
+    intro = "Tell us your preferred city, division and nights.";
+    submitButtonText = buttonText || "Join the League Interest List";
+    microDisclaimer = microcopy !== undefined ? microcopy : "";
   } else if (type === "partners") {
-    headline = "Let’s build something for hockey players.";
-    intro = "Explore partnerships for leagues, sponsors, arenas, or hockey services.";
-    submitButtonText = "Start the Conversation";
+    headline = "Partner with Veddie.";
+    intro = "Put your name where adult hockey players actually look.";
+    submitButtonText = buttonText || "Partner on a division or the post-game";
+    microDisclaimer = microcopy !== undefined ? microcopy : "";
   } else if (type === "contact") {
     headline = "Let’s talk hockey.";
-    intro =
-      "Questions about your division, team entry, pickup or a partnership? Send us a note and we’ll help with the next step.";
-    submitButtonText = "Send My Question";
+    intro = "Questions about your division, team entry, or an event? Send us a note.";
+    submitButtonText = buttonText || "Send My Question";
+    microDisclaimer = microcopy !== undefined ? microcopy : "";
   }
 
   return (
@@ -231,12 +241,14 @@ export default function LeadCaptureForm({
       id={id}
       className={`bg-brand-surface border border-brand-border rounded-2xl p-6 sm:p-8 max-w-2xl mx-auto ${className}`}
     >
-      <div className="mb-6">
-        <h3 className="text-2xl font-athletic text-brand-cream tracking-tight mb-2">
-          {headline}
-        </h3>
-        <p className="text-brand-muted text-sm">{intro}</p>
-      </div>
+      {!hideHeading && (
+        <div className="mb-6">
+          <h3 className="text-2xl font-athletic text-brand-cream tracking-tight mb-2">
+            {headline}
+          </h3>
+          <p className="text-brand-muted text-sm">{intro}</p>
+        </div>
+      )}
 
       {error && (
         <div className="mb-5 p-3 rounded-lg bg-brand-red/10 border border-brand-red/30 flex items-center gap-2 text-brand-red text-xs">
@@ -290,11 +302,12 @@ export default function LeadCaptureForm({
                 onChange={handleChange}
                 className="w-full px-3.5 py-2.5 rounded-lg bg-brand-card border border-brand-border text-brand-cream text-sm focus:outline-none focus:border-brand-accent transition-colors"
               >
-                <option value="Choosing a program">Choosing a program</option>
+                <option value="The Invitational">The Invitational</option>
+                <option value="The Champions Cup">The Champions Cup</option>
+                <option value="Nominate a team">Nominate a team</option>
                 <option value="Division placement">Division placement</option>
-                <option value="Team entry">Team entry</option>
-                <option value="Partnership">Partnership</option>
-                <option value="Other">Other</option>
+                <option value="Sponsorship">Sponsorship</option>
+                <option value="Something else">Something else</option>
               </select>
             </div>
 
@@ -371,10 +384,12 @@ export default function LeadCaptureForm({
                   onChange={handleChange}
                   className="w-full px-3.5 py-2.5 rounded-lg bg-brand-card border border-brand-border text-brand-cream text-sm focus:outline-none focus:border-brand-accent"
                 >
-                  <option value="League">League</option>
-                  <option value="Sponsor">Sponsor</option>
-                  <option value="Arena">Arena</option>
-                  <option value="Service provider">Service provider</option>
+                  <option value="A division">A division</option>
+                  <option value="The room">The room</option>
+                  <option value="Result cards">Result cards</option>
+                  <option value="Event photo & video">Event photo & video</option>
+                  <option value="The post-game">The post-game</option>
+                  <option value="League organizer">League organizer</option>
                   <option value="Other">Other</option>
                 </select>
               </div>

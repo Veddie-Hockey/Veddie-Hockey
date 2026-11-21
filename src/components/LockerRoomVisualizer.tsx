@@ -26,51 +26,51 @@ interface Hotspot {
 const HOTSPOTS: Hotspot[] = [
   {
     id: "stall",
-    title: "Player Stall Nameplates",
+    title: "Player stall nameplates",
     tagline: "Your name. Your number. Your room.",
     description: "Every player spot has a customized acrylic stall nameplate with player surname, roster number, and official team crest. No fighting over stalls.",
     icon: Tag,
-    highlightDetails: ["Custom team crest & colors", "Magnetic or mounted pro-grade acrylic", "Clean whiteboard lineup ready on arrival"],
+    highlightDetails: ["Custom team crest & colors", "Magnetic or mounted acrylic nameplates", "Clean lineup whiteboard ready on arrival"],
   },
   {
     id: "tape",
-    title: "Tape & Essentials Station",
+    title: "Tape & essentials station",
     tagline: "Never ask a teammate for clear tape again.",
-    description: "A fully stocked station in the center of the room with black & white cloth stick tape, clear poly sock tape, professional scissors, spare laces, and anti-fog visor spray.",
+    description: "A fully stocked station in the center of the room with black & white cloth stick tape, clear poly sock tape, scissors, spare laces, and anti-fog visor spray.",
     icon: Scissors,
-    highlightDetails: ["Unlimited stick tape & clear poly", "Spare laces in multiple lengths", "Helmet repair screws & drivers on standby"],
+    highlightDetails: ["Stick tape & clear poly", "Spare laces in multiple lengths", "Helmet repair screws & drivers on standby"],
   },
   {
     id: "towels",
-    title: "Commercial Fresh Towel Service",
+    title: "A fresh towel for every player",
     tagline: "No soggy gym bags on the ride home.",
-    description: "Crisp, sanitized commercial white bath towels pre-folded at every stall. When you’re done showering, toss it in the bin—we handle all post-game laundry.",
+    description: "Crisp, sanitized white bath towels pre-folded at every stall. When you’re done showering, toss it in the bin—we handle all post-game laundry.",
     icon: Shirt,
-    highlightDetails: ["Clean 100% cotton towels ready in room", "Post-game hamper collection", "Zero dirty laundry in your hockey bag"],
+    highlightDetails: ["Clean 100% cotton towels ready in room", "Post-game hamper collection", "Zero dirty towels in your hockey bag"],
   },
   {
     id: "hydration",
-    title: "Stocked Hydration Bar",
-    tagline: "Cramps are a thing of the past.",
-    description: "Ice-cold water dispensers, electrolyte drink mix packets, and sanitized bottles ready for your team before taking the ice.",
+    title: "Water and sports drinks in the room",
+    tagline: "Stay hydrated before and during the game.",
+    description: "Ice-cold water dispensers, electrolyte hydration, and clean bottles ready for your team before taking the ice.",
     icon: Droplets,
-    highlightDetails: ["Pre-mixed electrolyte solutions", "Sanitized team squeeze bottles", "Cold bench replenishment between periods"],
+    highlightDetails: ["Electrolyte hydration options", "Clean team squeeze bottles", "Cold bench replenishment between periods"],
   },
   {
     id: "sound",
-    title: "Pregame & Intermission Sound",
+    title: "Pregame music ready",
     tagline: "The soundtrack to your game.",
     description: "High-output Bluetooth locker room speaker synced to your team’s pregame playlist. Lock in before warmups and celebrate after big wins.",
     icon: Music,
-    highlightDetails: ["Team-controlled mobile pairing", "High-fidelity bass for locker room atmosphere", "Pre-set pump-up playlist options"],
+    highlightDetails: ["Team-controlled mobile pairing", "High-fidelity sound for locker room atmosphere", "Pre-set pump-up playlist options"],
   },
   {
     id: "therapist",
-    title: "Athletic Therapist & Staff",
-    tagline: "Pro-level player care at the rink.",
-    description: "Certified athletic therapist available in the room for pre-game ankle/wrist taping, groin stretches, acute injury assessments, and emergency bench support.",
+    title: "Athletic therapist on site",
+    tagline: "Player care at the rink.",
+    description: "Certified athletic therapist available in the room for pre-game ankle/wrist taping, stretches, acute injury assessments, and emergency support.",
     icon: HeartPulse,
-    highlightDetails: ["Pre-game preventative taping", "Immediate ice & concussion assessment", "Bench attendance during all tournament games"],
+    highlightDetails: ["Pre-game preventative taping", "Immediate ice & acute assessment", "Dedicated care during championship events"],
   },
 ];
 
@@ -88,7 +88,7 @@ export default function LockerRoomVisualizer() {
             Step Inside the Veddie Dressing Room
           </h3>
           <p className="text-xs text-brand-muted mt-1">
-            Click any touchpoint below to see how we transform the amateur locker room into a pro-grade environment.
+            Click any touchpoint below to see how we prepare the room before you arrive.
           </p>
         </div>
       </div>

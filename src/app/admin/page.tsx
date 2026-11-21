@@ -16,10 +16,46 @@ import {
   Search,
   ChevronRight,
   TrendingUp,
+  Lock,
+  LogOut,
 } from "lucide-react";
 
 export default function AdminPage() {
   const [activeTab, setActiveTab] = useState<"leads" | "elo" | "proforma">("leads");
+
+  // Auth state - Nov 21 Edit: Put /admin behind a login
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
+  const [authChecked, setAuthChecked] = useState<boolean>(false);
+  const [passwordInput, setPasswordInput] = useState<string>("");
+  const [authError, setAuthError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const stored = typeof window !== "undefined" ? sessionStorage.getItem("veddie_admin_auth") : null;
+    if (stored === "true") {
+      setIsAuthenticated(true);
+    }
+    setAuthChecked(true);
+  }, []);
+
+  const handleLogin = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (passwordInput.trim() === "veddie2027" || passwordInput.trim() === "admin") {
+      setIsAuthenticated(true);
+      if (typeof window !== "undefined") {
+        sessionStorage.setItem("veddie_admin_auth", "true");
+      }
+      setAuthError(null);
+    } else {
+      setAuthError("Invalid access code. Please enter the organizer password.");
+    }
+  };
+
+  const handleSignOut = () => {
+    setIsAuthenticated(false);
+    if (typeof window !== "undefined") {
+      sessionStorage.removeItem("veddie_admin_auth");
+    }
+  };
 
   // Leads State
   const [leads, setLeads] = useState<any[]>([]);
@@ -116,7 +152,7 @@ export default function AdminPage() {
   else if (teamAScore < teamBScore) matchOutcomeA = "L";
 
   const eloPreview =
-    teamA && teamB
+    teamA && teamB && teamA.rating !== undefined && teamB.rating !== undefined
       ? calculateElo(teamA.rating, teamB.rating, matchOutcomeA)
       : null;
 
@@ -127,14 +163,15 @@ export default function AdminPage() {
     const outcomeB = matchOutcomeA === "W" ? "L" : matchOutcomeA === "L" ? "W" : "T";
 
     // Update Team A
+    const currentRecordA = teamA.record || { wins: 0, losses: 0, ties: 0 };
     const updatedTeamA: TeamProfile = {
       ...teamA,
       rating: eloPreview.newRatingA,
       gamesPlayed: teamA.gamesPlayed + 1,
       record: {
-        wins: teamA.record.wins + (matchOutcomeA === "W" ? 1 : 0),
-        losses: teamA.record.losses + (matchOutcomeA === "L" ? 1 : 0),
-        ties: teamA.record.ties + (matchOutcomeA === "T" ? 1 : 0),
+        wins: currentRecordA.wins + (matchOutcomeA === "W" ? 1 : 0),
+        losses: currentRecordA.losses + (matchOutcomeA === "L" ? 1 : 0),
+        ties: currentRecordA.ties + (matchOutcomeA === "T" ? 1 : 0),
       },
       lastPlayed: new Date().toISOString().slice(0, 10),
       matches: [
@@ -150,19 +187,20 @@ export default function AdminPage() {
           ratingChange: eloPreview.deltaA,
           verified: true,
         },
-        ...teamA.matches,
+        ...(teamA.matches || []),
       ],
     };
 
     // Update Team B
+    const currentRecordB = teamB.record || { wins: 0, losses: 0, ties: 0 };
     const updatedTeamB: TeamProfile = {
       ...teamB,
       rating: eloPreview.newRatingB,
       gamesPlayed: teamB.gamesPlayed + 1,
       record: {
-        wins: teamB.record.wins + (outcomeB === "W" ? 1 : 0),
-        losses: teamB.record.losses + (outcomeB === "L" ? 1 : 0),
-        ties: teamB.record.ties + (outcomeB === "T" ? 1 : 0),
+        wins: currentRecordB.wins + (outcomeB === "W" ? 1 : 0),
+        losses: currentRecordB.losses + (outcomeB === "L" ? 1 : 0),
+        ties: currentRecordB.ties + (outcomeB === "T" ? 1 : 0),
       },
       lastPlayed: new Date().toISOString().slice(0, 10),
       matches: [
@@ -178,7 +216,7 @@ export default function AdminPage() {
           ratingChange: eloPreview.deltaB,
           verified: true,
         },
-        ...teamB.matches,
+        ...(teamB.matches || []),
       ],
     };
 
@@ -228,14 +266,75 @@ export default function AdminPage() {
   const pfBreakEvenFee =
     (pfCostsExclProcessing - pfMerchRevenue) / (pfTeams * pfNetRetainedRate);
 
+  if (!authChecked) {
+    return (
+      <div className="min-h-[60vh] flex items-center justify-center">
+        <div className="w-8 h-8 border-4 border-brand-accent border-t-transparent rounded-full animate-spin" />
+      </div>
+    );
+  }
+
+  if (!isAuthenticated) {
+    return (
+      <div className="min-h-[75vh] flex items-center justify-center px-4 py-20">
+        <div className="max-w-md w-full bg-brand-surface border border-brand-border rounded-2xl p-8 shadow-2xl text-center">
+          <div className="w-12 h-12 rounded-xl bg-brand-red/10 border border-brand-red/30 flex items-center justify-center mx-auto mb-4 text-brand-red">
+            <Lock className="w-6 h-6" />
+          </div>
+          <h1 className="text-2xl font-athletic text-brand-cream font-bold mb-2">
+            Organizer Desk Login
+          </h1>
+          <p className="text-xs text-brand-muted mb-6">
+            This area is restricted to verified Veddie Hockey event directors and operations staff.
+          </p>
+          <form onSubmit={handleLogin} className="space-y-4">
+            <div>
+              <input
+                type="password"
+                placeholder="Enter access code"
+                value={passwordInput}
+                onChange={(e) => setPasswordInput(e.target.value)}
+                required
+                className="w-full px-4 py-3 rounded-xl bg-brand-card border border-brand-border text-brand-cream text-sm focus:outline-none focus:border-brand-accent transition-colors text-center font-mono tracking-widest placeholder:tracking-normal placeholder:font-sans"
+              />
+            </div>
+            {authError && (
+              <p className="text-xs text-brand-red font-medium">{authError}</p>
+            )}
+            <button
+              type="submit"
+              className="w-full py-3 rounded-xl bg-brand-red text-brand-navy text-xs font-black uppercase tracking-wider hover:bg-brand-red-hover transition-all shadow-lg active:scale-95"
+            >
+              Unlock Desk
+            </button>
+          </form>
+          <div className="mt-6 pt-6 border-t border-brand-border/40 text-center">
+            <Link href="/" className="text-xs text-brand-muted hover:text-brand-cream transition-colors">
+              &larr; Return to Homepage
+            </Link>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="flex flex-col py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
       {/* Header */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-8 border-b border-brand-border mb-8">
         <div>
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-accent/20 border border-brand-accent/40 text-brand-accent text-xs font-bold tracking-widest uppercase mb-3">
-            <Shield className="w-3.5 h-3.5" />
-            ORGANIZER WORKSPACE
+          <div className="flex items-center gap-3 mb-3">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-accent/20 border border-brand-accent/40 text-brand-accent text-xs font-bold tracking-widest uppercase">
+              <Shield className="w-3.5 h-3.5" />
+              ORGANIZER WORKSPACE
+            </div>
+            <button
+              onClick={handleSignOut}
+              className="inline-flex items-center gap-1.5 text-xs text-brand-muted hover:text-brand-red transition-colors"
+            >
+              <LogOut className="w-3 h-3" />
+              Sign Out
+            </button>
           </div>
           <h1 className="text-3xl sm:text-4xl font-athletic text-brand-cream tracking-tight font-black">
             Veddie Operations & Tournament Desk
@@ -288,7 +387,7 @@ export default function AdminPage() {
         <div className="space-y-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div className="flex items-center gap-2">
-              {["All", "cup", "champions-league", "tournaments", "leagues", "pickup", "partners", "contact"].map((t) => (
+              {["All", "cup", "champions-league", "tournaments", "leagues", "partners", "contact", "nominate"].map((t) => (
                 <button
                   key={t}
                   onClick={() => setLeadFilter(t)}
@@ -440,7 +539,7 @@ export default function AdminPage() {
                   >
                     {teams.map((t) => (
                       <option key={t.slug} value={t.slug}>
-                        {t.name} ({t.rating} Elo • {t.division})
+                        {t.name} ({t.rating ?? "—"} Elo • {t.division})
                       </option>
                     ))}
                   </select>
@@ -469,7 +568,7 @@ export default function AdminPage() {
                   >
                     {teams.map((t) => (
                       <option key={t.slug} value={t.slug} disabled={t.slug === selectedTeamA}>
-                        {t.name} ({t.rating} Elo • {t.division})
+                        {t.name} ({t.rating ?? "—"} Elo • {t.division})
                       </option>
                     ))}
                   </select>
@@ -526,7 +625,7 @@ export default function AdminPage() {
 
             <div className="space-y-3">
               {[...teams]
-                .sort((a, b) => b.rating - a.rating)
+                .sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0))
                 .map((t, idx) => (
                   <div
                     key={t.slug}
@@ -537,12 +636,12 @@ export default function AdminPage() {
                         #{idx + 1} {t.name}
                       </div>
                       <div className="text-[11px] text-brand-muted">
-                        {t.division} • {t.record.wins}-{t.record.losses}-{t.record.ties}
+                        {t.division} • {t.record ? `${t.record.wins}-${t.record.losses}-${t.record.ties}` : "0-0-0"}
                       </div>
                     </div>
                     <div className="text-right">
                       <span className="font-athletic font-bold text-brand-accent text-base">
-                        {t.rating}
+                        {t.rating ?? "—"}
                       </span>
                     </div>
                   </div>

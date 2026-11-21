@@ -11,18 +11,29 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Veddie Hockey | Still Got It.",
+  metadataBase: new URL("https://veddiehockey.com"),
+  title: {
+    default: "Veddie Hockey | You don't have to be a pro to feel like one.",
+    template: "%s | Veddie Hockey",
+  },
   description:
-    "Discover premium adult hockey with Veddie. Explore Champions Cup, Champions League, tournaments, and leagues. Find your next game.",
+    "Men's hockey in the GTA. The Veddie Invitational and Champions Cup, April 2027. Your name on the stall, real refs, real standings.",
   icons: {
     icon: "/veddie-logo.png",
   },
   openGraph: {
-    title: "Veddie Hockey | Still Got It.",
+    title: "Veddie Hockey | You don't have to be a pro to feel like one.",
     description:
-      "The pro hockey experience for the rest of your career. Prepared rooms, reviewed divisions, certified officiating, and moments worth keeping.",
+      "Men's hockey in the GTA. The Veddie Invitational and Champions Cup, April 2027. Your name on the stall, real refs, real standings.",
+    url: "https://veddiehockey.com",
     siteName: "Veddie Hockey",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Veddie Hockey | You don't have to be a pro to feel like one.",
+    description:
+      "Men's hockey in the GTA. The Veddie Invitational and Champions Cup, April 2027. Your name on the stall, real refs, real standings.",
   },
 };
 

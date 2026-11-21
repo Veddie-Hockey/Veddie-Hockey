@@ -1,39 +1,62 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Calendar, ShieldCheck, Trophy, Sparkles, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Calendar, ShieldCheck, Trophy, Sparkles, ArrowRight, CheckCircle2, Users } from "lucide-react";
 import LeadCaptureForm from "@/components/LeadCaptureForm";
+import ShareToCaptainButton from "@/components/ShareToCaptainButton";
 
 export const metadata: Metadata = {
-  title: "Adult Hockey Tournaments | Veddie Hockey",
+  title: "The Veddie Invitational, April 2027 | Veddie Hockey",
   description:
-    "Same team. New rivals. Explore Veddie tournament plans and register for event updates by location, skill level and age category.",
+    "First Veddie Invitational · Early April 2027 in the GTA. Your game. The pro treatment. Open, 40+, 50+ and 60+. Real refs, three games minimum and your name above the stall.",
 };
 
 export default function TournamentsPage() {
+  const brackets = [
+    { name: "Open (18+)", status: "Planned", desc: "Competitive and recreational adult squads" },
+    { name: "40+ Masters", status: "Planned", desc: "Four decades of hockey instincts" },
+    { name: "50+ Legends", status: "Planned", desc: "Fast puck movement and great locker rooms" },
+    { name: "60+ Classics", status: "Planned", desc: "Lifelong players who still love the game" },
+  ];
+
+  const atEveryEventAmenities = [
+    "Player stall nameplates",
+    "Room ready on arrival",
+    "Tape & essentials station",
+    "A fresh towel for every player",
+    "Water & sports drinks in the room",
+    "Pregame music ready",
+    "Certified refs & timekeeper",
+    "Warm-up pucks ready",
+    "Live stats & standings",
+    "Three Stars honours",
+    "Team photo & final-score graphic within 72 hours",
+    "Highlight clips",
+  ];
+
   return (
     <div className="flex flex-col">
       {/* HERO */}
-      <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-b from-brand-navy via-brand-surface to-brand-navy border-b border-brand-border px-4 sm:px-6 lg:px-8 py-20 text-center">
+      <section className="relative min-h-[65vh] flex items-center justify-center bg-gradient-to-b from-brand-navy via-brand-surface to-brand-navy border-b border-brand-border px-4 sm:px-6 lg:px-8 py-20 text-center">
         <div className="max-w-4xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-border text-brand-accent text-xs font-bold tracking-widest uppercase mb-6">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-accent/40 text-brand-accent text-xs font-bold tracking-widest uppercase mb-6">
             <Calendar className="w-4 h-4" />
-            VEDDIE TOURNAMENTS • ACCEPTING INTEREST
+            First Veddie Invitational · Early April 2027
           </div>
 
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-athletic text-brand-cream tracking-tight mb-6 font-black">
-            Same team. New rivals.
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-athletic text-brand-cream tracking-tight mb-6 font-black uppercase">
+            Your game. The pro treatment.
           </h1>
 
-          <p className="text-base sm:text-xl text-brand-muted max-w-2xl mx-auto mb-10 leading-relaxed">
-            Get the team together for a standalone tournament weekend built around proper hockey atmosphere, clean facilities, reviewed divisions and games that actually matter. Three guaranteed games, competitive parity and the touches that make a road trip worthwhile.
+          <p className="text-base sm:text-xl text-brand-muted max-w-2xl mx-auto mb-8 leading-relaxed font-sans">
+            Open, 40+, 50+ and 60+. Real refs, three games minimum and your name above the stall.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
             <a
               href="#tournament-form"
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-accent text-brand-navy font-bold font-bold uppercase tracking-wider text-sm hover:bg-brand-accent-hover transition-all shadow-xl hover:shadow-brand-accent/20"
+              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-red text-brand-navy font-black uppercase tracking-wider text-sm hover:bg-brand-red-hover transition-all shadow-xl hover:shadow-brand-red/30 active:scale-95"
             >
-              Get Tournament Updates
+              Get Invitational Details
             </a>
             <Link
               href="/divisions"
@@ -43,82 +66,111 @@ export default function TournamentsPage() {
             </Link>
           </div>
 
-          <p className="text-xs text-brand-muted">
-            Join the tournament list for updates on dates, destinations and division availability.
-          </p>
+          <div className="flex items-center justify-center gap-2 text-xs text-brand-muted">
+            <span>Playing without a team?</span>
+            <ShareToCaptainButton variant="minimal" />
+          </div>
         </div>
       </section>
 
-      {/* WHY VEDDIE TOURNAMENTS */}
-      <section className="py-24 bg-brand-navy border-b border-brand-border">
+      {/* CAPTAIN CALLOUT BLOCK (Nov 21 spec) */}
+      <section className="py-20 bg-brand-navy border-b border-brand-border px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto p-8 sm:p-12 rounded-3xl bg-[#0b203a] border-2 border-[#1c3f6e] text-center shadow-2xl">
+          <h2 className="text-2xl sm:text-4xl font-athletic text-brand-cream mb-4 font-black">
+            Captain, you’ve done enough.
+          </h2>
+          <p className="text-base sm:text-lg text-slate-200 leading-relaxed max-w-2xl mx-auto font-sans mb-8">
+            Ice times. E-transfers. Chasing the guy who never pays. For April, we book the ice, the refs, the room, the schedule and the photos. You bring the game. We bring the show.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="#tournament-form"
+              className="px-8 py-3.5 rounded-xl bg-brand-red text-brand-navy font-black uppercase tracking-wider text-xs hover:bg-brand-red-hover transition-all shadow-lg"
+            >
+              Get Invitational Details
+            </a>
+            <ShareToCaptainButton variant="secondary" />
+          </div>
+        </div>
+      </section>
+
+      {/* PLANNED BRACKETS */}
+      <section className="py-20 bg-brand-surface border-b border-brand-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-12">
             <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2">
-              The Standard
+              Age Categories
             </span>
-            <h2 className="text-3xl sm:text-5xl font-athletic text-brand-cream tracking-tight mb-4">
-              The tournament weekend you’ve been waiting for.
+            <h2 className="text-3xl sm:text-5xl font-athletic text-brand-cream tracking-tight mb-4 font-black">
+              Every division gets the same treatment.
             </h2>
-            <p className="text-base text-brand-muted">
-              We’ve all played tournaments with 11pm Sunday consolation games, absent scorekeepers, and undisclosed former pros in recreational brackets. We designed Veddie tournaments to fix all of that.
+            <p className="text-sm sm:text-base text-brand-muted font-sans">
+              Planned brackets for Early April 2027 in the Greater Toronto Area.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-8 rounded-2xl bg-brand-surface border border-brand-border">
-              <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2">
-                Guaranteed Ice
-              </span>
-              <h3 className="text-xl font-athletic text-brand-cream mb-3">
-                3 Games Minimum
-              </h3>
-              <p className="text-sm text-brand-muted leading-relaxed">
-                Balanced pool play guarantees every squad three full-length games with ample rest between contests. Playoff qualifiers advance to Sunday brackets.
-              </p>
-            </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+            {brackets.map((b) => (
+              <div key={b.name} className="p-6 rounded-2xl bg-brand-card border border-brand-border flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center justify-between mb-3">
+                    <h3 className="font-athletic text-brand-cream font-bold text-xl">
+                      {b.name}
+                    </h3>
+                    <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-brand-surface text-brand-muted border border-brand-border">
+                      {b.status}
+                    </span>
+                  </div>
+                  <p className="text-xs text-brand-muted leading-relaxed">
+                    {b.desc}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
 
-            <div className="p-8 rounded-2xl bg-brand-surface border border-brand-border">
-              <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2">
-                Strict Placement
+          {/* AT EVERY EVENT AMENITIES (Replaces The Pro Amenities per Nov 21 spec) */}
+          <div className="max-w-4xl mx-auto p-8 rounded-2xl bg-brand-card border border-brand-border">
+            <div className="text-center mb-8">
+              <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-1">
+                Standard Inclusions
               </span>
-              <h3 className="text-xl font-athletic text-brand-cream mb-3">
-                Zero Sandbagging Policy
+              <h3 className="text-2xl font-athletic text-brand-cream font-black">
+                Ready at Every Veddie Event
               </h3>
-              <p className="text-sm text-brand-muted leading-relaxed">
-                Rosters are vetted before the first puck drop. Playing histories are verified across D1 through D4 to preserve fair, authentic competition.
-              </p>
             </div>
-
-            <div className="p-8 rounded-2xl bg-brand-surface border border-brand-border">
-              <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2">
-                Full Production
-              </span>
-              <h3 className="text-xl font-athletic text-brand-cream mb-3">
-                The Pro Amenities
-              </h3>
-              <p className="text-sm text-brand-muted leading-relaxed">
-                Dressing room nameplates, fresh towel service, athletic therapist on site, music during warmups and stoppages, and game highlight clips.
-              </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-200">
+              {atEveryEventAmenities.map((amenity) => (
+                <div key={amenity} className="flex items-center gap-2 p-2.5 rounded-lg bg-brand-surface/60 border border-brand-border/40">
+                  <CheckCircle2 className="w-4 h-4 text-brand-accent shrink-0" />
+                  <span>{amenity}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* LEAD CAPTURE FORM */}
-      <section className="py-24 bg-brand-surface px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center mb-12">
+      {/* LEAD CAPTURE FORM (Single H2, hide duplicate form heading) */}
+      <section id="tournament-form" className="py-24 bg-brand-navy px-4 sm:px-6 lg:px-8">
+        <div className="max-w-2xl mx-auto text-center mb-8">
           <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2">
-            Priority Notification
+            Priority Entry
           </span>
-          <h2 className="text-3xl sm:text-5xl font-athletic text-brand-cream tracking-tight mb-4">
-            Get the team’s next weekend on the radar.
+          <h2 className="text-3xl sm:text-5xl font-athletic text-brand-cream tracking-tight mb-2 font-black">
+            Get Invitational Details
           </h2>
-          <p className="text-base text-brand-muted max-w-xl mx-auto">
-            Tell us the kind of event you’re looking for. Intact teams and individual free agents are welcome.
+          <p className="text-sm text-brand-muted">
+            Tell us about your team. We check team placement and reply within 2 business days. No payment today.
           </p>
         </div>
 
-        <LeadCaptureForm type="tournaments" id="tournament-form" />
+        <LeadCaptureForm
+          type="tournaments"
+          hideHeading={true}
+          buttonText="Get Invitational details"
+          microcopy="We check team placement and reply within 2 business days. No payment today."
+        />
       </section>
     </div>
   );

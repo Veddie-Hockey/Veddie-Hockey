@@ -1,42 +1,41 @@
 "use client";
 
 import { useState } from "react";
-import { Trophy, Shield, ArrowRight, CheckCircle2, AlertCircle } from "lucide-react";
+import { Trophy, CheckCircle2, AlertCircle } from "lucide-react";
 
 export default function QualificationCalculator() {
   const [divisionSize, setDivisionSize] = useState<number>(8);
   const [currentPosition, setCurrentPosition] = useState<number>(2);
 
-  // Exact math from client document:
-  // Champions League/Cup: ceiling(N / 4)
-  // Challengers Cup: from ceiling(N / 4) + 1 through floor(N / 2)
+  // Qualification: Top quarter of standings, rounded up.
   const championsCupPlaces = Math.ceil(divisionSize / 4);
-  const challengersCupPlacesEnd = Math.floor(divisionSize / 2);
-
   const qualifiesChampionsCup = currentPosition <= championsCupPlaces;
-  const qualifiesChallengersCup =
-    !qualifiesChampionsCup && currentPosition <= challengersCupPlacesEnd;
 
   return (
     <div className="bg-brand-surface border border-brand-border rounded-2xl p-6 sm:p-8 max-w-2xl mx-auto shadow-2xl">
-      <div className="flex items-center gap-3 mb-6">
-        <div className="p-3 bg-brand-accent/20 text-brand-accent rounded-xl">
-          <Trophy className="w-5 h-5" />
+      <div className="flex items-center justify-between gap-3 mb-6">
+        <div className="flex items-center gap-3">
+          <div className="p-3 bg-brand-accent/20 text-brand-accent rounded-xl">
+            <Trophy className="w-5 h-5" />
+          </div>
+          <div>
+            <h3 className="text-xl font-athletic text-brand-cream tracking-tight">
+              “Do We Qualify?” Eligibility Calculator
+            </h3>
+            <p className="text-xs text-brand-muted">
+              Win your playoffs or finish in the top quarter of your home league standings, rounded up.
+            </p>
+          </div>
         </div>
-        <div>
-          <h3 className="text-xl font-athletic text-brand-cream tracking-tight">
-            “Do We Qualify?” Instant Eligibility Calculator
-          </h3>
-          <p className="text-xs text-brand-muted">
-            Test your home league standing against the official ceiling(N ÷ 4) qualification formula.
-          </p>
-        </div>
+        <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-brand-card text-brand-muted border border-brand-border">
+          Example
+        </span>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
         <div className="bg-brand-card p-4 rounded-xl border border-brand-border">
           <label className="text-xs font-bold uppercase tracking-wider text-brand-muted block mb-1">
-            Total Teams in Your Division ($N$)
+            Teams in your division
           </label>
           <div className="flex items-center gap-3">
             <input
@@ -57,7 +56,7 @@ export default function QualificationCalculator() {
             </span>
           </div>
           <span className="text-[11px] text-brand-muted mt-1 block">
-            Guaranteed Cup spots: <strong>{championsCupPlaces}</strong>
+            Qualifying spots: <strong>Top {championsCupPlaces}</strong>
           </span>
         </div>
 
@@ -90,8 +89,6 @@ export default function QualificationCalculator() {
         className={`p-5 rounded-xl border transition-all ${
           qualifiesChampionsCup
             ? "bg-brand-green/10 border-brand-green/40 text-brand-green"
-            : qualifiesChallengersCup
-            ? "bg-brand-ice/10 border-brand-ice/40 text-brand-ice"
             : "bg-brand-accent/10 border-brand-accent/40 text-brand-accent"
         }`}
       >
@@ -105,24 +102,18 @@ export default function QualificationCalculator() {
           <div className="flex-1">
             <h4 className="font-athletic text-lg font-bold text-brand-cream">
               {qualifiesChampionsCup
-                ? "Qualified for Champions Cup! (Top 25%)"
-                : qualifiesChallengersCup
-                ? "Eligible for Challengers Cup Tier (Top 50%)"
-                : "Playoff Championship Route Required"}
+                ? `Qualifies for Champions Cup (Inside Top ${championsCupPlaces})`
+                : "Playoff Championship Route"}
             </h4>
 
             <p className="text-xs text-brand-muted mt-1 leading-relaxed">
               {qualifiesChampionsCup ? (
                 <>
-                  In a {divisionSize}-team division, positions 1 through {championsCupPlaces} earn automatic invitations into the <strong>Veddie Champions Cup</strong>. Your team is currently in an automatic bid spot!
-                </>
-              ) : qualifiesChallengersCup ? (
-                <>
-                  Your team sits between positions {championsCupPlaces + 1} and {challengersCupPlacesEnd}. You qualify for the <strong>Challengers Cup</strong>, or you can earn a direct Champions Cup invitation by winning your home league playoff championship!
+                  In a {divisionSize}-team division, positions 1 through {championsCupPlaces} qualify for the <strong>Veddie Champions Cup</strong>. Your team is currently inside the line!
                 </>
               ) : (
                 <>
-                  Your team is currently outside the regular season top half. However, <strong>home league playoff champions</strong> receive direct automatic invitations to the Champions Cup regardless of regular season finish!
+                  Your team is currently outside the regular season cutline. However, <strong>home league playoff champions</strong> earn direct entry regardless of regular season finish!
                 </>
               )}
             </p>
@@ -132,13 +123,13 @@ export default function QualificationCalculator() {
 
       <div className="mt-6 pt-4 border-t border-brand-border flex items-center justify-between text-xs">
         <span className="text-brand-muted">
-          Formula: ceiling(N ÷ 4) rounded up
+          A 10-team league sends 3. An 8-team division sends 2.
         </span>
         <a
           href="#cup-form"
           className="text-brand-accent hover:underline font-bold uppercase tracking-wider inline-flex items-center gap-1"
         >
-          Claim Your Team's Spot &rarr;
+          Check My Team’s Eligibility &rarr;
         </a>
       </div>
     </div>

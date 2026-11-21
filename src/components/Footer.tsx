@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Shield, Sparkles, MapPin, Mail, ArrowRight, CheckCircle2 } from "lucide-react";
+import { CheckCircle2, Instagram } from "lucide-react";
 
 export default function Footer() {
   const [newsletterEmail, setNewsletterEmail] = useState("");
@@ -32,14 +32,15 @@ export default function Footer() {
   return (
     <footer className="bg-brand-navy border-t border-brand-border text-brand-muted text-sm pt-16 pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* BRODIE-STYLE TOP NEWSLETTER ROW */}
-        <div className="pb-16 mb-16 border-b border-brand-border/60 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+        {/* TOP NEWSLETTER ROW */}
+        <div className="pb-16 mb-12 border-b border-brand-border/60 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
           <div className="max-w-md">
             <h3 className="text-2xl sm:text-3xl font-athletic text-brand-cream tracking-tight mb-2">
               Get Veddie News In Your Inbox
             </h3>
+            {/* Nov 21 Edit: replaced newsletter description */}
             <p className="text-xs text-brand-muted">
-              Tournament announcements, division openings, and power rankings delivered straight to your email.
+              Dates, divisions and the Road to the Cup, straight to your inbox.
             </p>
           </div>
 
@@ -73,9 +74,31 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* 5-COLUMN MAIN FOOTER LAYOUT (MATCHING BRODIE REC SPEC) */}
+        {/* Nov 21 Edit: Wordmark with "Your game. The pro treatment." and Instagram */}
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-12 pb-8 border-b border-brand-border/50">
+          <div className="flex items-center gap-4">
+            <div className="relative h-10 w-28">
+              <Image src="/veddie-logo.png" alt="Veddie Hockey" fill className="object-contain object-left" />
+            </div>
+            <span className="text-sm font-athletic text-brand-cream/90 tracking-wide border-l border-brand-border pl-4">
+              Your game. The pro treatment.
+            </span>
+          </div>
+
+          <a
+            href="https://instagram.com/veddiehockey"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-xs text-brand-muted hover:text-brand-cream transition-colors"
+          >
+            <Instagram className="w-4 h-4 text-brand-accent" />
+            <span>@veddiehockey</span>
+          </a>
+        </div>
+
+        {/* 5-COLUMN MAIN FOOTER LAYOUT */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 mb-16">
-          {/* Column 1: Contact (Moved here from deleted Connect & Legal) */}
+          {/* Column 1: Contact (Single verified contact block) */}
           <div className="space-y-4">
             <h4 className="text-xs font-bold uppercase tracking-wider text-brand-cream font-athletic">
               Contact
@@ -99,7 +122,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 2: Company */}
+          {/* Column 2: Company (Careers & Investors hidden per Nov 21 spec) */}
           <div>
             <h4 className="text-xs font-bold uppercase tracking-wider text-brand-cream mb-4 font-athletic">
               Company
@@ -116,19 +139,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/company#careers" className="hover:text-brand-accent transition-colors flex items-center gap-1.5">
-                  <span>Careers</span>
-                  <span className="text-[9px] font-bold uppercase px-1.5 py-0.2 rounded bg-brand-accent/20 text-brand-accent">Hiring</span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/company#investors" className="hover:text-brand-accent transition-colors">
-                  Investors
-                </Link>
-              </li>
-              <li>
                 <Link href="/contact" className="hover:text-brand-accent transition-colors">
-                  Contact
+                  Contact Desk
                 </Link>
               </li>
             </ul>
@@ -175,8 +187,7 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5 text-xs">
               <li>
-                <Link href="/rankings" className="hover:text-brand-accent transition-colors flex items-center gap-1.5">
-                  <Shield className="w-3 h-3 text-brand-accent" />
+                <Link href="/rankings" className="hover:text-brand-accent transition-colors">
                   Team Rankings
                 </Link>
               </li>
@@ -191,8 +202,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/experience" className="hover:text-brand-accent transition-colors flex items-center gap-1.5">
-                  <Sparkles className="w-3 h-3 text-brand-accent" />
+                <Link href="/experience" className="hover:text-brand-accent transition-colors">
                   The Experience
                 </Link>
               </li>
@@ -209,17 +219,12 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 5: Expand (Brand new Brodie-spec section) */}
+          {/* Column 5: Expand (Request a city hidden per Nov 21 spec) */}
           <div>
             <h4 className="text-xs font-bold uppercase tracking-wider text-brand-cream mb-4 font-athletic">
               Expand
             </h4>
             <ul className="space-y-2.5 text-xs">
-              <li>
-                <Link href="/expand#request-city" className="hover:text-brand-accent transition-colors">
-                  Request A City
-                </Link>
-              </li>
               <li>
                 <Link href="/expand#start-league" className="hover:text-brand-accent transition-colors">
                   Start A League
@@ -244,7 +249,8 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* BOTTOM LEGAL BAR (BRODIE SPEC) */}
+        {/* BOTTOM LEGAL BAR */}
+        {/* Nov 21 Edit: Removed "Organizer Desk", updated copyright to "© 2026 Veddie Hockey", removed ™ */}
         <div className="pt-8 border-t border-brand-border flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-brand-muted">
           <div className="flex flex-wrap items-center gap-6">
             <Link href="/privacy" className="hover:text-brand-cream transition-colors">
@@ -259,13 +265,10 @@ export default function Footer() {
             <Link href="/player-code" className="hover:text-brand-cream transition-colors">
               Player Code of Conduct
             </Link>
-            <Link href="/admin" className="text-brand-muted/50 hover:text-brand-accent transition-colors">
-              Organizer Desk
-            </Link>
           </div>
 
           <p className="text-brand-muted/70 text-center md:text-right">
-            © {new Date().getFullYear()} Veddie Sports Group™ / Veddie Hockey. All Rights Reserved.
+            © 2026 Veddie Hockey. All Rights Reserved.
           </p>
         </div>
       </div>

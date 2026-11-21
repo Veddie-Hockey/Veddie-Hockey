@@ -19,33 +19,39 @@ export default function PrivacyPage() {
         <section className="bg-brand-surface p-6 rounded-xl border border-brand-border">
           <h2 className="text-lg font-athletic text-brand-cream mb-2">1. Overview</h2>
           <p className="text-brand-muted">
-            Veddie Hockey (“Veddie”, “we”, “our”) respects your privacy and is committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard the data you provide when interacting with our website, submitting interest forms, or participating in our hockey programs.
+            Veddie Hockey (“Veddie”, “we”, “our”) respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard data when you visit our website, submit interest or nomination forms, or participate in our hockey events.
           </p>
         </section>
 
         <section className="bg-brand-surface p-6 rounded-xl border border-brand-border">
           <h2 className="text-lg font-athletic text-brand-cream mb-2">2. Information We Collect</h2>
           <p className="text-brand-muted mb-3">
-            We collect information strictly necessary to coordinate adult hockey activities, verify division eligibility, and communicate program details:
+            We collect information strictly necessary to coordinate tournament brackets, verify qualification eligibility, and communicate event logistics:
           </p>
-          <ul className="list-disc pl-5 space-y-1 text-brand-muted">
-            <li><strong>Contact Details:</strong> Name, email address, phone number, and geographic area.</li>
-            <li><strong>Hockey Background:</strong> Home league, team name, playing history, skill level, and age bracket.</li>
-            <li><strong>Media:</strong> Photos and game video captured during events (with participant consent).</li>
+          <ul className="list-disc pl-5 space-y-1.5 text-brand-muted">
+            <li><strong>Contact Information:</strong> Name, email address, phone number, and city/region.</li>
+            <li><strong>Team & Playing Background:</strong> Team name, home league, division standings, playing experience, and skill tier.</li>
+            <li><strong>Team Nominations:</strong> Details submitted by league commissioners, referees, or nominators for Champions Cup review.</li>
+            <li><strong>Media & Coverage Preferences:</strong> In-event team photos and highlight recordings, including opt-out preferences indicated at check-in.</li>
+            <li><strong>Newsletter & Communication Preferences:</strong> Email preferences for event announcements, schedule drops, and Road to the Cup updates.</li>
           </ul>
         </section>
 
         <section className="bg-brand-surface p-6 rounded-xl border border-brand-border">
           <h2 className="text-lg font-athletic text-brand-cream mb-2">3. How We Use Your Information</h2>
           <p className="text-brand-muted">
-            We use collected data solely to: evaluate division balance; notify you of opening tournaments and leagues; organize match schedules; and maintain verified team Elo ratings. We never sell or rent your personal data to third-party advertisers.
+            We use collected data solely to: evaluate division balance, verify qualification eligibility, coordinate match schedules, deliver post-game photos, and send requested tournament communications. We never sell, rent, or trade your personal information with third-party advertisers.
           </p>
         </section>
 
         <section className="bg-brand-surface p-6 rounded-xl border border-brand-border">
-          <h2 className="text-lg font-athletic text-brand-cream mb-2">4. Communication & Unsubscribe</h2>
+          <h2 className="text-lg font-athletic text-brand-cream mb-2">4. Data Inquiries & Removal Requests</h2>
           <p className="text-brand-muted">
-            You may unsubscribe from optional promotional emails at any time by clicking the unsubscribe link in any message or contacting our operations desk directly.
+            If you have questions about your data, wish to update your contact details, or would like your information removed from our records, please contact our team at{" "}
+            <a href="mailto:info@veddiehockey.com" className="text-brand-accent hover:underline">
+              info@veddiehockey.com
+            </a>
+            .
           </p>
         </section>
       </div>

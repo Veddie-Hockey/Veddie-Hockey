@@ -1,16 +1,30 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Trophy, Shield, Sparkles, CheckCircle2, ArrowRight, Award } from "lucide-react";
+import { Trophy, Shield, Sparkles, CheckCircle2, ArrowRight } from "lucide-react";
 import LeadCaptureForm from "@/components/LeadCaptureForm";
 import QualificationCalculator from "@/components/QualificationCalculator";
+import ShareToCaptainButton from "@/components/ShareToCaptainButton";
 
 export const metadata: Metadata = {
-  title: "Champions Cup | Veddie Hockey",
+  title: "Veddie Champions Cup, April 2027 | Veddie Hockey",
   description:
-    "Give your team a bigger stage. Explore Veddie Champions Cup qualification, divisions and the planned championship experience. Register team interest.",
+    "The closest thing to the show. Late April in Richmond Hill, for teams that earn their spot in their home league.",
 };
 
 export default function ChampionsCupPage() {
+  const atEventCupAmenities = [
+    { title: "Player stall nameplates", desc: "Your personalized name, squad number, and team crest above your stall." },
+    { title: "Room ready on arrival", desc: "Team name on the door, clean room, and lineup board ready." },
+    { title: "Starting lineup intros", desc: "Starting goalie and skaters announced over arena sound before puck drop." },
+    { title: "PA announcements", desc: "In-game goal calls, penalties, and period summaries over the arena sound." },
+    { title: "Certified refs & timekeeper", desc: "Two certified on-ice officials and a dedicated scorekeeper every game." },
+    { title: "Athletic therapist on site", desc: "Pregame taping, acute injury assessment, and ice bags in the room." },
+    { title: "Team photo & final-score graphic", desc: "Team photo, final-score graphic and highlights for every team within 72 hours." },
+    { title: "Livestream of the finals", desc: "Championship final broadcasts streamed live with score overlay." },
+    { title: "Post-game interview wall", desc: "Captain and player interviews against the official championship backdrop." },
+    { title: "Post-game refreshments", desc: "Cold beverages ready in the room after the final buzzer." },
+  ];
+
   return (
     <div className="flex flex-col">
       {/* HERO */}
@@ -18,23 +32,27 @@ export default function ChampionsCupPage() {
         <div className="max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-accent/40 text-brand-accent text-xs font-bold tracking-widest uppercase mb-6">
             <Trophy className="w-4 h-4" />
-            VEDDIE CHAMPIONS CUP • ACCEPTING INTEREST
+            Late April 2027 · Richmond Hill
           </div>
 
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-athletic text-brand-cream tracking-tight mb-6 font-black">
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-athletic text-brand-cream tracking-tight mb-4 font-black uppercase">
             Your league was just the beginning.
           </h1>
 
-          <p className="text-base sm:text-xl text-brand-muted max-w-2xl mx-auto mb-10 leading-relaxed">
-            You’ve earned your place at home. Now give the team a bigger stage. The Veddie Champions Cup brings top adult teams together from across the province for a flagship championship with funded prizes, professional touches and a level of competition that justifies the drive.
+          <p className="text-xl sm:text-2xl font-bold text-brand-accent font-athletic uppercase tracking-wider mb-6">
+            The closest thing to the show.
+          </p>
+
+          <p className="text-base sm:text-lg text-slate-200 max-w-2xl mx-auto mb-10 leading-relaxed font-sans">
+            Late April in Richmond Hill, for teams that earn their spot in their home league. Win your playoffs or finish in the top quarter of your standings to represent your league.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
             <a
               href="#cup-form"
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-accent text-brand-navy font-bold font-bold uppercase tracking-wider text-sm hover:bg-brand-accent-hover transition-all shadow-xl hover:shadow-brand-accent/20"
+              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-red text-brand-navy font-black uppercase tracking-wider text-sm hover:bg-brand-red-hover transition-all shadow-xl hover:shadow-brand-red/30 active:scale-95"
             >
-              Register Team Interest
+              Check My Team’s Eligibility
             </a>
             <a
               href="#qualification"
@@ -44,251 +62,167 @@ export default function ChampionsCupPage() {
             </a>
           </div>
 
-          <p className="text-xs text-brand-muted">
-            Join the first-edition interest list. Dates, location, divisions and entry details will be published before registration opens.
-          </p>
+          <div>
+            <ShareToCaptainButton variant="minimal" />
+          </div>
         </div>
       </section>
 
-      {/* REASON TO PLAY */}
+      {/* THREE STEP QUALIFYING PROCESS (Nov 21 spec) */}
       <section className="py-20 bg-brand-navy border-b border-brand-border">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-athletic text-brand-cream tracking-tight mb-6">
-            Same team. Bigger stage.
-          </h2>
-          <p className="text-base sm:text-lg text-brand-muted leading-relaxed">
-            You already know what your team can do in your own league. The Cup gives you a new question to answer: how do you stack up against the best teams from other arenas? Fresh rivalries. Meaningful hardware. Zero sandbagging.
-          </p>
-        </div>
-      </section>
-
-      {/* PILOT FORMAT */}
-      <section className="py-24 bg-brand-surface border-b border-brand-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-12">
             <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2">
-              Inaugural Pilot Tournament
+              Three-Step Qualification
             </span>
-            <h2 className="text-3xl sm:text-5xl font-athletic text-brand-cream tracking-tight mb-4">
-              16 teams. Two divisions. One champion per division.
+            <h2 className="text-3xl sm:text-4xl font-athletic text-brand-cream tracking-tight font-black">
+              Earned on the ice. Confirmed by us.
             </h2>
-            <p className="text-base text-brand-muted">
-              The inaugural Champions Cup runs as a focused 16-team pilot event: two divisions of eight teams each, built to test the experience and crown our first champions.
-            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-            <div className="p-6 rounded-2xl bg-brand-card border border-brand-border text-center">
-              <span className="text-3xl font-athletic font-bold text-brand-accent block mb-1">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="p-8 rounded-2xl bg-brand-surface border border-brand-border text-center">
+              <div className="w-12 h-12 rounded-xl bg-brand-accent/20 text-brand-accent font-athletic font-black text-xl flex items-center justify-center mx-auto mb-4">
+                1
+              </div>
+              <h3 className="text-xl font-athletic text-brand-cream font-bold mb-2">
+                Check your standings.
+              </h3>
+              <p className="text-xs text-brand-muted leading-relaxed font-sans">
+                Win your league playoffs, or finish in the top quarter of its standings, rounded up. A 10-team league sends 3.
+              </p>
+            </div>
+
+            <div className="p-8 rounded-2xl bg-brand-surface border border-brand-border text-center">
+              <div className="w-12 h-12 rounded-xl bg-brand-accent/20 text-brand-accent font-athletic font-black text-xl flex items-center justify-center mx-auto mb-4">
+                2
+              </div>
+              <h3 className="text-xl font-athletic text-brand-cream font-bold mb-2">
+                Submit your result.
+              </h3>
+              <p className="text-xs text-brand-muted leading-relaxed font-sans">
+                Enter your team name, home league, and link to your public standings or playoff bracket.
+              </p>
+            </div>
+
+            <div className="p-8 rounded-2xl bg-brand-surface border border-brand-border text-center">
+              <div className="w-12 h-12 rounded-xl bg-brand-accent/20 text-brand-accent font-athletic font-black text-xl flex items-center justify-center mx-auto mb-4">
                 3
-              </span>
-              <h3 className="text-sm font-bold uppercase tracking-wider text-brand-cream mb-2">
-                Guaranteed Games
+              </div>
+              <h3 className="text-xl font-athletic text-brand-cream font-bold mb-2">
+                We confirm your spot.
               </h3>
-              <p className="text-xs text-brand-muted">
-                Each team plays three pool games. Semifinals and final follow for qualifying teams.
-              </p>
-            </div>
-
-            <div className="p-6 rounded-2xl bg-brand-card border border-brand-border text-center">
-              <span className="text-3xl font-athletic font-bold text-brand-cream block mb-1">
-                5
-              </span>
-              <h3 className="text-sm font-bold uppercase tracking-wider text-brand-cream mb-2">
-                Games for Finalists
-              </h3>
-              <p className="text-xs text-brand-muted">
-                Finalists play five games across the weekend to decide the championship banner.
-              </p>
-            </div>
-
-            <div className="p-6 rounded-2xl bg-brand-card border border-brand-border text-center">
-              <span className="text-3xl font-athletic font-bold text-brand-accent block mb-1">
-                $$$
-              </span>
-              <h3 className="text-sm font-bold uppercase tracking-wider text-brand-cream mb-2">
-                Funded Cash Prize
-              </h3>
-              <p className="text-xs text-brand-muted">
-                Division winners receive a funded team cash prize and championship honors.
-              </p>
-            </div>
-
-            <div className="p-6 rounded-2xl bg-brand-card border border-brand-accent/50 text-center bg-brand-accent/5">
-              <span className="text-3xl font-athletic font-bold text-brand-accent block mb-1">
-                $0
-              </span>
-              <h3 className="text-sm font-bold uppercase tracking-wider text-brand-cream mb-2">
-                Inaugural Team Entry
-              </h3>
-              <p className="text-xs text-brand-muted">
-                Entry fee covered by Veddie for the selected field in our inaugural pilot edition.
+              <p className="text-xs text-brand-muted leading-relaxed font-sans">
+                We verify your home-league standing, confirm your division tier, and issue your official invitation.
               </p>
             </div>
           </div>
-
-          <p className="text-center text-xs text-brand-muted">
-            Teams provide their own gear, uniforms and travel. Standby spots and attendance commitment rules will be published before acceptance.
-          </p>
         </div>
       </section>
 
-      {/* QUALIFICATION RULES */}
-      <section id="qualification" className="py-24 bg-brand-navy border-b border-brand-border">
+      {/* QUALIFICATION RULES & CALCULATOR */}
+      <section id="qualification" className="py-24 bg-brand-surface border-b border-brand-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mb-16">
+          <div className="max-w-3xl mb-12">
             <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2">
-              Competitive Integrity
+              Rule Copy
             </span>
-            <h2 className="text-3xl sm:text-5xl font-athletic text-brand-cream tracking-tight mb-4">
-              How qualification works
+            <h2 className="text-3xl sm:text-5xl font-athletic text-brand-cream tracking-tight mb-4 font-black">
+              How do teams get into the Champions Cup?
             </h2>
-            <p className="text-base text-brand-muted">
-              Entry into the Champions Cup is earned through your home league season, not through an open credit card checkout.
+            <p className="text-base text-brand-muted font-sans leading-relaxed">
+              Win your league’s playoffs, or finish in the top quarter of its standings, rounded up. A 10-team league sends 3. An 8-team division sends 2. If the playoff champion is also a top-quarter team, the next eligible team is invited.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <div className="p-8 rounded-2xl bg-brand-surface border border-brand-border">
-              <div className="text-xs font-bold uppercase tracking-wider text-brand-accent mb-2">
-                Primary Route
-              </div>
-              <h3 className="text-xl font-athletic text-brand-cream mb-3">
-                Top 25% of Regular Season
-              </h3>
-              <p className="text-sm text-brand-muted leading-relaxed mb-4">
-                Finish in the top 25% of your home league division standings, rounded up: ceiling(N ÷ 4). In an 8-team division, 1st and 2nd qualify. In a 12-team division, top 3 qualify.
-              </p>
-              <div className="text-xs font-mono bg-brand-card p-2 rounded border border-brand-border text-brand-cream">
-                Places = ceiling(teams ÷ 4)
-              </div>
-            </div>
-
-            <div className="p-8 rounded-2xl bg-brand-surface border border-brand-border">
-              <div className="text-xs font-bold uppercase tracking-wider text-brand-accent mb-2">
-                Championship Route
-              </div>
-              <h3 className="text-xl font-athletic text-brand-cream mb-3">
-                Playoff Champions
-              </h3>
-              <p className="text-sm text-brand-muted leading-relaxed mb-4">
-                If your team finishes outside the top 25% but wins your home league playoff championship, your team qualifies for the Champions Cup. Duplicate qualifiers receive one entry.
-              </p>
-              <div className="text-xs font-mono bg-brand-card p-2 rounded border border-brand-border text-brand-cream">
-                Playoff Winner = Direct Entry
-              </div>
-            </div>
-
-            <div className="p-8 rounded-2xl bg-brand-surface border border-brand-border">
-              <div className="text-xs font-bold uppercase tracking-wider text-brand-accent mb-2">
-                Secondary Tier
-              </div>
-              <h3 className="text-xl font-athletic text-brand-cream mb-3">
-                Challengers Cup Route
-              </h3>
-              <p className="text-sm text-brand-muted leading-relaxed mb-4">
-                Remaining top-half teams (positions running from ceiling(N÷4)+1 through floor(N÷2)) are eligible for the Challengers Cup competition tier.
-              </p>
-              <div className="text-xs font-mono bg-brand-card p-2 rounded border border-brand-border text-brand-cream">
-                Remaining Top 50% = Challengers
-              </div>
-            </div>
+          <div className="mb-16">
+            <QualificationCalculator />
           </div>
 
-          <div className="p-6 rounded-xl bg-brand-card border border-brand-border flex flex-col sm:flex-row items-center justify-between gap-4 mb-16">
-            <span className="text-xs text-brand-muted">
-              Standings verified against official home-league records prior to formal tournament invitations.
-            </span>
-            <a
-              href="#cup-form"
-              className="inline-flex items-center gap-2 px-6 py-2.5 rounded-lg bg-brand-accent text-brand-navy font-bold text-xs font-bold uppercase tracking-wider hover:bg-brand-accent-hover transition-colors"
-            >
-              Put Your Team Forward
-              <ArrowRight className="w-3.5 h-3.5" />
-            </a>
-          </div>
-
-          {/* Interactive Calculator */}
-          <QualificationCalculator />
-        </div>
-      </section>
-
-      {/* PRO EXPERIENCE TOUCHES */}
-      <section className="py-20 bg-brand-surface border-b border-brand-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2">
-                Player Experience
-              </span>
-              <h2 className="text-3xl sm:text-5xl font-athletic text-brand-cream tracking-tight mb-6">
-                Treated like pros from the moment you arrive.
-              </h2>
-              <div className="space-y-4 text-sm text-brand-muted leading-relaxed mb-8">
-                <p>
-                  No dingy locker rooms. No missing referees. No mystery scorekeeping.
-                </p>
-                <p>
-                  Every team in the Champions Cup gets a spotless dressing room with stall nameplates, fresh towel service, tape & essentials station, athletic therapist on site, full game replays, and three stars of the game recognition.
-                </p>
-              </div>
+          <div className="p-6 rounded-2xl bg-brand-card border border-brand-border flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p className="text-xs text-brand-muted font-sans">
+              Are you a home league organizer? Nominate your top division squads directly.
+            </p>
+            <div className="flex items-center gap-3">
               <Link
-                href="/experience"
-                className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-brand-accent hover:underline"
+                href="/nominate"
+                className="px-6 py-2.5 rounded-xl bg-brand-surface border border-brand-border hover:border-brand-accent text-brand-cream text-xs font-bold uppercase tracking-wider transition-colors"
               >
-                See all 29 pro features &rarr;
+                Nominate Your Top Teams
               </Link>
-            </div>
-
-            <div className="bg-brand-card p-8 rounded-2xl border border-brand-border space-y-4">
-              <div className="flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-brand-accent shrink-0 mt-0.5" />
-                <div>
-                  <h4 className="font-athletic text-brand-cream text-base">Dedicated Locker Room</h4>
-                  <p className="text-xs text-brand-muted">Name on the door, whiteboard lineup, stall nameplates, fresh towels.</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-brand-accent shrink-0 mt-0.5" />
-                <div>
-                  <h4 className="font-athletic text-brand-cream text-base">In-Game Arena Production</h4>
-                  <p className="text-xs text-brand-muted">Starting lineup announcements, music at stoppages, goal horns & songs.</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-brand-accent shrink-0 mt-0.5" />
-                <div>
-                  <h4 className="font-athletic text-brand-cream text-base">Full Media Coverage</h4>
-                  <p className="text-xs text-brand-muted">HD game film replays, action photography, and social highlight clips.</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-brand-accent shrink-0 mt-0.5" />
-                <div>
-                  <h4 className="font-athletic text-brand-cream text-base">Elo Rankings Impact</h4>
-                  <p className="text-xs text-brand-muted">Every game feeds your official provincial standing on the Veddie Leaderboard.</p>
-                </div>
-              </div>
+              <a
+                href="#cup-form"
+                className="px-6 py-2.5 rounded-xl bg-brand-red text-brand-navy text-xs font-black uppercase tracking-wider hover:bg-brand-red-hover transition-colors shadow-md"
+              >
+                Check My Team’s Eligibility
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FORM SECTION */}
-      <section className="py-24 bg-brand-navy px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center mb-12">
+      {/* EVERYTHING BUT THE PRO CONTRACT */}
+      <section className="py-20 bg-brand-navy border-b border-brand-border">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mb-12">
+            <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2">
+              Championship Atmosphere
+            </span>
+            <h2 className="text-3xl sm:text-5xl font-athletic text-brand-cream tracking-tight mb-4 font-black">
+              Everything but the pro contract.
+            </h2>
+            <p className="text-base text-brand-muted font-sans">
+              Every detail set up for the championship weekend: from starting lineup calls to final-score graphics.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            {atEventCupAmenities.map((item) => (
+              <div key={item.title} className="p-5 rounded-2xl bg-brand-surface border border-brand-border flex items-start gap-4">
+                <CheckCircle2 className="w-5 h-5 text-brand-accent shrink-0 mt-0.5" />
+                <div>
+                  <h4 className="font-athletic text-brand-cream text-base font-bold mb-1">
+                    {item.title}
+                  </h4>
+                  <p className="text-xs text-brand-muted leading-relaxed">
+                    {item.desc}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="pt-4">
+            <Link
+              href="/experience"
+              className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-brand-accent hover:underline"
+            >
+              See the Veddie Experience &rarr;
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* LEAD CAPTURE FORM (Single H2, hide duplicate form heading) */}
+      <section id="cup-form" className="py-24 bg-brand-surface px-4 sm:px-6 lg:px-8">
+        <div className="max-w-2xl mx-auto text-center mb-8">
           <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2">
-            Inaugural Edition
+            Championship Verification
           </span>
-          <h2 className="text-3xl sm:text-5xl font-athletic text-brand-cream tracking-tight mb-4">
-            Put your team on the radar.
+          <h2 className="text-3xl sm:text-5xl font-athletic text-brand-cream tracking-tight mb-2 font-black">
+            Check My Team’s Eligibility
           </h2>
-          <p className="text-base text-brand-muted max-w-xl mx-auto">
-            Tell us about your team and your home league standing. We’ll review your details and reach out as pilot division brackets are finalized.
+          <p className="text-sm text-brand-muted">
+            We check your standings, then confirm your spot. No payment today.
           </p>
         </div>
 
-        <LeadCaptureForm type="cup" id="cup-form" />
+        <LeadCaptureForm
+          type="cup"
+          hideHeading={true}
+          buttonText="Check My Team's Eligibility"
+          microcopy="We check your standings, then confirm your spot. No payment today."
+        />
       </section>
     </div>
   );
