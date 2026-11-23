@@ -7,6 +7,9 @@ import {
   Trophy,
   Calendar,
   CheckCircle2,
+  Gift,
+  Swords,
+  Users,
 } from "lucide-react";
 import ShareToCaptainButton from "@/components/ShareToCaptainButton";
 
@@ -35,7 +38,8 @@ export default function HomePage() {
 
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card/90 border border-brand-accent/40 text-brand-accent text-xs font-bold tracking-widest uppercase mb-6">
-            Two April weekends. Men’s hockey in the GTA.
+            <Sparkles className="w-3.5 h-3.5" />
+            2027 Founding Season · Men’s hockey in the GTA.
           </div>
 
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-athletic tracking-tight text-brand-cream mb-6 font-black uppercase">
@@ -61,6 +65,96 @@ export default function HomePage() {
             >
               Claim Your Team’s Spot
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* =========================================================================
+          THREE DOORS ENTRY (Captains, Players, Free Agents)
+      ========================================================================= */}
+      <section className="py-16 bg-[#071322] border-b border-brand-border px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center max-w-2xl mx-auto mb-10">
+            <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-1">
+              How Do You Want to Enter?
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-athletic text-brand-cream font-black">
+              Three Doors onto the Ice
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="p-6 rounded-2xl bg-[#0b203a] border-2 border-[#1c3f6e] hover:border-brand-accent transition-all flex flex-col justify-between shadow-xl">
+              <div>
+                <div className="w-10 h-10 rounded-xl bg-brand-surface text-brand-accent flex items-center justify-center mb-4 border border-brand-border">
+                  <Trophy className="w-5 h-5" />
+                </div>
+                <span className="text-[10px] font-bold uppercase tracking-wider text-brand-accent block mb-1">
+                  Captains · Team Entry
+                </span>
+                <h3 className="text-lg font-athletic text-brand-cream font-bold mb-2">
+                  Bring Your Squad
+                </h3>
+                <p className="text-xs text-slate-300 leading-relaxed mb-6 font-sans">
+                  Get the Captain’s Package, ready-to-paste team chat poll, and reserve your division bracket.
+                </p>
+              </div>
+              <Link
+                href="/tournaments#tournament-form"
+                className="w-full py-3 px-4 rounded-xl bg-brand-accent text-brand-navy font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 hover:bg-brand-accent-hover transition-all text-center"
+              >
+                <span>Get Captain's Package</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-[#0b203a] border-2 border-[#1c3f6e] hover:border-brand-cream transition-all flex flex-col justify-between shadow-xl">
+              <div>
+                <div className="w-10 h-10 rounded-xl bg-brand-surface text-brand-cream flex items-center justify-center mb-4 border border-brand-border">
+                  <Users className="w-5 h-5" />
+                </div>
+                <span className="text-[10px] font-bold uppercase tracking-wider text-brand-cream/80 block mb-1">
+                  Players · Roster Member
+                </span>
+                <h3 className="text-lg font-athletic text-brand-cream font-bold mb-2">
+                  Join Your Team
+                </h3>
+                <p className="text-xs text-slate-300 leading-relaxed mb-6 font-sans">
+                  Captain already registering? Confirm your roster spot, digital player card, and stall nameplate.
+                </p>
+              </div>
+              <Link
+                href="/tournaments#tournament-form"
+                className="w-full py-3 px-4 rounded-xl bg-brand-surface border border-brand-border text-brand-cream font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 hover:bg-brand-card transition-all text-center"
+              >
+                <span>Confirm Roster Spot</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-[#0b203a] border-2 border-[#1c3f6e] hover:border-brand-accent transition-all flex flex-col justify-between shadow-xl">
+              <div>
+                <div className="w-10 h-10 rounded-xl bg-brand-surface text-brand-accent flex items-center justify-center mb-4 border border-brand-border">
+                  <Swords className="w-5 h-5" />
+                </div>
+                <span className="text-[10px] font-bold uppercase tracking-wider text-brand-accent block mb-1">
+                  Solo Players · Free Agents
+                </span>
+                <h3 className="text-lg font-athletic text-brand-cream font-bold mb-2">
+                  Free Agent Draft
+                </h3>
+                <p className="text-xs text-slate-300 leading-relaxed mb-6 font-sans">
+                  No team? We build rosters for free agents. Placed onto balanced teams 14 days before puck drop.
+                </p>
+              </div>
+              <Link
+                href="/leagues#league-form"
+                className="w-full py-3 px-4 rounded-xl bg-brand-card border border-brand-border hover:border-brand-accent text-brand-cream font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-all text-center"
+              >
+                <span>Enter Free Agent Draft</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -278,6 +372,40 @@ export default function HomePage() {
             >
               Nominate a Team
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* =========================================================================
+          NOW I'M A VEDDIE CONTEST SECTION
+      ========================================================================= */}
+      <section className="py-20 bg-[#071322] border-b border-brand-border px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto p-8 sm:p-12 rounded-3xl bg-gradient-to-r from-brand-surface via-[#0b203a] to-brand-surface border-2 border-brand-accent/40 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="max-w-xl">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-accent/20 text-brand-accent text-xs font-bold uppercase tracking-wider mb-3">
+              <Gift className="w-4 h-4" />
+              WIN YOUR TEAM A WEEKEND IN RICHMOND HILL
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-athletic text-brand-cream font-black mb-3">
+              "I Used To… Now I’m a Veddie."
+            </h2>
+            <p className="text-sm text-slate-200 font-sans italic mb-4 leading-relaxed">
+              “I used to find away games with my dad, an arena book, and a map the size of a matchbox with four streets on it. Now I’m a Veddie.”
+            </p>
+            <p className="text-xs text-brand-muted font-sans leading-relaxed">
+              Submit your favourite hockey memory for a chance to win an official Veddie championship hoodie and your team’s entry into our April Invitational.
+            </p>
+          </div>
+
+          <div className="flex flex-col sm:flex-row md:flex-col gap-3 w-full sm:w-auto shrink-0">
+            <Link
+              href="/contest"
+              className="px-8 py-4 rounded-xl bg-brand-accent text-brand-navy font-bold text-xs uppercase tracking-wider hover:bg-brand-accent-hover transition-all shadow-xl text-center flex items-center justify-center gap-2"
+            >
+              <span>Enter The Contest</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <ShareToCaptainButton variant="secondary" />
           </div>
         </div>
       </section>

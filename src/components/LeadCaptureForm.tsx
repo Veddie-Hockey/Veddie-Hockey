@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
+import { CheckCircle2, AlertCircle, Loader2, Copy, Check, Share2 } from "lucide-react";
 
 export type FormType =
   | "cup"
@@ -11,7 +11,8 @@ export type FormType =
   | "leagues"
   | "pickup"
   | "partners"
-  | "contact";
+  | "contact"
+  | "contest";
 
 interface LeadCaptureFormProps {
   type: FormType;
@@ -35,6 +36,7 @@ export default function LeadCaptureForm({
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [pollCopied, setPollCopied] = useState(false);
 
   // Form State
   const [formData, setFormData] = useState({
@@ -63,9 +65,16 @@ export default function LeadCaptureForm({
     preferredDestination: "",
     preferredTimeRange: "Evening (8pm–11pm)",
 
+    // Marketing & Expansion fields
+    ownsBusiness: false,
+    businessDetails: "",
+    leagueInterest: "Yes, definitely",
+    preferredLeagueNight: "",
+    hockeyMemory: "",
+
     // Partner fields
     organization: "",
-    partnerType: "League",
+    partnerType: "A division",
     exploreMessage: "",
 
     // Contact fields
@@ -146,9 +155,13 @@ export default function LeadCaptureForm({
       successBody =
         "Thanks for putting your team forward. The Veddie competition desk will check your home-league standings and reply within 2 business days. No payment today.";
     } else if (type === "tournaments") {
-      successHeadline = "Tournament inquiry received.";
+      successHeadline = "Captain's Package on the way.";
       successBody =
-        "Thanks! The Veddie tournament desk reviews team placement and replies with full Invitational details within 2 business days.";
+        "Thanks! The Veddie tournament desk reviews team placement and replies with full package details within 2 business days. In the meantime, paste this poll into your team chat to get your numbers together:";
+    } else if (type === "contest") {
+      successHeadline = "You’re in the draw!";
+      successBody =
+        "Thanks for sharing your hockey memory. You're entered to win a Veddie hoodie and your team's entry into our April Invitational in Richmond Hill.";
     } else if (type === "champions-league") {
       successHeadline = "You’re on the Champions League interest list.";
       successBody =
@@ -179,6 +192,73 @@ export default function LeadCaptureForm({
           {successHeadline}
         </h3>
         <p className="text-brand-muted text-sm leading-relaxed mb-6">{successBody}</p>
+
+        {/* Tournaments Captain Chat Poll Helper */}
+        {type === "tournaments" && (
+          <div className="mb-6 p-4 rounded-xl bg-brand-card border border-brand-border text-left">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-brand-accent">
+                Team Chat Poll (Copy & Paste)
+              </span>
+              <button
+                type="button"
+                onClick={() => {
+                  navigator.clipboard.writeText(
+                    "April 2027 · Richmond Hill · 3 games guaranteed + pro room. Who's in? Let me know by Friday."
+                  );
+                  setPollCopied(true);
+                  setTimeout(() => setPollCopied(false), 2000);
+                }}
+                className="text-xs font-bold text-brand-cream hover:text-brand-accent flex items-center gap-1 transition-colors"
+              >
+                {pollCopied ? (
+                  <>
+                    <Check className="w-3.5 h-3.5 text-brand-accent" />
+                    <span className="text-brand-accent">Copied!</span>
+                  </>
+                ) : (
+                  <>
+                    <Copy className="w-3.5 h-3.5" />
+                    <span>Copy Poll</span>
+                  </>
+                )}
+              </button>
+            </div>
+            <p className="text-xs font-mono text-slate-200 bg-brand-surface p-2.5 rounded-lg border border-brand-border/80 select-all">
+              "April 2027 · Richmond Hill · 3 games guaranteed + pro room. Who's in? Let me know by Friday."
+            </p>
+          </div>
+        )}
+
+        {/* Contest Next Actions: Send to Chat & Captain Lead */}
+        {type === "contest" && (
+          <div className="space-y-3 mb-6">
+            <button
+              type="button"
+              onClick={() => {
+                const text = "Win our team a weekend at the Veddie Invitational! Check this out:";
+                if (navigator.share) {
+                  navigator.share({ title: "Veddie Hockey Contest", text, url: window.location.href });
+                } else {
+                  navigator.clipboard.writeText(`${text} ${window.location.href}`);
+                  setPollCopied(true);
+                  setTimeout(() => setPollCopied(false), 2000);
+                }
+              }}
+              className="w-full py-3 px-4 rounded-xl bg-brand-card border border-brand-border hover:border-brand-accent text-brand-cream font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all"
+            >
+              <Share2 className="w-4 h-4 text-brand-accent" />
+              <span>{pollCopied ? "Link Copied to Clipboard!" : "Send This to the Team Chat"}</span>
+            </button>
+            <Link
+              href="/tournaments#tournament-form"
+              className="w-full py-3 px-4 rounded-xl bg-brand-accent text-brand-navy font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-brand-accent-hover transition-all"
+            >
+              I’m the Captain — Send Me April Details &rarr;
+            </Link>
+          </div>
+        )}
+
         <div className="pt-4 border-t border-brand-border">
           <Link
             href="/play"
@@ -212,13 +292,19 @@ export default function LeadCaptureForm({
     submitButtonText = buttonText || "Join the Champions League interest list";
     microDisclaimer = microcopy !== undefined ? microcopy : "";
   } else if (type === "tournaments") {
-    headline = "Get Invitational details.";
-    intro = "Tell us about your squad. Open, 40+, 50+ and 60+.";
-    submitButtonText = buttonText || "Get Invitational details";
+    headline = "Get the Captain’s Package.";
+    intro = "Tell us about your squad. Open, 40+, 50+ and 60+. Includes date, rink, price breakdown and team-chat poll graphic.";
+    submitButtonText = buttonText || "Get the Captain's Package";
     microDisclaimer =
       microcopy !== undefined
         ? microcopy
         : "We check team placement and reply within 2 business days. No payment today.";
+  } else if (type === "contest") {
+    headline = "Win Your Team a Weekend at the Invitational.";
+    intro =
+      "Submit your 'I used to… Now I’m a Veddie' hockey memory to enter the draw for a Veddie hoodie and a team entry into our Richmond Hill Invitational.";
+    submitButtonText = buttonText || "Submit My Memory & Enter Draw";
+    microDisclaimer = microcopy !== undefined ? microcopy : "";
   } else if (type === "leagues") {
     headline = "Find your hockey night.";
     intro = "Tell us your preferred city, division and nights.";
@@ -386,9 +472,11 @@ export default function LeadCaptureForm({
                 >
                   <option value="A division">A division</option>
                   <option value="The room">The room</option>
+                  <option value="Player Services">Player Services (Physio, Chiro, Real Estate, Finance)</option>
                   <option value="Result cards">Result cards</option>
                   <option value="Event photo & video">Event photo & video</option>
                   <option value="The post-game">The post-game</option>
+                  <option value="Locker Room Partners (April Trial)">Locker Room Partners (April Trial)</option>
                   <option value="League organizer">League organizer</option>
                   <option value="Other">Other</option>
                 </select>
@@ -743,12 +831,76 @@ export default function LeadCaptureForm({
                       name="preferredDestination"
                       value={formData.preferredDestination}
                       onChange={handleChange}
-                      placeholder="e.g. Niagara, Kitchener, Toronto"
+                      placeholder="e.g. Richmond Hill, GTA"
+                      className="w-full px-3.5 py-2.5 rounded-lg bg-brand-card border border-brand-border text-brand-cream text-sm focus:outline-none focus:border-brand-accent"
+                    />
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-xs font-semibold uppercase tracking-wider text-brand-cream mb-1.5">
+                      Would your team consider a weekly league?
+                    </label>
+                    <select
+                      name="leagueInterest"
+                      value={formData.leagueInterest}
+                      onChange={handleChange}
+                      className="w-full px-3.5 py-2.5 rounded-lg bg-brand-card border border-brand-border text-brand-cream text-sm focus:outline-none focus:border-brand-accent"
+                    >
+                      <option value="Yes, definitely">Yes, definitely</option>
+                      <option value="Maybe / depending on night">Maybe / depending on night</option>
+                      <option value="Tournaments only">Tournaments only</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-xs font-semibold uppercase tracking-wider text-brand-cream mb-1.5">
+                      Preferred League Night (Optional)
+                    </label>
+                    <input
+                      type="text"
+                      name="preferredLeagueNight"
+                      value={formData.preferredLeagueNight}
+                      onChange={handleChange}
+                      placeholder="e.g. Thursdays, Sunday evenings"
                       className="w-full px-3.5 py-2.5 rounded-lg bg-brand-card border border-brand-border text-brand-cream text-sm focus:outline-none focus:border-brand-accent"
                     />
                   </div>
                 </div>
               </>
+            )}
+
+            {/* Contest Specific Fields */}
+            {type === "contest" && (
+              <div className="space-y-4">
+                <div>
+                  <label className="block text-xs font-semibold uppercase tracking-wider text-brand-cream mb-1.5">
+                    Your Current Team or Home League (Optional)
+                  </label>
+                  <input
+                    type="text"
+                    name="teamName"
+                    value={formData.teamName}
+                    onChange={handleChange}
+                    placeholder="e.g. Oakville Steelheads / Halton Rec"
+                    className="w-full px-3.5 py-2.5 rounded-lg bg-brand-card border border-brand-border text-brand-cream text-sm focus:outline-none focus:border-brand-accent"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-semibold uppercase tracking-wider text-brand-cream mb-1.5">
+                    Your "I Used To… Now I’m a Veddie" Hockey Memory <span className="text-brand-accent">*</span>
+                  </label>
+                  <textarea
+                    name="hockeyMemory"
+                    rows={4}
+                    required
+                    value={formData.hockeyMemory}
+                    onChange={handleChange}
+                    placeholder="e.g. I used to find away games with my dad, an arena book, and a map the size of a matchbox with four streets on it. Now I’m a Veddie..."
+                    className="w-full px-3.5 py-2.5 rounded-lg bg-brand-card border border-brand-border text-brand-cream text-sm focus:outline-none focus:border-brand-accent"
+                  />
+                </div>
+              </div>
             )}
 
             {/* Leagues Specific Fields */}
@@ -868,6 +1020,27 @@ export default function LeadCaptureForm({
             </div>
           </>
         )}
+
+        {/* Optional Business Owner check */}
+        <div className="p-3.5 rounded-xl bg-brand-card/50 border border-brand-border/60">
+          <label className="flex items-start gap-2.5 cursor-pointer select-none">
+            <input
+              type="checkbox"
+              name="ownsBusiness"
+              checked={formData.ownsBusiness}
+              onChange={handleChange}
+              className="mt-1 h-4 w-4 rounded border-brand-border bg-brand-card text-brand-accent focus:ring-brand-accent"
+            />
+            <div>
+              <span className="text-xs font-semibold text-brand-cream block">
+                Do you own or run a local business? (Optional)
+              </span>
+              <span className="text-[11px] text-brand-muted block mt-0.5">
+                Check here if you’d like to explore local player services, sponsorship, or team partnership discounts.
+              </span>
+            </div>
+          </label>
+        </div>
 
         {/* Marketing Consent Checkbox */}
         <div className="pt-2">

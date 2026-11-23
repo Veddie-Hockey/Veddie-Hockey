@@ -56,9 +56,19 @@ export async function sendLeadToGHL(lead: LeadPayload) {
   if (lead.ageCategory) {
     tags.push(`age-${lead.ageCategory.toLowerCase().replace(/\s+/g, "-")}`);
   }
+  if (lead.ownsBusiness) {
+    tags.push("business-owner");
+  }
+  if (lead.type === "contest") {
+    tags.push("contest-entrant");
+  }
 
   // Build notes summary from extra form fields
   const detailLines: string[] = [];
+  if (lead.ownsBusiness) detailLines.push(`Owns / Operates Business: Yes`);
+  if (lead.leagueInterest) detailLines.push(`Weekly League Interest: ${lead.leagueInterest}`);
+  if (lead.preferredLeagueNight) detailLines.push(`Preferred League Night: ${lead.preferredLeagueNight}`);
+  if (lead.hockeyMemory) detailLines.push(`Contest Hockey Memory:\n${lead.hockeyMemory}`);
   if (lead.topic) detailLines.push(`Topic: ${lead.topic}`);
   if (lead.type) detailLines.push(`Program / Form Type: ${lead.type}`);
   if (lead.city) detailLines.push(`City / Region: ${lead.city}`);

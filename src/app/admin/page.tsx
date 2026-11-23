@@ -423,7 +423,7 @@ export default function AdminPage() {
         <div className="space-y-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div className="flex items-center gap-2">
-              {["All", "cup", "champions-league", "tournaments", "leagues", "partners", "contact", "nominate"].map((t) => (
+              {["All", "cup", "champions-league", "tournaments", "leagues", "partners", "contact", "nominate", "contest"].map((t) => (
                 <button
                   key={t}
                   onClick={() => setLeadFilter(t)}

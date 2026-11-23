@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/our-story",
     "/partners",
     "/expand",
+    "/contest",
     "/contact",
     "/faqs",
     "/privacy",

@@ -40,7 +40,7 @@ export default function TournamentsPage() {
         <div className="max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-accent/40 text-brand-accent text-xs font-bold tracking-widest uppercase mb-6">
             <Calendar className="w-4 h-4" />
-            First Veddie Invitational · Early April 2027
+            2027 Founding Season · Early April 2027
           </div>
 
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-athletic text-brand-cream tracking-tight mb-6 font-black uppercase">
@@ -56,7 +56,7 @@ export default function TournamentsPage() {
               href="#tournament-form"
               className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-red text-brand-navy font-black uppercase tracking-wider text-sm hover:bg-brand-red-hover transition-all shadow-xl hover:shadow-brand-red/30 active:scale-95"
             >
-              Get Invitational Details
+              Get the Captain's Package
             </a>
             <Link
               href="/divisions"
@@ -73,7 +73,7 @@ export default function TournamentsPage() {
         </div>
       </section>
 
-      {/* CAPTAIN CALLOUT BLOCK (Nov 21 spec) */}
+      {/* CAPTAIN CALLOUT BLOCK WITH TEAM CHAT POLL */}
       <section className="py-20 bg-brand-navy border-b border-brand-border px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto p-8 sm:p-12 rounded-3xl bg-[#0b203a] border-2 border-[#1c3f6e] text-center shadow-2xl">
           <h2 className="text-2xl sm:text-4xl font-athletic text-brand-cream mb-4 font-black">
@@ -82,14 +82,43 @@ export default function TournamentsPage() {
           <p className="text-base sm:text-lg text-slate-200 leading-relaxed max-w-2xl mx-auto font-sans mb-8">
             Ice times. E-transfers. Chasing the guy who never pays. For April, we book the ice, the refs, the room, the schedule and the photos. You bring the game. We bring the show.
           </p>
+
+          {/* Quick Team-Chat Poll Card */}
+          <div className="p-4 rounded-2xl bg-brand-navy border border-brand-border/80 max-w-lg mx-auto text-left mb-8 shadow-inner">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-brand-accent">
+                Ready-To-Paste Team Chat Poll
+              </span>
+              <span className="text-[10px] text-brand-muted">Copy & paste into WhatsApp / iMessage</span>
+            </div>
+            <p className="text-xs font-mono text-brand-cream bg-brand-card p-3 rounded-lg border border-brand-border/60 select-all">
+              "April 2027 · Richmond Hill · 3 games guaranteed + pro room. Who's in? Let me know by Friday."
+            </p>
+          </div>
+
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="#tournament-form"
               className="px-8 py-3.5 rounded-xl bg-brand-red text-brand-navy font-black uppercase tracking-wider text-xs hover:bg-brand-red-hover transition-all shadow-lg"
             >
-              Get Invitational Details
+              Get the Captain's Package
             </a>
             <ShareToCaptainButton variant="secondary" />
+          </div>
+        </div>
+      </section>
+
+      {/* FOUNDING SEASON STATUS BANNER */}
+      <section className="py-8 bg-brand-card/40 border-b border-brand-border px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left text-xs text-brand-muted">
+          <div className="flex items-center gap-2 text-brand-cream font-bold">
+            <Sparkles className="w-4 h-4 text-brand-accent shrink-0" />
+            <span>2027 Founding Season Entrant Perks:</span>
+          </div>
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+            <span>• Permanent "Est. 2027" card tag</span>
+            <span>• Priority renewal rights</span>
+            <span>• Founding Members Wall listing</span>
           </div>
         </div>
       </section>

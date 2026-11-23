@@ -11,6 +11,7 @@ import {
   Share2,
   Beer,
   Building,
+  Briefcase,
 } from "lucide-react";
 import LeadCaptureForm from "@/components/LeadCaptureForm";
 
@@ -31,6 +32,11 @@ export default function PartnersPage() {
       title: "The Room",
       description: "Branding on custom player nameplates, essentials tape station, and dressing room towels.",
       icon: DoorClosed,
+    },
+    {
+      title: "Player Services",
+      description: "Direct exposure for local physiotherapy, chiro, sports rehab, wealth advisory, or real estate practices.",
+      icon: Briefcase,
     },
     {
       title: "Result Cards",
@@ -199,6 +205,30 @@ export default function PartnersPage() {
                   VEDDIE INVITATIONAL · [YOUR LOGO HERE]
                 </span>
               </div>
+            </div>
+          </div>
+
+          {/* Locker Room Partners (April Trial) */}
+          <div className="mb-12 p-8 rounded-2xl bg-[#0b203a] border-2 border-[#1c3f6e] max-w-4xl mx-auto shadow-2xl">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-accent/20 text-brand-accent text-xs font-bold uppercase tracking-wider mb-3">
+                  <Sparkles className="w-3.5 h-3.5" />
+                  Product-For-Placement Program
+                </div>
+                <h3 className="text-2xl font-athletic text-brand-cream font-bold mb-2">
+                  Locker Room Partners · April Trial
+                </h3>
+                <p className="text-xs sm:text-sm text-slate-300 max-w-xl font-sans leading-relaxed">
+                  Supply product (hydration, recovery nutrition, tape, or shower products) for ~240 adult athletes at our April events. In return, get staged locker room photography, product placement in player stalls, distribution verification, and direct player feedback within 3 business days.
+                </p>
+              </div>
+              <a
+                href="#partner-form"
+                className="shrink-0 px-6 py-3.5 rounded-xl bg-brand-accent text-brand-navy font-bold text-xs uppercase tracking-wider hover:bg-brand-accent-hover transition-all text-center"
+              >
+                Apply for April Trial &rarr;
+              </a>
             </div>
           </div>
 
