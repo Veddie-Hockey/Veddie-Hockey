@@ -43,23 +43,18 @@ export default function DivisionsPage() {
   return (
     <div className="flex flex-col">
       {/* HERO */}
-      <section className="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-b from-brand-navy via-brand-surface to-brand-navy border-b border-brand-border px-4 sm:px-6 lg:px-8 py-20 text-center">
+      <section className="relative min-h-[50vh] flex items-center justify-center bg-gradient-to-b from-brand-navy via-brand-surface to-brand-navy border-b border-brand-border px-4 sm:px-6 lg:px-8 py-20 text-center">
         <div className="max-w-4xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-accent/40 text-brand-accent text-xs font-bold tracking-widest uppercase mb-6">
-            <Shield className="w-4 h-4" />
-            COMPETITIVE INTEGRITY
-          </div>
-
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-athletic text-brand-cream tracking-tight mb-4 font-black uppercase">
-            Every division gets the same treatment.
+            Find Your Division
           </h1>
 
-          <p className="text-lg sm:text-xl text-slate-200 max-w-2xl mx-auto mb-4 font-semibold italic">
-            “A 60+ D4 team gets the same room, refs and coverage as an Open D1 team.”
+          <p className="text-lg sm:text-2xl text-brand-accent max-w-2xl mx-auto mb-4 font-athletic font-bold">
+            Pick your age group, then find the level that sounds like your team.
           </p>
 
           <p className="text-sm sm:text-base text-brand-muted max-w-xl mx-auto mb-8 font-sans">
-            Good hockey starts with players who belong on the same ice. Explore our division tiers and find where your roster belongs.
+            A 60+ D4 team gets the same room, refs and coverage as an Open D1 team. Base placement on the whole team’s current strength.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -203,35 +198,124 @@ export default function DivisionsPage() {
         </div>
       </section>
 
-      {/* D1-D4 ONE SENTENCE EXPLANATIONS (Nov 21 spec) */}
+      {/* D1-D4 SKILL CARDS WITH ITALICIZED COPY PER NOV 22 SPEC */}
       <section className="py-20 bg-brand-navy border-b border-brand-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mb-12">
             <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2">
               Skill Hierarchy
             </span>
-            <h2 className="text-3xl sm:text-4xl font-athletic text-brand-cream font-black">
+            <h2 className="text-3xl sm:text-4xl font-athletic text-brand-cream font-black mb-4">
               Skill divisions explained.
             </h2>
-            <p className="text-sm text-brand-muted">
-              Clear, straightforward placement standards for every adult hockey background.
+            <p className="text-sm text-brand-muted font-sans">
+              Base placement on your whole team’s current strength.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            {skillOneLiners.map((s) => (
-              <div key={s.code} className="p-6 rounded-2xl bg-brand-surface border border-brand-border">
-                <span className="text-sm font-athletic font-bold px-3 py-1 rounded-lg border uppercase tracking-wider bg-brand-card text-brand-accent border-brand-border block w-fit mb-3">
-                  {s.code} — {s.name}
-                </span>
-                <p className="text-sm text-brand-cream font-medium leading-relaxed">
-                  {s.summary}
-                </p>
-              </div>
-            ))}
+          {/* Age Groups shown together above skill cards per Nov 22 spec */}
+          <div className="mb-8 p-4 rounded-2xl bg-brand-surface border border-brand-border flex flex-wrap items-center gap-3">
+            <span className="text-xs font-bold uppercase tracking-wider text-brand-accent">
+              Offered Age Groups:
+            </span>
+            <span className="px-3 py-1 rounded-lg bg-brand-card text-brand-cream text-xs font-bold">Open (18+)</span>
+            <span className="px-3 py-1 rounded-lg bg-brand-card text-brand-cream text-xs font-bold">40+</span>
+            <span className="px-3 py-1 rounded-lg bg-brand-card text-brand-cream text-xs font-bold">50+</span>
+            <span className="px-3 py-1 rounded-lg bg-brand-card text-brand-cream text-xs font-bold">60+</span>
           </div>
 
-          {/* COLLAPSIBLE FULL PLACEMENT RULES (Nov 21 spec) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            {/* D1 · Elite */}
+            <div className="p-8 rounded-2xl bg-brand-surface border border-brand-border flex flex-col justify-between">
+              <div>
+                <span className="text-xs font-athletic font-bold px-3 py-1 rounded-lg border uppercase tracking-wider bg-brand-card text-brand-accent border-brand-border inline-block mb-3">
+                  D1 · Elite
+                </span>
+                <h3 className="text-xl font-athletic text-brand-cream font-bold mb-2">
+                  Top tier pace and execution
+                </h3>
+                <p className="text-xs text-brand-muted mb-4 font-sans leading-relaxed">
+                  Fast-paced hockey with former junior, university, or high-level alumni. Full-speed breakouts and sharp positioning.
+                </p>
+              </div>
+              <p className="text-xs sm:text-sm text-brand-cream/90 italic border-t border-brand-border/60 pt-4 leading-relaxed font-sans">
+                “You’ve got a nasty toe drag, had at least a cup of coffee at a high level, and somebody on the other bench has already looked you up on Elite Prospects or Hockey DB.”
+              </p>
+            </div>
+
+            {/* D2 · Competitive */}
+            <div className="p-8 rounded-2xl bg-brand-surface border border-brand-border flex flex-col justify-between">
+              <div>
+                <span className="text-xs font-athletic font-bold px-3 py-1 rounded-lg border uppercase tracking-wider bg-brand-card text-brand-accent border-brand-border inline-block mb-3">
+                  D2 · Competitive
+                </span>
+                <h3 className="text-xl font-athletic text-brand-cream font-bold mb-2">
+                  Competitive adult club play
+                </h3>
+                <p className="text-xs text-brand-muted mb-4 font-sans leading-relaxed">
+                  Experienced players with AAA/AA backgrounds or accomplished rec chemistry. Structured play and strong instincts.
+                </p>
+              </div>
+              <p className="text-xs sm:text-sm text-brand-cream/90 italic border-t border-brand-border/60 pt-4 leading-relaxed font-sans">
+                “You still remember the power play from your AAA days. You’ve drawn it on the dressing-room whiteboard.”
+              </p>
+            </div>
+
+            {/* D3 · Intermediate */}
+            <div className="p-8 rounded-2xl bg-brand-surface border border-brand-border flex flex-col justify-between">
+              <div>
+                <span className="text-xs font-athletic font-bold px-3 py-1 rounded-lg border uppercase tracking-wider bg-brand-card text-brand-accent border-brand-border inline-block mb-3">
+                  D3 · Intermediate
+                </span>
+                <h3 className="text-xl font-athletic text-brand-cream font-bold mb-2">
+                  Established rec squads
+                </h3>
+                <p className="text-xs text-brand-muted mb-4 font-sans leading-relaxed">
+                  High school varsity, select, and longtime rec players. Great passing and veteran hockey sense without the junior-speed track meet.
+                </p>
+              </div>
+              <p className="text-xs sm:text-sm text-brand-cream/90 italic border-t border-brand-border/60 pt-4 leading-relaxed font-sans">
+                “You’ve played with your winger for ten years. You know exactly where he’ll be. You’re still going to yell his name.”
+              </p>
+            </div>
+
+            {/* D4 · Recreational */}
+            <div className="p-8 rounded-2xl bg-brand-surface border border-brand-border flex flex-col justify-between">
+              <div>
+                <span className="text-xs font-athletic font-bold px-3 py-1 rounded-lg border uppercase tracking-wider bg-brand-card text-brand-accent border-brand-border inline-block mb-3">
+                  D4 · Recreational
+                </span>
+                <h3 className="text-xl font-athletic text-brand-cream font-bold mb-2">
+                  Pure rec & lifelong hockey
+                </h3>
+                <p className="text-xs text-brand-muted mb-4 font-sans leading-relaxed">
+                  House league veterans and adult-onset skaters. Competitive spirit, balanced pace, and great locker-room camaraderie.
+                </p>
+              </div>
+              <p className="text-xs sm:text-sm text-brand-cream/90 italic border-t border-brand-border/60 pt-4 leading-relaxed font-sans">
+                “You scored one off your shin pad and immediately pointed to the teammate who passed it. Chemistry like that takes time.”
+              </p>
+            </div>
+          </div>
+
+          {/* BETWEEN DIVISIONS BLOCK (Nov 22 spec) */}
+          <div className="p-8 rounded-2xl bg-brand-surface border border-brand-accent/40 max-w-2xl mx-auto text-center mb-12 shadow-xl">
+            <h3 className="text-xl font-athletic text-brand-cream font-bold mb-2">
+              Between divisions?
+            </h3>
+            <p className="text-xs sm:text-sm text-brand-muted font-sans leading-relaxed mb-6">
+              Tell us your captain’s home league, current division, and standings link. Our placement team will recommend the right bracket for close, competitive games.
+            </p>
+            <Link
+              href="/contact?topic=Division+placement"
+              className="inline-flex items-center gap-2 px-7 py-3 rounded-xl bg-brand-red text-brand-navy font-black text-xs uppercase tracking-wider hover:bg-brand-red-hover transition-all shadow-md"
+            >
+              Ask About Team Placement
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+
+          {/* COLLAPSIBLE FULL PLACEMENT RULES */}
           <div className="bg-brand-surface border border-brand-border rounded-2xl overflow-hidden">
             <button
               onClick={() => setShowFullRules(!showFullRules)}

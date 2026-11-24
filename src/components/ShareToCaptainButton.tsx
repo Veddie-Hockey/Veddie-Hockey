@@ -7,6 +7,7 @@ interface ShareToCaptainButtonProps {
   title?: string;
   text?: string;
   url?: string;
+  customUrl?: string;
   className?: string;
   variant?: "primary" | "secondary" | "minimal";
 }
@@ -15,13 +16,14 @@ export default function ShareToCaptainButton({
   title = "Veddie Hockey - Men's Hockey in the GTA",
   text = "Check out Veddie Hockey: real refs, stall nameplates, verified divisions, and a final score worth keeping.",
   url,
+  customUrl,
   className = "",
   variant = "secondary",
 }: ShareToCaptainButtonProps) {
   const [copied, setCopied] = useState(false);
 
   const handleShare = async () => {
-    const shareUrl = url || (typeof window !== "undefined" ? window.location.href : "https://veddiehockey.com");
+    const shareUrl = customUrl || url || (typeof window !== "undefined" ? window.location.href : "https://veddiehockey.com");
 
     if (typeof navigator !== "undefined" && navigator.share) {
       try {

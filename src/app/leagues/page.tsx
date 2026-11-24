@@ -1,52 +1,103 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Users, Clock, BarChart3, ShieldCheck, ArrowRight } from "lucide-react";
+import { Users, Clock, BarChart3, ShieldCheck, ArrowRight, Sparkles } from "lucide-react";
 import LeadCaptureForm from "@/components/LeadCaptureForm";
 import ShareToCaptainButton from "@/components/ShareToCaptainButton";
 
 export const metadata: Metadata = {
-  title: "Adult Hockey Leagues | Veddie Hockey",
+  title: "Adult Hockey Leagues",
   description:
-    "Make this your hockey night. Register interest in Veddie Leagues as a team captain, individual player, or goalie.",
+    "Make it your team’s weekly hockey night. Bring your roster or join as a free agent and play in a division that fits your level.",
 };
 
 export default function LeaguesPage() {
   return (
     <div className="flex flex-col">
       {/* HERO */}
-      <section className="relative min-h-[65vh] flex items-center justify-center bg-gradient-to-b from-brand-navy via-brand-surface to-brand-navy border-b border-brand-border px-4 sm:px-6 lg:px-8 py-20 text-center">
+      <section className="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-b from-brand-navy via-brand-surface to-brand-navy border-b border-brand-border px-4 sm:px-6 lg:px-8 py-20 text-center">
         <div className="max-w-4xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-accent/40 text-brand-accent text-xs font-bold tracking-widest uppercase mb-6">
-            <Users className="w-4 h-4" />
-            WEEKLY LEAGUES • ACCEPTING INTEREST
-          </div>
-
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-athletic text-brand-cream tracking-tight mb-6 font-black uppercase">
-            Make this your hockey night.
-          </h1>
-
-          <p className="text-base sm:text-xl text-brand-muted max-w-2xl mx-auto mb-8 leading-relaxed font-sans">
-            A consistent weekly game. A team to call your own. Certified officials, comprehensive stats and player stall nameplates. Join as an intact team, individual skater, or goalie.
+          <p className="text-sm font-semibold uppercase tracking-wider text-brand-accent mb-3">
+            Coming September 2027
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
-            <a
-              href="#league-form"
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-red text-brand-navy font-black uppercase tracking-wider text-sm hover:bg-brand-red-hover transition-all shadow-xl hover:shadow-brand-red/30 active:scale-95"
-            >
-              Join the League Interest List
-            </a>
-            <Link
-              href="/divisions"
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-card border border-brand-border text-brand-cream font-bold uppercase tracking-wider text-sm hover:bg-brand-card-hover transition-all"
-            >
-              Explore Divisions
-            </Link>
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-athletic text-brand-cream tracking-tight mb-4 font-black uppercase">
+            Veddie Hockey Leagues
+          </h1>
+
+          <p className="text-base sm:text-xl text-brand-muted max-w-2xl mx-auto mb-10 leading-relaxed font-sans">
+            Make it your team’s weekly hockey night. Bring your roster or join as a free agent and play in a division that fits your level.
+          </p>
+
+          {/* TWO WAYS TO JOIN */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto mb-10 text-left">
+            {/* Captains: Bring your team */}
+            <div className="p-6 rounded-2xl bg-brand-surface border border-brand-border flex flex-col justify-between">
+              <div>
+                <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-1">
+                  Captains
+                </span>
+                <h3 className="text-xl font-athletic text-brand-cream font-bold mb-2">
+                  Bring your team.
+                </h3>
+                <p className="text-xs text-brand-muted leading-relaxed mb-4">
+                  Register full team interest for your preferred night, division and home arena.
+                </p>
+              </div>
+              <a
+                href="#league-form"
+                className="w-full py-3 px-4 rounded-xl bg-brand-red text-brand-navy font-black text-xs uppercase tracking-wider hover:bg-brand-red-hover transition-all text-center"
+              >
+                Register Team Interest
+              </a>
+            </div>
+
+            {/* Individual players: Looking for a team? */}
+            <div className="p-6 rounded-2xl bg-brand-surface border border-brand-border flex flex-col justify-between">
+              <div>
+                <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-1">
+                  Individual Players & Goalies
+                </span>
+                <h3 className="text-xl font-athletic text-brand-cream font-bold mb-2">
+                  Looking for a team?
+                </h3>
+                <p className="text-xs text-brand-muted leading-relaxed mb-4">
+                  Join the free-agent and goalie list to be placed on a balanced roster in your division.
+                </p>
+              </div>
+              <a
+                href="#league-form"
+                className="w-full py-3 px-4 rounded-xl bg-brand-card border border-brand-border text-brand-cream font-bold text-xs uppercase tracking-wider hover:border-brand-accent transition-all text-center"
+              >
+                Join the Free Agent List
+              </a>
+            </div>
           </div>
 
           <div>
             <ShareToCaptainButton variant="minimal" />
           </div>
+        </div>
+      </section>
+
+      {/* FEEL LIKE YOU'RE IN THE PROS */}
+      <section className="py-16 bg-brand-surface border-b border-brand-border px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-3xl mx-auto">
+          <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2">
+            The Pro Treatment
+          </span>
+          <h2 className="text-2xl sm:text-4xl font-athletic text-brand-cream font-black mb-3">
+            Feel like you’re in the pros
+          </h2>
+          <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-sans mb-6">
+            Walk into the room and find your name above your stall. See what a Veddie game night looks like, from warmups to the final buzzer.
+          </p>
+          <Link
+            href="/experience"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-brand-card border border-brand-border hover:border-brand-accent text-brand-cream text-xs font-bold uppercase tracking-wider transition-all"
+          >
+            <span>Explore the Veddie Experience</span>
+            <ArrowRight className="w-4 h-4 text-brand-accent" />
+          </Link>
         </div>
       </section>
 
@@ -61,7 +112,7 @@ export default function LeaguesPage() {
               A league built for the way adults actually play.
             </h2>
             <p className="text-base text-brand-muted font-sans">
-              Reliable game nights, certified officiating, and clear division placement review.
+              Your weekly game, with the pro treatment: sensible ice times, an organizer you can reach and divisions we review so every game is close.
             </p>
           </div>
 
@@ -69,10 +120,10 @@ export default function LeaguesPage() {
             <div className="p-8 rounded-2xl bg-brand-surface border border-brand-border">
               <Clock className="w-8 h-8 text-brand-accent mb-4" />
               <h3 className="text-xl font-athletic text-brand-cream mb-2 font-bold">
-                Tell Us Your Preferred Nights
+                Predictable Scheduling
               </h3>
               <p className="text-xs text-brand-muted leading-relaxed font-sans">
-                Predictable weekly schedules and confirmed start times. Tell us which weeknights work best for your squad.
+                Evening ice times that get you home at a reasonable hour.
               </p>
             </div>
 

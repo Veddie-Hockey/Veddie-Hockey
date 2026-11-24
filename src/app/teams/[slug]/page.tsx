@@ -31,10 +31,10 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: TeamPageProps): Metadata {
   const team = findTeamBySlug(params.slug);
   if (!team) {
-    return { title: "Team Not Found | Veddie Hockey" };
+    return { title: "Team Not Found" };
   }
   return {
-    title: `${team.name} | Veddie Team Profile`,
+    title: `${team.name} - Team Profile`,
     description: `Official profile and qualification status for ${team.name} in Veddie adult hockey competition.`,
   };
 }

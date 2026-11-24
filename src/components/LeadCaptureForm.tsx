@@ -18,6 +18,7 @@ interface LeadCaptureFormProps {
   type: FormType;
   id?: string;
   defaultTopic?: string;
+  defaultPartnerType?: string;
   className?: string;
   hideHeading?: boolean;
   buttonText?: string;
@@ -28,6 +29,7 @@ export default function LeadCaptureForm({
   type,
   id,
   defaultTopic,
+  defaultPartnerType,
   className = "",
   hideHeading = false,
   buttonText,
@@ -44,7 +46,7 @@ export default function LeadCaptureForm({
     email: "",
     city: "",
     ageCategory: "Open 18+",
-    skillLevel: "Not sure",
+    skillLevel: "D2 — Competitive",
     anythingElse: "",
     marketingConsent: false,
 
@@ -74,7 +76,8 @@ export default function LeadCaptureForm({
 
     // Partner fields
     organization: "",
-    partnerType: "A division",
+    partnerType: defaultPartnerType || "Locker Room Partners",
+    productCategory: "Apparel",
     exploreMessage: "",
 
     // Contact fields
@@ -548,26 +551,27 @@ export default function LeadCaptureForm({
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div>
                 <label className="block text-xs font-semibold uppercase tracking-wider text-brand-cream mb-1.5">
-                  Preferred City / Area <span className="text-brand-accent">*</span>
+                  Preferred City / Area {type !== "cup" && type !== "tournaments" && <span className="text-brand-accent">*</span>}
                 </label>
                 <input
                   type="text"
                   name="city"
                   value={formData.city}
                   onChange={handleChange}
-                  required
+                  required={type !== "cup" && type !== "tournaments"}
                   placeholder="e.g. GTA / Kitchener"
                   className="w-full px-3.5 py-2.5 rounded-lg bg-brand-card border border-brand-border text-brand-cream text-sm focus:outline-none focus:border-brand-accent"
                 />
               </div>
               <div>
                 <label className="block text-xs font-semibold uppercase tracking-wider text-brand-cream mb-1.5">
-                  Age Category
+                  Age Category {(type === "cup" || type === "tournaments") && <span className="text-brand-accent">*</span>}
                 </label>
                 <select
                   name="ageCategory"
                   value={formData.ageCategory}
                   onChange={handleChange}
+                  required={type === "cup" || type === "tournaments"}
                   className="w-full px-3.5 py-2.5 rounded-lg bg-brand-card border border-brand-border text-brand-cream text-sm focus:outline-none focus:border-brand-accent"
                 >
                   <option value="Open 18+">Open 18+</option>
@@ -579,12 +583,13 @@ export default function LeadCaptureForm({
               </div>
               <div>
                 <label className="block text-xs font-semibold uppercase tracking-wider text-brand-cream mb-1.5">
-                  Skill Level
+                  Skill Level {(type === "cup" || type === "tournaments") && <span className="text-brand-accent">*</span>}
                 </label>
                 <select
                   name="skillLevel"
                   value={formData.skillLevel}
                   onChange={handleChange}
+                  required={type === "cup" || type === "tournaments"}
                   className="w-full px-3.5 py-2.5 rounded-lg bg-brand-card border border-brand-border text-brand-cream text-sm focus:outline-none focus:border-brand-accent"
                 >
                   <option value="D1 — Elite">D1 — Elite</option>
@@ -616,14 +621,13 @@ export default function LeadCaptureForm({
                   </div>
                   <div>
                     <label className="block text-xs font-semibold uppercase tracking-wider text-brand-cream mb-1.5">
-                      Home League <span className="text-brand-accent">*</span>
+                      Home League (Optional)
                     </label>
                     <input
                       type="text"
                       name="homeLeague"
                       value={formData.homeLeague}
                       onChange={handleChange}
-                      required
                       placeholder="e.g. Halton Adult Hockey League"
                       className="w-full px-3.5 py-2.5 rounded-lg bg-brand-card border border-brand-border text-brand-cream text-sm focus:outline-none focus:border-brand-accent"
                     />
@@ -633,21 +637,20 @@ export default function LeadCaptureForm({
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-xs font-semibold uppercase tracking-wider text-brand-cream mb-1.5">
-                      Home Division <span className="text-brand-accent">*</span>
+                      Home Division (Optional)
                     </label>
                     <input
                       type="text"
                       name="homeDivision"
                       value={formData.homeDivision}
                       onChange={handleChange}
-                      required
                       placeholder="e.g. Division 1 / Tier A"
                       className="w-full px-3.5 py-2.5 rounded-lg bg-brand-card border border-brand-border text-brand-cream text-sm focus:outline-none focus:border-brand-accent"
                     />
                   </div>
                   <div>
                     <label className="block text-xs font-semibold uppercase tracking-wider text-brand-cream mb-1.5">
-                      Current Standing
+                      Current Standing (Optional)
                     </label>
                     <input
                       type="text"
@@ -662,14 +665,13 @@ export default function LeadCaptureForm({
 
                 <div>
                   <label className="block text-xs font-semibold uppercase tracking-wider text-brand-cream mb-1.5">
-                    Brief Team Playing Background <span className="text-brand-accent">*</span>
+                    Brief Team Playing Background (Optional)
                   </label>
                   <textarea
                     name="playingBackground"
                     rows={2}
                     value={formData.playingBackground}
                     onChange={handleChange}
-                    required
                     placeholder="e.g. Mix of AAA/AA alumni, playing together 6 years"
                     className="w-full px-3.5 py-2.5 rounded-lg bg-brand-card border border-brand-border text-brand-cream text-sm focus:outline-none focus:border-brand-accent"
                   />
@@ -778,7 +780,21 @@ export default function LeadCaptureForm({
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-xs font-semibold uppercase tracking-wider text-brand-cream mb-1.5">
-                      Enquiring As <span className="text-brand-accent">*</span>
+                      Team Name <span className="text-brand-accent">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      name="teamName"
+                      value={formData.teamName}
+                      onChange={handleChange}
+                      required
+                      placeholder="Your team name"
+                      className="w-full px-3.5 py-2.5 rounded-lg bg-brand-card border border-brand-border text-brand-cream text-sm focus:outline-none focus:border-brand-accent"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-xs font-semibold uppercase tracking-wider text-brand-cream mb-1.5">
+                      Enquiring As
                     </label>
                     <select
                       name="enquiryType"
@@ -786,45 +802,29 @@ export default function LeadCaptureForm({
                       onChange={handleChange}
                       className="w-full px-3.5 py-2.5 rounded-lg bg-brand-card border border-brand-border text-brand-cream text-sm focus:outline-none focus:border-brand-accent"
                     >
-                      <option value="Team">Team</option>
-                      <option value="Individual player">Individual player</option>
+                      <option value="Team">Team Captain</option>
+                      <option value="Individual player">Roster Member</option>
                     </select>
                   </div>
-                  {formData.enquiryType === "Team" && (
-                    <div>
-                      <label className="block text-xs font-semibold uppercase tracking-wider text-brand-cream mb-1.5">
-                        Team Name <span className="text-brand-accent">*</span>
-                      </label>
-                      <input
-                        type="text"
-                        name="teamName"
-                        value={formData.teamName}
-                        onChange={handleChange}
-                        required
-                        placeholder="Your team name"
-                        className="w-full px-3.5 py-2.5 rounded-lg bg-brand-card border border-brand-border text-brand-cream text-sm focus:outline-none focus:border-brand-accent"
-                      />
-                    </div>
-                  )}
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-xs font-semibold uppercase tracking-wider text-brand-cream mb-1.5">
-                      Preferred Dates or Months
+                      Preferred Dates or Months (Optional)
                     </label>
                     <input
                       type="text"
                       name="preferredDates"
                       value={formData.preferredDates}
                       onChange={handleChange}
-                      placeholder="e.g. Spring / Summer weekends"
+                      placeholder="e.g. Early April 2027"
                       className="w-full px-3.5 py-2.5 rounded-lg bg-brand-card border border-brand-border text-brand-cream text-sm focus:outline-none focus:border-brand-accent"
                     />
                   </div>
                   <div>
                     <label className="block text-xs font-semibold uppercase tracking-wider text-brand-cream mb-1.5">
-                      Preferred Destination
+                      Preferred Destination (Optional)
                     </label>
                     <input
                       type="text"
@@ -917,8 +917,9 @@ export default function LeadCaptureForm({
                       onChange={handleChange}
                       className="w-full px-3.5 py-2.5 rounded-lg bg-brand-card border border-brand-border text-brand-cream text-sm focus:outline-none focus:border-brand-accent"
                     >
-                      <option value="Team">Team</option>
-                      <option value="Individual">Individual</option>
+                      <option value="Team">Team Captain (Bring Your Team)</option>
+                      <option value="Individual">Individual Skater (Free Agent)</option>
+                      <option value="Goalie">Individual Goalie (Free Agent)</option>
                     </select>
                   </div>
                   <div>

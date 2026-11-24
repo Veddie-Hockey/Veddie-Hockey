@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Participation Terms | Veddie Hockey",
+  title: "Participation Terms",
   description: "Official Participation Terms, Registration Rules, and Agreement for Veddie Hockey.",
 };
 

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ShieldCheck, Mail, AlertTriangle, FileText } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Player Code of Conduct | Veddie Hockey",
+  title: "Player Code of Conduct",
   description: "Official Player Code of Conduct, sportsmanship rules, and incident reporting for Veddie Hockey.",
 };
 

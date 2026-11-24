@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Veddie Hockey",
+  title: "Privacy Policy",
   description: "Official Privacy Policy for Veddie Hockey participants, captains, and website visitors.",
 };
 

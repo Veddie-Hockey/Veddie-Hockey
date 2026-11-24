@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Refund Policy | Veddie Hockey",
+  title: "Refund Policy",
   description: "Official Refund and Cancellation Policy for Veddie Hockey events.",
 };
 

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { HelpCircle, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Frequently Asked Questions | Veddie Hockey",
+  title: "Frequently Asked Questions",
   description:
     "Find answers about the Veddie Invitational, the Champions Cup, qualification rules, amenities, and registration details.",
 };

@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import { PRO_FEATURES, ProFeature, FeatureCategory } from "@/data/proFeatures";
-import LockerRoomVisualizer from "@/components/LockerRoomVisualizer";
 import ShareToCaptainButton from "@/components/ShareToCaptainButton";
 import {
   Sparkles,
@@ -33,6 +32,8 @@ import {
   BarChart3,
   ArrowRight,
   Shield,
+  Calendar,
+  Trophy,
 } from "lucide-react";
 
 // Icon mapping helper
@@ -95,16 +96,10 @@ export default function ExperiencePage() {
           </h1>
 
           <p className="text-base sm:text-xl text-brand-muted max-w-2xl mx-auto mb-10 leading-relaxed font-sans">
-            Your name on the stall, real refs, real standings, and a final score worth keeping. Discover the touches that make a Veddie hockey weekend different.
+            You’ve put in years of late skates because you love the game. You don’t have to be a pro to feel like one. Your name above the stall, certified refs and a final score worth keeping, at every level.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
-            <Link
-              href="/play"
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-red text-brand-navy font-black uppercase tracking-wider text-sm hover:bg-brand-red-hover transition-all shadow-xl hover:shadow-brand-red/30 active:scale-95"
-            >
-              See the April Events
-            </Link>
             <Link
               href="/divisions"
               className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-card border border-brand-border text-brand-cream font-bold uppercase tracking-wider text-sm hover:bg-brand-card-hover transition-all"
@@ -134,7 +129,7 @@ export default function ExperiencePage() {
                 “Ready before you are.”
               </p>
               <p className="text-xs text-brand-muted leading-relaxed">
-                Your name on the stall, tape ready, fresh towels, and your team playlist on.
+                Walk in with your team. Your name is above the stall, the tape is ready and your playlist is on.
               </p>
             </div>
 
@@ -149,7 +144,7 @@ export default function ExperiencePage() {
                 “Hockey that counts.”
               </p>
               <p className="text-xs text-brand-muted leading-relaxed">
-                Real refs, divisions that fit, standings that update, and something on the line.
+                Play teams at your level, with certified refs and a score that counts toward the standings.
               </p>
             </div>
 
@@ -164,19 +159,13 @@ export default function ExperiencePage() {
                 “A final score worth keeping.”
               </p>
               <p className="text-xs text-brand-muted leading-relaxed">
-                Matchup cards, a final-score graphic, highlight clips, and a high-resolution team photo.
+                Relive it the next morning with the team photo, a final-score graphic and clips for the group chat.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* LOCKER ROOM VISUALIZER */}
-      <section className="py-16 bg-brand-navy border-b border-brand-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <LockerRoomVisualizer />
-        </div>
-      </section>
 
       {/* FULL FEATURES LIST */}
       <section className="py-20 bg-brand-surface border-b border-brand-border">
@@ -252,6 +241,91 @@ export default function ExperiencePage() {
         </div>
       </section>
 
+      {/* UPCOMING EVENTS */}
+      <section className="py-20 bg-brand-navy border-b border-brand-border px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2">
+              On-Ice Schedule
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-athletic text-brand-cream font-black">
+              Upcoming Events
+            </h2>
+            <p className="text-sm text-brand-muted font-sans mt-2">
+              Experience the full pro treatment at our premier GTA events.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            {/* Event 1: Invitational */}
+            <div className="bg-[#0b203a] border-2 border-[#1c3f6e] hover:border-brand-accent rounded-2xl p-8 flex flex-col justify-between transition-all group shadow-xl">
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-xs font-black uppercase tracking-wider px-3 py-1 rounded bg-brand-accent text-brand-navy">
+                    Early April 2027
+                  </span>
+                  <span className="text-xs font-semibold text-brand-muted uppercase">
+                    Tournament
+                  </span>
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-athletic text-brand-cream font-black mb-2">
+                  The Veddie Invitational
+                </h3>
+                <p className="text-sm font-bold text-brand-cream/90 mb-4">
+                  Early April 2027 · Open, 40+, 50+ and 60+
+                </p>
+                <p className="text-xs text-slate-300 leading-relaxed mb-6 font-sans">
+                  Three guaranteed games, strict divisions, certified refs and your name above the stall.
+                </p>
+              </div>
+              <div className="space-y-3">
+                <Link
+                  href="/tournaments"
+                  className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl bg-brand-red text-brand-navy text-xs font-black uppercase tracking-wider hover:bg-brand-red-hover transition-all shadow-md"
+                >
+                  View Invitational Details
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+                <ShareToCaptainButton variant="minimal" customUrl="https://veddiehockey.com/tournaments" />
+              </div>
+            </div>
+
+            {/* Event 2: Champions Cup */}
+            <div className="bg-[#0b203a] border-2 border-[#1c3f6e] hover:border-brand-red rounded-2xl p-8 flex flex-col justify-between transition-all group shadow-xl">
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-xs font-black uppercase tracking-wider px-3 py-1 rounded bg-brand-red text-brand-navy">
+                    Championship Event
+                  </span>
+                  <span className="text-xs font-semibold text-brand-muted uppercase">
+                    GTA
+                  </span>
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-athletic text-brand-cream font-black mb-2">
+                  The Veddie Champions Cup
+                </h3>
+                <p className="text-sm font-bold text-brand-cream/90 mb-4">
+                  Dates and venue to be announced
+                </p>
+                <p className="text-xs text-slate-300 leading-relaxed mb-6 font-sans">
+                  Earn your spot in your home league. Then face qualifying teams from other leagues for the Cup.
+                </p>
+              </div>
+              <div className="space-y-3">
+                <Link
+                  href="/champions-cup#qualification"
+                  className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl bg-brand-cream text-brand-navy text-xs font-black uppercase tracking-wider hover:bg-white transition-all shadow-md"
+                >
+                  How Teams Qualify
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+                <ShareToCaptainButton variant="minimal" customUrl="https://veddiehockey.com/champions-cup" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FINAL BOTTOM CALLOUT */}
       <section className="py-24 bg-brand-navy px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-3xl mx-auto">
@@ -259,14 +333,14 @@ export default function ExperiencePage() {
             You bring the game. We bring the show.
           </h2>
           <p className="text-base text-brand-muted mb-8 max-w-xl mx-auto">
-            April events in the GTA: The Veddie Invitational and Champions Cup. Reserve your squad’s place on the ice.
+            Ready to get your team onto the ice? Find your format and claim your place.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/play"
               className="inline-flex items-center gap-2 px-9 py-4 rounded-xl bg-brand-red text-brand-navy font-black uppercase tracking-wider text-sm hover:bg-brand-red-hover transition-all shadow-xl active:scale-95"
             >
-              See the April Events
+              Find Your Game
               <ArrowRight className="w-4 h-4 stroke-[3]" />
             </Link>
             <ShareToCaptainButton />

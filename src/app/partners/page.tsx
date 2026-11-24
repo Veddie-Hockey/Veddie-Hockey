@@ -16,7 +16,7 @@ import {
 import LeadCaptureForm from "@/components/LeadCaptureForm";
 
 export const metadata: Metadata = {
-  title: "Partners | Veddie Hockey",
+  title: "Partners",
   description:
     "Partner with Veddie Hockey. Opportunities for league organizers, brand sponsors, and community partners across the GTA.",
 };
@@ -208,26 +208,64 @@ export default function PartnersPage() {
             </div>
           </div>
 
-          {/* Locker Room Partners (April Trial) */}
-          <div className="mb-12 p-8 rounded-2xl bg-[#0b203a] border-2 border-[#1c3f6e] max-w-4xl mx-auto shadow-2xl">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
-              <div>
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-accent/20 text-brand-accent text-xs font-bold uppercase tracking-wider mb-3">
-                  <Sparkles className="w-3.5 h-3.5" />
-                  Product-For-Placement Program
+          {/* LOCKER ROOM PARTNERS (Nov 22 Spec) */}
+          <div className="mb-16 p-8 sm:p-12 rounded-3xl bg-[#0b203a] border-2 border-[#1c3f6e] max-w-4xl mx-auto shadow-2xl text-left">
+            <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2 font-athletic">
+              In-Kind Product Trial
+            </span>
+            <h3 className="text-2xl sm:text-3xl font-athletic text-brand-cream font-black mb-4">
+              Locker Room Partners
+            </h3>
+            <p className="text-sm sm:text-base text-slate-200 font-sans leading-relaxed mb-4">
+              The hat in the trophy photo. The cold drink after the final buzzer. The snack a player reaches for between games. Locker Room Partners put their products in the hands of adult rec hockey players at the moment they’ll use them.
+            </p>
+            <p className="text-sm sm:text-base text-slate-300 font-sans leading-relaxed mb-8">
+              Start with one event. Your brand supplies the product, and Veddie handles distribution. An in-kind trial can be covered entirely with product.
+            </p>
+
+            {/* Where your product fits */}
+            <div className="mb-8">
+              <h4 className="text-xs font-bold uppercase tracking-wider text-brand-accent mb-4">
+                Where your product fits
+              </h4>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-sans">
+                <div className="p-4 rounded-xl bg-brand-surface border border-brand-border">
+                  <span className="font-bold text-brand-cream block mb-1">Apparel</span>
+                  <p className="text-brand-muted">Outfit the winning roster with championship hats for the trophy photo.</p>
                 </div>
-                <h3 className="text-2xl font-athletic text-brand-cream font-bold mb-2">
-                  Locker Room Partners · April Trial
-                </h3>
-                <p className="text-xs sm:text-sm text-slate-300 max-w-xl font-sans leading-relaxed">
-                  Supply product (hydration, recovery nutrition, tape, or shower products) for ~240 adult athletes at our April events. In return, get staged locker room photography, product placement in player stalls, distribution verification, and direct player feedback within 3 business days.
-                </p>
+                <div className="p-4 rounded-xl bg-brand-surface border border-brand-border">
+                  <span className="font-bold text-brand-cream block mb-1">Body care</span>
+                  <p className="text-brand-muted">Give players travel-size soap or body wash for the post-game shower.</p>
+                </div>
+                <div className="p-4 rounded-xl bg-brand-surface border border-brand-border">
+                  <span className="font-bold text-brand-cream block mb-1">Hydration</span>
+                  <p className="text-brand-muted">Put a cold drink in players’ hands as they come off the ice.</p>
+                </div>
+                <div className="p-4 rounded-xl bg-brand-surface border border-brand-border">
+                  <span className="font-bold text-brand-cream block mb-1">Game-day snacks</span>
+                  <p className="text-brand-muted">Hand players a bar at check-in to tuck into their bag for later.</p>
+                </div>
               </div>
+            </div>
+
+            {/* What your brand gets */}
+            <div className="mb-8 p-6 rounded-2xl bg-brand-navy/60 border border-brand-border">
+              <h4 className="text-xs font-bold uppercase tracking-wider text-brand-accent mb-2">
+                What your brand gets
+              </h4>
+              <p className="text-xs sm:text-sm text-slate-200 leading-relaxed font-sans">
+                We feature your product where players pick it up and recognize your brand in our shared event thank-you. Within three business days, you’ll receive a recap with distribution counts, photos cleared for your use, player feedback and QR scans if you provided an offer.
+              </p>
+            </div>
+
+            {/* CTA */}
+            <div className="pt-2">
               <a
                 href="#partner-form"
-                className="shrink-0 px-6 py-3.5 rounded-xl bg-brand-accent text-brand-navy font-bold text-xs uppercase tracking-wider hover:bg-brand-accent-hover transition-all text-center"
+                className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-brand-red text-brand-navy font-black text-xs uppercase tracking-wider hover:bg-brand-red-hover transition-all shadow-lg"
               >
-                Apply for April Trial &rarr;
+                Become a Locker Room Partner
+                <ArrowRight className="w-4 h-4" />
               </a>
             </div>
           </div>

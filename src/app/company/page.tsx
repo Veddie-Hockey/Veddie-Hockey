@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Company | Veddie Hockey",
+  title: "Company",
   description:
     "About Veddie Hockey, who runs it, where it launches, operations in Southern Ontario, careers, and headquarters.",
 };
@@ -300,7 +300,7 @@ export default function CompanyPage() {
               <div className="space-y-3 text-sm text-brand-cream">
                 <div className="flex items-center gap-2.5">
                   <MapPin className="w-4 h-4 text-brand-accent shrink-0" />
-                  <span>5-1050 King Street W., Toronto, Ontario M6K 0C7</span>
+                  <span>Greater Toronto Area, Ontario</span>
                 </div>
                 <div className="flex items-center gap-2.5">
                   <Mail className="w-4 h-4 text-brand-accent shrink-0" />

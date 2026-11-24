@@ -105,11 +105,7 @@ export default function Footer() {
             </h4>
             <div className="space-y-2 text-xs">
               <p className="text-brand-cream font-bold text-sm">
-                Greater Toronto Area HQ
-              </p>
-              <p className="text-brand-muted leading-relaxed">
-                5-1050 King Street W.<br />
-                Toronto, Ontario M6K 0C7
+                Greater Toronto Area
               </p>
               <p className="pt-2">
                 <a

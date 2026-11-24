@@ -4,7 +4,7 @@ import { Gift, Trophy, Sparkles, MessageSquare, ArrowRight, ShieldCheck, Heart }
 import LeadCaptureForm from "@/components/LeadCaptureForm";
 
 export const metadata: Metadata = {
-  title: "Win Your Team a Weekend | Veddie Hockey Contest",
+  title: "Win Your Team a Weekend - Contest",
   description:
     "Submit your 'I used to… Now I’m a Veddie' hockey memory to enter the draw for a Veddie hoodie and a team entry into our Richmond Hill Invitational.",
 };

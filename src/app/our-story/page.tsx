@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Sparkles, ArrowRight, Heart } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Our Story | Veddie Hockey",
+  title: "Our Story",
   description:
     "The name comes from hockey 'vet'. Nobody ever set the room up for us, so we did. Learn why Veddie was created.",
 };
@@ -63,7 +63,7 @@ export default function OurStoryPage() {
               A standard built for players who care.
             </h3>
             <p className="text-sm text-brand-muted leading-relaxed">
-              We started Veddie to give adult hockey the presentation it deserves: clean dressing rooms with custom nameplates, cold towels waiting on your stall, certified officials, digital scorekeeping, and photos you can actually share.
+              We started Veddie because the guys who play every week deserve the pro treatment: your name above the stall, cold towels waiting, certified officials, digital scorekeeping and photos worth sharing.
             </p>
           </div>
 

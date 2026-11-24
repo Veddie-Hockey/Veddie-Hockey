@@ -1,62 +1,42 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Calendar, ShieldCheck, Trophy, Sparkles, ArrowRight, CheckCircle2, Users } from "lucide-react";
+import { Calendar, Trophy, ArrowRight, CheckCircle2, Shield, Clock, MapPin } from "lucide-react";
 import LeadCaptureForm from "@/components/LeadCaptureForm";
 import ShareToCaptainButton from "@/components/ShareToCaptainButton";
 
 export const metadata: Metadata = {
-  title: "The Veddie Invitational, April 2027 | Veddie Hockey",
+  title: "The Veddie Invitational",
   description:
-    "First Veddie Invitational · Early April 2027 in the GTA. Your game. The pro treatment. Open, 40+, 50+ and 60+. Real refs, three games minimum and your name above the stall.",
+    "Bring your team for a weekend of competitive hockey. Face teams at your level and play for a tournament title.",
 };
 
 export default function TournamentsPage() {
   const brackets = [
-    { name: "Open (18+)", status: "Planned", desc: "Competitive and recreational adult squads" },
-    { name: "40+ Masters", status: "Planned", desc: "Four decades of hockey instincts" },
-    { name: "50+ Legends", status: "Planned", desc: "Fast puck movement and great locker rooms" },
-    { name: "60+ Classics", status: "Planned", desc: "Lifelong players who still love the game" },
-  ];
-
-  const atEveryEventAmenities = [
-    "Player stall nameplates",
-    "Room ready on arrival",
-    "Tape & essentials station",
-    "A fresh towel for every player",
-    "Water & sports drinks in the room",
-    "Pregame music ready",
-    "Certified refs & timekeeper",
-    "Warm-up pucks ready",
-    "Live stats & standings",
-    "Three Stars honours",
-    "Team photo & final-score graphic within 72 hours",
-    "Highlight clips",
+    { name: "Open (18+)", desc: "Competitive and recreational adult squads" },
+    { name: "40+ Masters", desc: "Four decades of hockey instincts" },
+    { name: "50+ Legends", desc: "Fast puck movement and great locker rooms" },
+    { name: "60+ Classics", desc: "Lifelong players who still love the game" },
   ];
 
   return (
     <div className="flex flex-col">
       {/* HERO */}
-      <section className="relative min-h-[65vh] flex items-center justify-center bg-gradient-to-b from-brand-navy via-brand-surface to-brand-navy border-b border-brand-border px-4 sm:px-6 lg:px-8 py-20 text-center">
+      <section className="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-b from-brand-navy via-brand-surface to-brand-navy border-b border-brand-border px-4 sm:px-6 lg:px-8 py-20 text-center">
         <div className="max-w-4xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-accent/40 text-brand-accent text-xs font-bold tracking-widest uppercase mb-6">
-            <Calendar className="w-4 h-4" />
-            2027 Founding Season · Early April 2027
-          </div>
-
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-athletic text-brand-cream tracking-tight mb-6 font-black uppercase">
-            Your game. The pro treatment.
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-athletic text-brand-cream tracking-tight mb-4 font-black uppercase">
+            Veddie Hockey Tournaments
           </h1>
 
-          <p className="text-base sm:text-xl text-brand-muted max-w-2xl mx-auto mb-8 leading-relaxed font-sans">
-            Open, 40+, 50+ and 60+. Real refs, three games minimum and your name above the stall.
+          <p className="text-base sm:text-xl text-brand-muted max-w-2xl mx-auto mb-10 leading-relaxed font-sans">
+            Bring your team for a weekend of competitive hockey. Face teams at your level and play for a tournament title.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
             <a
-              href="#tournament-form"
+              href="#upcoming-tournaments"
               className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-red text-brand-navy font-black uppercase tracking-wider text-sm hover:bg-brand-red-hover transition-all shadow-xl hover:shadow-brand-red/30 active:scale-95"
             >
-              Get the Captain's Package
+              View Upcoming Tournaments
             </a>
             <Link
               href="/divisions"
@@ -66,122 +46,202 @@ export default function TournamentsPage() {
             </Link>
           </div>
 
-          <div className="flex items-center justify-center gap-2 text-xs text-brand-muted">
-            <span>Playing without a team?</span>
+          <div>
             <ShareToCaptainButton variant="minimal" />
           </div>
         </div>
       </section>
 
-      {/* CAPTAIN CALLOUT BLOCK WITH TEAM CHAT POLL */}
-      <section className="py-20 bg-brand-navy border-b border-brand-border px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto p-8 sm:p-12 rounded-3xl bg-[#0b203a] border-2 border-[#1c3f6e] text-center shadow-2xl">
-          <h2 className="text-2xl sm:text-4xl font-athletic text-brand-cream mb-4 font-black">
-            Captain, you’ve done enough.
-          </h2>
-          <p className="text-base sm:text-lg text-slate-200 leading-relaxed max-w-2xl mx-auto font-sans mb-8">
-            Ice times. E-transfers. Chasing the guy who never pays. For April, we book the ice, the refs, the room, the schedule and the photos. You bring the game. We bring the show.
-          </p>
-
-          {/* Quick Team-Chat Poll Card */}
-          <div className="p-4 rounded-2xl bg-brand-navy border border-brand-border/80 max-w-lg mx-auto text-left mb-8 shadow-inner">
-            <div className="flex items-center justify-between mb-2">
-              <span className="text-[11px] font-bold uppercase tracking-wider text-brand-accent">
-                Ready-To-Paste Team Chat Poll
-              </span>
-              <span className="text-[10px] text-brand-muted">Copy & paste into WhatsApp / iMessage</span>
-            </div>
-            <p className="text-xs font-mono text-brand-cream bg-brand-card p-3 rounded-lg border border-brand-border/60 select-all">
-              "April 2027 · Richmond Hill · 3 games guaranteed + pro room. Who's in? Let me know by Friday."
-            </p>
-          </div>
-
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href="#tournament-form"
-              className="px-8 py-3.5 rounded-xl bg-brand-red text-brand-navy font-black uppercase tracking-wider text-xs hover:bg-brand-red-hover transition-all shadow-lg"
-            >
-              Get the Captain's Package
-            </a>
-            <ShareToCaptainButton variant="secondary" />
-          </div>
-        </div>
-      </section>
-
-      {/* FOUNDING SEASON STATUS BANNER */}
-      <section className="py-8 bg-brand-card/40 border-b border-brand-border px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left text-xs text-brand-muted">
-          <div className="flex items-center gap-2 text-brand-cream font-bold">
-            <Sparkles className="w-4 h-4 text-brand-accent shrink-0" />
-            <span>2027 Founding Season Entrant Perks:</span>
-          </div>
-          <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
-            <span>• Permanent "Est. 2027" card tag</span>
-            <span>• Priority renewal rights</span>
-            <span>• Founding Members Wall listing</span>
-          </div>
-        </div>
-      </section>
-
-      {/* PLANNED BRACKETS */}
-      <section className="py-20 bg-brand-surface border-b border-brand-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* UPCOMING TOURNAMENTS */}
+      <section id="upcoming-tournaments" className="py-20 bg-brand-surface border-b border-brand-border px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2">
-              Age Categories
+              Tournament Calendar
             </span>
             <h2 className="text-3xl sm:text-5xl font-athletic text-brand-cream tracking-tight mb-4 font-black">
-              Every division gets the same treatment.
+              Upcoming Tournaments
             </h2>
-            <p className="text-sm sm:text-base text-brand-muted font-sans">
-              Planned brackets for Early April 2027 in the Greater Toronto Area.
+            <p className="text-base text-brand-muted font-sans">
+              Confirmed dates, guaranteed games, and divisions for adult squads.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-            {brackets.map((b) => (
-              <div key={b.name} className="p-6 rounded-2xl bg-brand-card border border-brand-border flex flex-col justify-between">
-                <div>
-                  <div className="flex items-center justify-between mb-3">
-                    <h3 className="font-athletic text-brand-cream font-bold text-xl">
-                      {b.name}
-                    </h3>
-                    <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-brand-surface text-brand-muted border border-brand-border">
-                      {b.status}
-                    </span>
-                  </div>
-                  <p className="text-xs text-brand-muted leading-relaxed">
-                    {b.desc}
-                  </p>
+          {/* Featured Tournament Card: The Veddie Invitational */}
+          <div className="bg-[#0b203a] border-2 border-[#1c3f6e] rounded-3xl p-8 sm:p-12 shadow-2xl space-y-8">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-brand-border/60 pb-6">
+              <div>
+                <span className="text-xs font-black uppercase tracking-wider px-3 py-1 rounded bg-brand-accent text-brand-navy inline-block mb-3">
+                  Early April 2027
+                </span>
+                <h3 className="text-3xl sm:text-4xl font-athletic text-brand-cream font-black">
+                  Veddie Invitational · Early April 2027
+                </h3>
+                <p className="text-sm font-bold text-brand-cream/90 mt-1">
+                  Three guaranteed games. Open, 40+, 50+ and 60+ divisions.
+                </p>
+              </div>
+
+              <div className="shrink-0">
+                <a
+                  href="#tournament-form"
+                  className="px-7 py-3.5 rounded-xl bg-brand-red text-brand-navy font-black text-xs uppercase tracking-wider hover:bg-brand-red-hover transition-all shadow-lg inline-flex items-center gap-2"
+                >
+                  Request an Invitational Spot
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
+
+            {/* Event Specs Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-xs text-brand-muted">
+              <div className="p-4 rounded-xl bg-brand-navy/60 border border-brand-border">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-brand-accent block mb-1">
+                  Venue & Location
+                </span>
+                <p className="text-brand-cream font-semibold text-sm">Richmond Hill / GTA</p>
+                <p className="mt-0.5">Twin-pad premier facility</p>
+              </div>
+              <div className="p-4 rounded-xl bg-brand-navy/60 border border-brand-border">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-brand-accent block mb-1">
+                  Guaranteed Games
+                </span>
+                <p className="text-brand-cream font-semibold text-sm">3 Games Guaranteed</p>
+                <p className="mt-0.5">Round robin + playoffs</p>
+              </div>
+              <div className="p-4 rounded-xl bg-brand-navy/60 border border-brand-border">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-brand-accent block mb-1">
+                  Offered Divisions
+                </span>
+                <p className="text-brand-cream font-semibold text-sm">Open, 40+, 50+, 60+</p>
+                <p className="mt-0.5">D1 through D4 flights</p>
+              </div>
+              <div className="p-4 rounded-xl bg-brand-navy/60 border border-brand-border">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-brand-accent block mb-1">
+                  Entry Deadlines
+                </span>
+                <p className="text-brand-cream font-semibold text-sm">Rolling by Division</p>
+                <p className="mt-0.5">Rosters due 14 days prior</p>
+              </div>
+            </div>
+
+            {/* WHAT'S INCLUDED: The Room, The Game, The Coverage */}
+            <div className="pt-6 border-t border-brand-border/60">
+              <h4 className="text-lg font-athletic text-brand-cream font-bold mb-6">
+                What’s Included: The Full Pro Treatment
+              </h4>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {/* The Room */}
+                <div className="p-6 rounded-2xl bg-brand-navy/60 border border-brand-border">
+                  <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2 font-athletic">
+                    The Room
+                  </span>
+                  <ul className="space-y-2 text-xs text-slate-300 font-sans">
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-brand-accent shrink-0" />
+                      <span>Custom player stall nameplates</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-brand-accent shrink-0" />
+                      <span>Room ready before team arrival</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-brand-accent shrink-0" />
+                      <span>Tape & essentials station ready</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-brand-accent shrink-0" />
+                      <span>Fresh towel for every player</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-brand-accent shrink-0" />
+                      <span>Pregame music playlist ready</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* The Game */}
+                <div className="p-6 rounded-2xl bg-brand-navy/60 border border-brand-border">
+                  <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2 font-athletic">
+                    The Game
+                  </span>
+                  <ul className="space-y-2 text-xs text-slate-300 font-sans">
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-brand-accent shrink-0" />
+                      <span>Two certified refs & scorekeeper</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-brand-accent shrink-0" />
+                      <span>Strict skill & age division review</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-brand-accent shrink-0" />
+                      <span>Warm-up pucks provided on ice</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-brand-accent shrink-0" />
+                      <span>Live online stats and standings</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-brand-accent shrink-0" />
+                      <span>Three Stars post-game recognition</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* The Coverage */}
+                <div className="p-6 rounded-2xl bg-brand-navy/60 border border-brand-border">
+                  <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2 font-athletic">
+                    The Coverage
+                  </span>
+                  <ul className="space-y-2 text-xs text-slate-300 font-sans">
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-brand-accent shrink-0" />
+                      <span>High-resolution team photo</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-brand-accent shrink-0" />
+                      <span>Digital final-score graphic (72h)</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-brand-accent shrink-0" />
+                      <span>Highlights for the group chat</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-brand-accent shrink-0" />
+                      <span>Division championship trophies</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
-            ))}
-          </div>
-
-          {/* AT EVERY EVENT AMENITIES (Replaces The Pro Amenities per Nov 21 spec) */}
-          <div className="max-w-4xl mx-auto p-8 rounded-2xl bg-brand-card border border-brand-border">
-            <div className="text-center mb-8">
-              <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-1">
-                Standard Inclusions
-              </span>
-              <h3 className="text-2xl font-athletic text-brand-cream font-black">
-                Ready at Every Veddie Event
-              </h3>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-200">
-              {atEveryEventAmenities.map((amenity) => (
-                <div key={amenity} className="flex items-center gap-2 p-2.5 rounded-lg bg-brand-surface/60 border border-brand-border/40">
-                  <CheckCircle2 className="w-4 h-4 text-brand-accent shrink-0" />
-                  <span>{amenity}</span>
-                </div>
-              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* LEAD CAPTURE FORM (Single H2, hide duplicate form heading) */}
-      <section id="tournament-form" className="py-24 bg-brand-navy px-4 sm:px-6 lg:px-8">
+      {/* THE VEDDIE EXPERIENCE CALLOUT */}
+      <section className="py-16 bg-brand-navy border-b border-brand-border px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-3xl mx-auto">
+          <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2">
+            The Veddie Experience
+          </span>
+          <h2 className="text-2xl sm:text-4xl font-athletic text-brand-cream font-black mb-3">
+            See what game day looks like, from the dressing room to the final whistle.
+          </h2>
+          <div className="pt-4">
+            <Link
+              href="/experience"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-brand-card border border-brand-border hover:border-brand-accent text-brand-cream text-xs font-bold uppercase tracking-wider transition-all"
+            >
+              <span>Explore the Veddie Experience</span>
+              <ArrowRight className="w-4 h-4 text-brand-accent" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* LEAD CAPTURE FORM */}
+      <section id="tournament-form" className="py-24 bg-brand-surface px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center mb-8">
           <span className="text-xs font-bold uppercase tracking-wider text-brand-accent block mb-2">
             Priority Entry
@@ -189,7 +249,7 @@ export default function TournamentsPage() {
           <h2 className="text-3xl sm:text-5xl font-athletic text-brand-cream tracking-tight mb-2 font-black">
             Get Invitational Details
           </h2>
-          <p className="text-sm text-brand-muted">
+          <p className="text-sm text-brand-muted font-sans">
             Tell us about your team. We check team placement and reply within 2 business days. No payment today.
           </p>
         </div>
@@ -197,7 +257,7 @@ export default function TournamentsPage() {
         <LeadCaptureForm
           type="tournaments"
           hideHeading={true}
-          buttonText="Get Invitational details"
+          buttonText="Get Invitational Details"
           microcopy="We check team placement and reply within 2 business days. No payment today."
         />
       </section>

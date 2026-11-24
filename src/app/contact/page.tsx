@@ -3,7 +3,7 @@ import { MessageSquare, Instagram, Mail } from "lucide-react";
 import LeadCaptureForm from "@/components/LeadCaptureForm";
 
 export const metadata: Metadata = {
-  title: "Contact | Veddie Hockey",
+  title: "Contact",
   description:
     "Ask about the Invitational, the Champions Cup, team nomination, division placement, or partnerships.",
 };

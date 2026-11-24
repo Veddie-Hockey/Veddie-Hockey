@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Trophy, Shield, CheckCircle2, ArrowRight, ExternalLink, Mail, Calendar } from "lucide-react";
-import QualificationCalculator from "@/components/QualificationCalculator";
 import ShareToCaptainButton from "@/components/ShareToCaptainButton";
 
 export const metadata: Metadata = {
-  title: "Road to the Cup | Veddie Hockey",
+  title: "Road to the Cup",
   description:
     "Road to the Champions Cup. The closest thing to the show starts in your home league. Who’s the team to beat in yours?",
 };
@@ -38,19 +37,19 @@ export default function RoadToTheCupPage() {
           </p>
         </div>
 
-        {/* Status labels - Three only per Nov 21 spec */}
+        {/* Status labels per Nov 22 spec */}
         <div className="flex flex-wrap items-center justify-center gap-4 text-xs">
           <span className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-brand-surface border border-brand-border text-brand-cream">
             <span className="w-2.5 h-2.5 rounded-full bg-brand-accent" />
-            Inside the line
+            In qualifying position
           </span>
           <span className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-brand-surface border border-brand-border text-brand-cream">
             <span className="w-2.5 h-2.5 rounded-full bg-brand-green" />
-            Verified qualifier
+            Qualified
           </span>
           <span className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-brand-surface border border-brand-border text-brand-cream">
             <span className="w-2.5 h-2.5 rounded-full bg-brand-red" />
-            Accepted invitation
+            Confirmed for April
           </span>
         </div>
       </div>
@@ -101,11 +100,6 @@ export default function RoadToTheCupPage() {
           </Link>
           <ShareToCaptainButton />
         </div>
-      </div>
-
-      {/* CALCULATOR */}
-      <div className="max-w-2xl mx-auto w-full mb-12">
-        <QualificationCalculator />
       </div>
     </div>
   );
