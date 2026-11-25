@@ -141,7 +141,7 @@ export default function CompanyPage() {
                 className="absolute inset-0 bg-cover bg-center filter brightness-95"
                 style={{
                   backgroundImage:
-                    "url('https://images.unsplash.com/photo-1515703407324-5f753eed2311?auto=format&fit=crop&w=1000&q=80')",
+                    "url('/images/hockey/hero-mens-hockey.jpg')",
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/20 to-transparent" />

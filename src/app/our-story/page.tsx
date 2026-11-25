@@ -45,7 +45,7 @@ export default function OurStoryPage() {
           <div className="my-8 rounded-2xl overflow-hidden border border-brand-border shadow-2xl">
             <div className="relative h-72 sm:h-96 w-full">
               <Image
-                src="https://images.unsplash.com/photo-1515703407324-5f753eed2311?auto=format&fit=crop&w=1200&q=80"
+                src="/images/hockey/hero-mens-hockey.jpg"
                 alt="Community hockey rink in Ontario"
                 fill
                 className="object-cover"
@@ -71,7 +71,7 @@ export default function OurStoryPage() {
             Whether you’re playing Open D1 or 60+ D4, when you step through the arena doors for a Veddie event:
           </p>
 
-          <p className="text-2xl sm:text-3xl font-athletic text-brand-accent font-black tracking-tight">
+          <p className="text-lg sm:text-2xl md:text-3xl font-athletic text-brand-accent font-black tracking-tight whitespace-nowrap">
             “You don't have to be a pro to feel like one.”
           </p>
 
