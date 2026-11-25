@@ -245,25 +245,9 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* BOTTOM LEGAL BAR */}
-        {/* Nov 21 Edit: Removed "Organizer Desk", updated copyright to "© 2026 Veddie Hockey", removed ™ */}
-        <div className="pt-8 border-t border-brand-border flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-brand-muted">
-          <div className="flex flex-wrap items-center gap-6">
-            <Link href="/privacy" className="hover:text-brand-cream transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="/refund-policy" className="hover:text-brand-cream transition-colors">
-              Refund Policy
-            </Link>
-            <Link href="/terms" className="hover:text-brand-cream transition-colors">
-              Participation Terms
-            </Link>
-            <Link href="/player-code" className="hover:text-brand-cream transition-colors">
-              Player Code of Conduct
-            </Link>
-          </div>
-
-          <p className="text-brand-muted/70 text-center md:text-right">
+        {/* BOTTOM COPYRIGHT BAR */}
+        <div className="pt-8 border-t border-brand-border flex items-center justify-center text-xs text-brand-muted">
+          <p className="text-brand-muted/70 text-center">
             © 2026 Veddie Hockey. All Rights Reserved.
           </p>
         </div>

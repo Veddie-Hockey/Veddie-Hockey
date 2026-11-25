@@ -156,26 +156,16 @@ export default function DivisionsPage() {
             {/* Result Bracket Card */}
             <div className="p-6 rounded-2xl bg-brand-surface border border-brand-border flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
-                <div className="flex items-center gap-3 mb-1">
+                <div className="flex items-center gap-3">
                   <span className="font-athletic text-xl sm:text-2xl text-brand-cream font-black">
                     {selectedEvent} · {selectedAge} {selectedSkill}
                   </span>
-                  <span
-                    className={`text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full ${
-                      currentBracket.status === "Confirmed"
-                        ? "bg-brand-green/20 text-brand-green border border-brand-green/40"
-                        : "bg-brand-accent/20 text-brand-accent border border-brand-accent/40"
-                    }`}
-                  >
-                    {currentBracket.status}
-                  </span>
                 </div>
-                <p className="text-xs text-brand-muted">{currentBracket.note}</p>
               </div>
 
               <div className="flex items-center gap-3 shrink-0">
                 <Link
-                  href="/contact?topic=Division+placement"
+                  href={`/contact?topic=Division+placement&event=${encodeURIComponent(selectedEvent)}&age=${encodeURIComponent(selectedAge)}&skill=${encodeURIComponent(selectedSkill)}`}
                   className="px-5 py-2.5 rounded-xl bg-brand-card border border-brand-border hover:border-brand-accent text-brand-cream text-xs font-bold uppercase tracking-wider transition-colors"
                 >
                   Ask About Placement
@@ -183,10 +173,10 @@ export default function DivisionsPage() {
                 <Link
                   href={
                     selectedEvent === "Invitational"
-                      ? "/tournaments#tournament-form"
+                      ? `/tournaments?event=${encodeURIComponent(selectedEvent)}&age=${encodeURIComponent(selectedAge)}&skill=${encodeURIComponent(selectedSkill)}#tournament-form`
                       : selectedEvent === "Champions Cup"
-                      ? "/champions-cup#cup-form"
-                      : "/leagues#league-form"
+                      ? `/champions-cup?event=${encodeURIComponent(selectedEvent)}&age=${encodeURIComponent(selectedAge)}&skill=${encodeURIComponent(selectedSkill)}#cup-form`
+                      : `/leagues?event=${encodeURIComponent(selectedEvent)}&age=${encodeURIComponent(selectedAge)}&skill=${encodeURIComponent(selectedSkill)}#league-form`
                   }
                   className="px-5 py-2.5 rounded-xl bg-brand-red text-brand-navy text-xs font-black uppercase tracking-wider hover:bg-brand-red-hover transition-colors shadow-md"
                 >
@@ -296,60 +286,6 @@ export default function DivisionsPage() {
                 “You scored one off your shin pad and immediately pointed to the teammate who passed it. Chemistry like that takes time.”
               </p>
             </div>
-          </div>
-
-          {/* BETWEEN DIVISIONS BLOCK (Nov 22 spec) */}
-          <div className="p-8 rounded-2xl bg-brand-surface border border-brand-accent/40 max-w-2xl mx-auto text-center mb-12 shadow-xl">
-            <h3 className="text-xl font-athletic text-brand-cream font-bold mb-2">
-              Between divisions?
-            </h3>
-            <p className="text-xs sm:text-sm text-brand-muted font-sans leading-relaxed mb-6">
-              Tell us your captain’s home league, current division, and standings link. Our placement team will recommend the right bracket for close, competitive games.
-            </p>
-            <Link
-              href="/contact?topic=Division+placement"
-              className="inline-flex items-center gap-2 px-7 py-3 rounded-xl bg-brand-red text-brand-navy font-black text-xs uppercase tracking-wider hover:bg-brand-red-hover transition-all shadow-md"
-            >
-              Ask About Team Placement
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-
-          {/* COLLAPSIBLE FULL PLACEMENT RULES */}
-          <div className="bg-brand-surface border border-brand-border rounded-2xl overflow-hidden">
-            <button
-              onClick={() => setShowFullRules(!showFullRules)}
-              className="w-full p-6 text-left flex items-center justify-between hover:bg-brand-card transition-colors"
-            >
-              <div className="flex items-center gap-3">
-                <Shield className="w-5 h-5 text-brand-accent" />
-                <span className="font-athletic text-lg font-bold text-brand-cream">
-                  Full Placement & Eligibility Rules
-                </span>
-              </div>
-              {showFullRules ? <ChevronUp className="w-5 h-5 text-brand-muted" /> : <ChevronDown className="w-5 h-5 text-brand-muted" />}
-            </button>
-
-            {showFullRules && (
-              <div className="p-6 pt-0 border-t border-brand-border/60 text-xs text-brand-muted space-y-4 leading-relaxed font-sans">
-                <div>
-                  <h4 className="font-bold text-brand-cream mb-1">D1 Elite</h4>
-                  <p>Former NHL, AHL, ECHL, European Pro alumni; NCAA Division I & III, USports, Major Junior (OHL/WHL/QMJHL), and Junior A alumni. Active professionals are excluded; former professionals are permitted.</p>
-                </div>
-                <div>
-                  <h4 className="font-bold text-brand-cream mb-1">D2 Competitive</h4>
-                  <p>AAA, AA, and accomplished competitive recreational alumni. No former professionals. Junior and university alumni undergo recency review based on years since playing at that level.</p>
-                </div>
-                <div>
-                  <h4 className="font-bold text-brand-cream mb-1">D3 Intermediate</h4>
-                  <p>High school varsity, select, and established recreational players with structured team play backgrounds. No AAA or Junior alumni permitted without extended hiatus.</p>
-                </div>
-                <div>
-                  <h4 className="font-bold text-brand-cream mb-1">D4 Recreational</h4>
-                  <p>House league veterans and adult-onset skaters. Players whose current ability materially exceeds the division are reassigned to higher flights.</p>
-                </div>
-              </div>
-            )}
           </div>
         </div>
       </section>

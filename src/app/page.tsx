@@ -25,7 +25,7 @@ export default function HomePage() {
           className="absolute inset-0 bg-cover bg-center filter brightness-40 scale-105 pointer-events-none"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1580748141549-71748dbe0bdc?auto=format&fit=crop&w=1920&q=80')",
+              "url('/images/hockey/hero-mens-hockey.jpg')",
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/80 to-brand-navy/60 pointer-events-none" />
@@ -156,9 +156,6 @@ export default function HomePage() {
           </div>
 
           <div className="text-center">
-            <p className="text-sm font-semibold text-brand-cream/90 italic mb-6">
-              “A 60+ D4 team gets the same pro treatment as an Open D1 team.”
-            </p>
             <Link
               href="/experience"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-brand-card border border-brand-border hover:border-brand-accent text-brand-cream text-xs font-bold uppercase tracking-wider transition-all"
@@ -193,16 +190,8 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             {/* Event Card 1: The Veddie Invitational */}
-            <div className="bg-[#0b203a] border-2 border-[#1c3f6e] hover:border-brand-accent rounded-3xl p-8 sm:p-10 flex flex-col justify-between transition-all group shadow-2xl">
+            <div className="bg-[#0b203a] border border-brand-border hover:border-brand-accent rounded-3xl p-8 sm:p-10 flex flex-col justify-between transition-all group shadow-2xl">
               <div>
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-xs font-black uppercase tracking-wider px-3 py-1 rounded bg-brand-accent text-brand-navy">
-                    Early April 2027
-                  </span>
-                  <span className="text-xs font-semibold text-brand-muted uppercase">
-                    Tournament
-                  </span>
-                </div>
                 <h3 className="text-2xl sm:text-3xl font-athletic text-brand-cream font-black mb-2">
                   The Veddie Invitational
                 </h3>
@@ -229,16 +218,8 @@ export default function HomePage() {
             </div>
 
             {/* Event Card 2: The Veddie Champions Cup */}
-            <div className="bg-[#0b203a] border-2 border-[#1c3f6e] hover:border-brand-red rounded-3xl p-8 sm:p-10 flex flex-col justify-between transition-all group shadow-2xl">
+            <div className="bg-[#0b203a] border border-brand-border hover:border-brand-accent rounded-3xl p-8 sm:p-10 flex flex-col justify-between transition-all group shadow-2xl">
               <div>
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-xs font-black uppercase tracking-wider px-3 py-1 rounded bg-brand-red text-brand-navy">
-                    Championship Event
-                  </span>
-                  <span className="text-xs font-semibold text-brand-muted uppercase">
-                    GTA
-                  </span>
-                </div>
                 <h3 className="text-2xl sm:text-3xl font-athletic text-brand-cream font-black mb-2">
                   The Veddie Champions Cup
                 </h3>
@@ -289,127 +270,91 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             {/* 1. Leagues */}
-            <div className="bg-brand-card border border-brand-border rounded-2xl overflow-hidden flex flex-col justify-between group shadow-lg">
-              <div className="relative h-44 overflow-hidden">
-                <div
-                  className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
-                  style={{ backgroundImage: "url('/images/hockey/leagues.jpg')" }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent" />
+            <div className="bg-brand-card border border-brand-border rounded-2xl p-7 flex flex-col justify-between group shadow-lg hover:border-brand-accent transition-all">
+              <div>
+                <span className="text-[11px] text-brand-accent font-semibold block mb-2 uppercase tracking-wider">
+                  Coming September 2027
+                </span>
+                <h3 className="text-2xl font-athletic text-brand-cream font-bold mb-2">
+                  Leagues
+                </h3>
+                <p className="text-xs text-brand-muted font-sans leading-relaxed mb-6">
+                  Play every week with your team or sign up as a free agent.
+                </p>
               </div>
-              <div className="p-6 flex-1 flex flex-col justify-between">
-                <div>
-                  <span className="text-[11px] text-brand-accent font-semibold block mb-1">
-                    Coming September 2027
-                  </span>
-                  <h3 className="text-xl font-athletic text-brand-cream font-bold mb-2">
-                    Leagues
-                  </h3>
-                  <p className="text-xs text-brand-muted font-sans leading-relaxed mb-4">
-                    Play every week with your team or sign up as a free agent.
-                  </p>
-                </div>
-                <Link
-                  href="/leagues"
-                  className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-brand-accent hover:text-brand-cream transition-colors"
-                >
-                  <span>Explore Leagues</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </Link>
-              </div>
+              <Link
+                href="/leagues"
+                className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-brand-accent hover:text-brand-cream transition-colors"
+              >
+                <span>Explore Leagues</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
             </div>
 
             {/* 2. Tournaments */}
-            <div className="bg-brand-card border border-brand-border rounded-2xl overflow-hidden flex flex-col justify-between group shadow-lg">
-              <div className="relative h-44 overflow-hidden">
-                <div
-                  className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
-                  style={{ backgroundImage: "url('/images/hockey/tournaments.jpg')" }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent" />
+            <div className="bg-brand-card border border-brand-border rounded-2xl p-7 flex flex-col justify-between group shadow-lg hover:border-brand-accent transition-all">
+              <div>
+                <span className="text-[11px] text-brand-accent font-semibold block mb-2 uppercase tracking-wider">
+                  Weekend Tournaments
+                </span>
+                <h3 className="text-2xl font-athletic text-brand-cream font-bold mb-2">
+                  Tournaments
+                </h3>
+                <p className="text-xs text-brand-muted font-sans leading-relaxed mb-6">
+                  Bring your team for a weekend of hockey against teams at your level.
+                </p>
               </div>
-              <div className="p-6 flex-1 flex flex-col justify-between">
-                <div>
-                  <span className="text-[11px] text-brand-accent font-semibold block mb-1">
-                    Weekend Tournaments
-                  </span>
-                  <h3 className="text-xl font-athletic text-brand-cream font-bold mb-2">
-                    Tournaments
-                  </h3>
-                  <p className="text-xs text-brand-muted font-sans leading-relaxed mb-4">
-                    Bring your team for a weekend of hockey against teams at your level.
-                  </p>
-                </div>
-                <Link
-                  href="/tournaments"
-                  className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-brand-accent hover:text-brand-cream transition-colors"
-                >
-                  <span>View Upcoming Tournaments</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </Link>
-              </div>
+              <Link
+                href="/tournaments"
+                className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-brand-accent hover:text-brand-cream transition-colors"
+              >
+                <span>View Upcoming Tournaments</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
             </div>
 
             {/* 3. Champions League */}
-            <div className="bg-brand-card border border-brand-border rounded-2xl overflow-hidden flex flex-col justify-between group shadow-lg">
-              <div className="relative h-44 overflow-hidden">
-                <div
-                  className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
-                  style={{ backgroundImage: "url('/images/hockey/champions-league.jpg')" }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent" />
+            <div className="bg-brand-card border border-brand-border rounded-2xl p-7 flex flex-col justify-between group shadow-lg hover:border-brand-accent transition-all">
+              <div>
+                <span className="text-[11px] text-brand-accent font-semibold block mb-2 uppercase tracking-wider">
+                  Coming September 2027
+                </span>
+                <h3 className="text-2xl font-athletic text-brand-cream font-bold mb-2">
+                  Champions League
+                </h3>
+                <p className="text-xs text-brand-muted font-sans leading-relaxed mb-6">
+                  Keep playing in your home league and face teams from other leagues in midweek regional competition.
+                </p>
               </div>
-              <div className="p-6 flex-1 flex flex-col justify-between">
-                <div>
-                  <span className="text-[11px] text-brand-accent font-semibold block mb-1">
-                    Coming September 2027
-                  </span>
-                  <h3 className="text-xl font-athletic text-brand-cream font-bold mb-2">
-                    Champions League
-                  </h3>
-                  <p className="text-xs text-brand-muted font-sans leading-relaxed mb-4">
-                    Keep playing in your home league and face teams from other leagues in midweek regional competition.
-                  </p>
-                </div>
-                <Link
-                  href="/champions-league"
-                  className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-brand-accent hover:text-brand-cream transition-colors"
-                >
-                  <span>Explore Champions League</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </Link>
-              </div>
+              <Link
+                href="/champions-league"
+                className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-brand-accent hover:text-brand-cream transition-colors"
+              >
+                <span>Explore Champions League</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
             </div>
 
             {/* 4. Champions Cup */}
-            <div className="bg-brand-card border border-brand-border rounded-2xl overflow-hidden flex flex-col justify-between group shadow-lg">
-              <div className="relative h-44 overflow-hidden">
-                <div
-                  className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
-                  style={{ backgroundImage: "url('/images/hockey/champions-cup.jpg')" }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent" />
+            <div className="bg-brand-card border border-brand-border rounded-2xl p-7 flex flex-col justify-between group shadow-lg hover:border-brand-red transition-all">
+              <div>
+                <span className="text-[11px] text-brand-red font-semibold block mb-2 uppercase tracking-wider">
+                  Championship Stage
+                </span>
+                <h3 className="text-2xl font-athletic text-brand-cream font-bold mb-2">
+                  Champions Cup
+                </h3>
+                <p className="text-xs text-brand-muted font-sans leading-relaxed mb-6">
+                  Win your league playoffs or finish in the top quarter of your division to qualify for the Cup.
+                </p>
               </div>
-              <div className="p-6 flex-1 flex flex-col justify-between">
-                <div>
-                  <span className="text-[11px] text-brand-red font-semibold block mb-1">
-                    Championship Stage
-                  </span>
-                  <h3 className="text-xl font-athletic text-brand-cream font-bold mb-2">
-                    Champions Cup
-                  </h3>
-                  <p className="text-xs text-brand-muted font-sans leading-relaxed mb-4">
-                    Win your league playoffs or finish in the top quarter of your division to qualify for the Cup.
-                  </p>
-                </div>
-                <Link
-                  href="/champions-cup"
-                  className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-brand-red hover:text-brand-cream transition-colors"
-                >
-                  <span>Check My Team’s Eligibility</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </Link>
-              </div>
+              <Link
+                href="/champions-cup"
+                className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-brand-red hover:text-brand-cream transition-colors"
+              >
+                <span>Check My Team’s Eligibility</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
             </div>
           </div>
 

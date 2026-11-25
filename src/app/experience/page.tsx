@@ -192,7 +192,6 @@ export default function ExperiencePage() {
                 }`}
               >
                 {cat}
-                {cat !== "All" && PILLAR_LINES[cat] ? ` — ${PILLAR_LINES[cat]}` : ""}
               </button>
             ))}
           </div>
@@ -211,17 +210,6 @@ export default function ExperiencePage() {
                       <div className="p-3 rounded-xl bg-brand-surface text-brand-accent group-hover:bg-brand-accent/20 transition-colors">
                         <Icon className="w-5 h-5" />
                       </div>
-                      <span
-                        className={`text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md ${
-                          feat.availability === "At every event"
-                            ? "bg-brand-green/15 text-brand-green border border-brand-green/30"
-                            : feat.availability === "Champions Cup only"
-                            ? "bg-brand-red/15 text-brand-red border border-brand-red/30"
-                            : "bg-brand-surface text-brand-muted border border-brand-border"
-                        }`}
-                      >
-                        {feat.availability}
-                      </span>
                     </div>
 
                     <span className="text-[10px] font-bold uppercase tracking-wider text-brand-muted block mb-1">
@@ -258,16 +246,8 @@ export default function ExperiencePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             {/* Event 1: Invitational */}
-            <div className="bg-[#0b203a] border-2 border-[#1c3f6e] hover:border-brand-accent rounded-2xl p-8 flex flex-col justify-between transition-all group shadow-xl">
+            <div className="bg-[#0b203a] border border-brand-border hover:border-brand-accent rounded-2xl p-8 flex flex-col justify-between transition-all group shadow-xl">
               <div>
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-xs font-black uppercase tracking-wider px-3 py-1 rounded bg-brand-accent text-brand-navy">
-                    Early April 2027
-                  </span>
-                  <span className="text-xs font-semibold text-brand-muted uppercase">
-                    Tournament
-                  </span>
-                </div>
                 <h3 className="text-2xl sm:text-3xl font-athletic text-brand-cream font-black mb-2">
                   The Veddie Invitational
                 </h3>
@@ -291,16 +271,8 @@ export default function ExperiencePage() {
             </div>
 
             {/* Event 2: Champions Cup */}
-            <div className="bg-[#0b203a] border-2 border-[#1c3f6e] hover:border-brand-red rounded-2xl p-8 flex flex-col justify-between transition-all group shadow-xl">
+            <div className="bg-[#0b203a] border border-brand-border hover:border-brand-accent rounded-2xl p-8 flex flex-col justify-between transition-all group shadow-xl">
               <div>
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-xs font-black uppercase tracking-wider px-3 py-1 rounded bg-brand-red text-brand-navy">
-                    Championship Event
-                  </span>
-                  <span className="text-xs font-semibold text-brand-muted uppercase">
-                    GTA
-                  </span>
-                </div>
                 <h3 className="text-2xl sm:text-3xl font-athletic text-brand-cream font-black mb-2">
                   The Veddie Champions Cup
                 </h3>

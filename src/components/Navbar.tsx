@@ -108,43 +108,29 @@ export default function Navbar() {
               </button>
 
               {companyDropdownOpen && (
-                <div className="absolute top-full right-0 w-[420px] bg-brand-surface border border-brand-border rounded-2xl shadow-2xl p-6 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
-                  <div className="space-y-4">
-                    <span className="text-xs font-bold text-brand-muted uppercase tracking-wider block">
-                      Veddie Hockey
-                    </span>
-                    <ul className="space-y-3 text-sm">
-                      <li>
-                        <Link
-                          href="/company"
-                          onClick={() => setCompanyDropdownOpen(false)}
-                          className="font-bold text-brand-cream hover:text-brand-accent transition-colors block"
-                        >
-                          About Veddie &rarr;
-                        </Link>
-                        <p className="text-xs text-brand-muted mt-0.5">Who runs Veddie, where we launch and our event philosophy.</p>
-                      </li>
-                      <li>
-                        <Link
-                          href="/our-story"
-                          onClick={() => setCompanyDropdownOpen(false)}
-                          className="font-bold text-brand-cream hover:text-brand-accent transition-colors block"
-                        >
-                          Our Story &rarr;
-                        </Link>
-                        <p className="text-xs text-brand-muted mt-0.5">Nobody ever set the room up for us. So we did.</p>
-                      </li>
-                      <li>
-                        <Link
-                          href="/contact"
-                          onClick={() => setCompanyDropdownOpen(false)}
-                          className="font-bold text-brand-cream hover:text-brand-accent transition-colors block"
-                        >
-                          Contact Desk &rarr;
-                        </Link>
-                        <p className="text-xs text-brand-muted mt-0.5">Toronto HQ operations, inquiries and team placements.</p>
-                      </li>
-                    </ul>
+                <div className="absolute top-full right-0 w-56 bg-brand-surface border border-brand-border rounded-xl shadow-2xl p-2 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
+                  <div className="space-y-1">
+                    <Link
+                      href="/company"
+                      onClick={() => setCompanyDropdownOpen(false)}
+                      className="block px-4 py-2.5 rounded-lg hover:bg-brand-card text-sm font-semibold text-brand-cream hover:text-brand-accent transition-colors"
+                    >
+                      About
+                    </Link>
+                    <Link
+                      href="/our-story"
+                      onClick={() => setCompanyDropdownOpen(false)}
+                      className="block px-4 py-2.5 rounded-lg hover:bg-brand-card text-sm font-semibold text-brand-cream hover:text-brand-accent transition-colors"
+                    >
+                      Our Story
+                    </Link>
+                    <Link
+                      href="/contact"
+                      onClick={() => setCompanyDropdownOpen(false)}
+                      className="block px-4 py-2.5 rounded-lg hover:bg-brand-card text-sm font-semibold text-brand-cream hover:text-brand-accent transition-colors"
+                    >
+                      Contact Desk
+                    </Link>
                   </div>
                 </div>
               )}

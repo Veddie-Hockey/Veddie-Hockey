@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { CheckCircle2, AlertCircle, Loader2, Copy, Check, Share2 } from "lucide-react";
 
@@ -84,6 +84,46 @@ export default function LeadCaptureForm({
     topic: defaultTopic || "Choosing a program",
     message: "",
   });
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const ev = params.get("event");
+      const age = params.get("age");
+      const skill = params.get("skill");
+      const topic = params.get("topic");
+
+      if (ev || age || skill || topic) {
+        setFormData((prev) => {
+          const updates: Record<string, any> = {};
+          if (age) updates.ageCategory = age;
+          if (skill) {
+            if (skill === "D1") updates.skillLevel = "D1 — Elite";
+            else if (skill === "D2") updates.skillLevel = "D2 — Competitive";
+            else if (skill === "D3") updates.skillLevel = "D3 — Intermediate";
+            else if (skill === "D4") updates.skillLevel = "D4 — Recreational";
+            else updates.skillLevel = skill;
+          }
+          if (age && skill) {
+            updates.homeDivision = `${age} ${skill}`;
+          }
+          if (topic) {
+            updates.topic = topic;
+          }
+          if (ev || age || skill) {
+            const bracketInfo = `${ev ? ev + " · " : ""}${age || ""} ${skill || ""}`.trim();
+            if (!prev.anythingElse) {
+              updates.anythingElse = `Selected bracket: ${bracketInfo}`;
+            }
+            if (type === "contact" && !prev.message) {
+              updates.message = `Inquiry regarding placement for: ${bracketInfo}`;
+            }
+          }
+          return { ...prev, ...updates };
+        });
+      }
+    }
+  }, [type]);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
