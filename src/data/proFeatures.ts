@@ -13,30 +13,6 @@ export interface ProFeature {
 export const PRO_FEATURES: ProFeature[] = [
   // ----------------- THE ROOM ("Ready before you are.") -----------------
   {
-    id: "r-1",
-    category: "The room",
-    title: "Player stall nameplates",
-    description: "Your personalized player name, squad number, and team crest above your stall.",
-    iconName: "Tag",
-    availability: "At every event",
-  },
-  {
-    id: "r-2",
-    category: "The room",
-    title: "Room ready on arrival",
-    description: "Team name on the door, clean room, and lineup board ready the moment you walk in.",
-    iconName: "DoorClosed",
-    availability: "At every event",
-  },
-  {
-    id: "r-3",
-    category: "The room",
-    title: "Tape & essentials station",
-    description: "White, black and sock tape, scissors, spare laces, and anti-fog spray always on deck.",
-    iconName: "Scissors",
-    availability: "At every event",
-  },
-  {
     id: "r-4",
     category: "The room",
     title: "A fresh towel for every player",
@@ -61,52 +37,12 @@ export const PRO_FEATURES: ProFeature[] = [
     availability: "At every event",
   },
   {
-    id: "r-7",
-    category: "The room",
-    title: "Matching jerseys with letters",
-    description: "Team uniform standards with home and away jerseys and captain letters.",
-    iconName: "ShieldCheck",
-    availability: "At every event",
-  },
-  {
     id: "r-8",
     category: "The room",
     title: "Post-game refreshments",
     description: "Cold post-game beverages ready in the dressing room after the final buzzer.",
     iconName: "Coffee",
     availability: "Champions Cup only",
-  },
-  {
-    id: "r-9",
-    category: "The room",
-    title: "Athletic therapist on site",
-    description: "Pregame athletic taping, acute assessment, and ice bags available in the room.",
-    iconName: "HeartPulse",
-    availability: "Champions Cup only",
-  },
-  {
-    id: "r-10",
-    category: "The room",
-    title: "Skate sharpening",
-    description: "Arena skate sharpening and edge tune-ups available on site.",
-    iconName: "Sparkles",
-    availability: "Coming soon",
-  },
-  {
-    id: "r-11",
-    category: "The room",
-    title: "Equipment attendant",
-    description: "Dedicated bench attendant managing rivets, extra steel, screws, and helmet repairs.",
-    iconName: "Wrench",
-    availability: "Coming soon",
-  },
-  {
-    id: "r-12",
-    category: "The room",
-    title: "Loaner equipment gear",
-    description: "Spare helmets, gloves, pants, and sticks if anyone leaves gear at home.",
-    iconName: "Package",
-    availability: "Coming soon",
   },
 
   // ----------------- THE GAME ("Hockey that counts.") -----------------
@@ -143,22 +79,6 @@ export const PRO_FEATURES: ProFeature[] = [
     availability: "At every event",
   },
   {
-    id: "g-5",
-    category: "The game",
-    title: "Starting lineup intros",
-    description: "Starting goalie and skaters announced over arena sound before puck drop.",
-    iconName: "Mic2",
-    availability: "Champions Cup only",
-  },
-  {
-    id: "g-6",
-    category: "The game",
-    title: "PA announcements",
-    description: "In-game goal calls, penalties, and period summaries over the arena sound system.",
-    iconName: "Volume2",
-    availability: "Champions Cup only",
-  },
-  {
     id: "g-7",
     category: "The game",
     title: "All-Star showcase",
@@ -169,14 +89,6 @@ export const PRO_FEATURES: ProFeature[] = [
 
   // ----------------- THE COVERAGE ("A final score worth keeping.") -----------------
   {
-    id: "c-1",
-    category: "The coverage",
-    title: "Team photo & final-score graphic",
-    description: "Team photo and verified result card delivered to players within 72 hours.",
-    iconName: "Camera",
-    availability: "At every event",
-  },
-  {
     id: "c-2",
     category: "The coverage",
     title: "Highlight clips",
@@ -185,27 +97,11 @@ export const PRO_FEATURES: ProFeature[] = [
     availability: "At every event",
   },
   {
-    id: "c-3",
-    category: "The coverage",
-    title: "High-resolution photography",
-    description: "On-ice action photography capturing game intensity and bench celebrations.",
-    iconName: "Image",
-    availability: "At every event",
-  },
-  {
     id: "c-4",
     category: "The coverage",
     title: "Livestream of the finals",
     description: "Championship final broadcasts streamed live with score overlay for family and teammates.",
     iconName: "Tv",
-    availability: "Champions Cup only",
-  },
-  {
-    id: "c-5",
-    category: "The coverage",
-    title: "Interview wall",
-    description: "Post-game captain and player interviews against the official championship backdrop.",
-    iconName: "Mic",
     availability: "Champions Cup only",
   },
   {

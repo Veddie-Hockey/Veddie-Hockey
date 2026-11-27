@@ -71,8 +71,8 @@ export default function OurStoryPage() {
             Whether you’re playing Open D1 or 60+ D4, when you step through the arena doors for a Veddie event:
           </p>
 
-          <p className="text-lg sm:text-2xl md:text-3xl font-athletic text-brand-accent font-black tracking-tight whitespace-nowrap">
-            “You don't have to be a pro to feel like one.”
+          <p className="text-base sm:text-2xl md:text-3xl font-athletic text-brand-accent font-black tracking-tight whitespace-nowrap">
+            “YOU DON'T HAVE TO BE A PRO TO FEEL LIKE ONE.”
           </p>
 
           <div className="pt-8 border-t border-brand-border flex flex-col sm:flex-row items-center justify-between gap-6">
